@@ -1,26 +1,178 @@
 @import "tailwindcss";
 
+/*
+  swapnilonline.com — design tokens
+  Single light theme, chosen deliberately.
+
+  ground   chalk paper, barely warm, so black-and-white photos sit naturally
+  ink      green-black, not pure black; every text colour derives from it
+  accent   bottle green for every action. Deep enough for 7:1 on white.
+  mark     marigold, lifted from the @swapnilonline avatar. The one loud
+           colour, spent only where attention is earned: the top rule, a
+           highlighted word, "you are here", stars, callouts. Never on buttons.
+  panel    deep green ground for the closing call-to-action blocks
+  money    amber for prices, dark enough to read as text
+*/
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ground: #f8f7f3;
+  --surface: #ffffff;
+  --surface-2: #efede7;
+  --ink: #14211b;
+  --ink-soft: #55615a;
+  --line: #d9dbd3;
+  --accent: #0f5c4b;
+  --accent-strong: #0b483b;
+  --accent-ink: #ffffff;
+  --accent-soft: #ddefe7;
+  --mark: #f5c12e;
+  --mark-soft: #fbedc2;
+  --panel: #123d33;
+  --panel-ink: #f8f7f3;
+  --money: #9a5a14;
+  --money-soft: #f6e8d2;
+  --danger: #b4373a;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ground: var(--ground);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-mark: var(--mark);
+  --color-mark-soft: var(--mark-soft);
+  --color-panel: var(--panel);
+  --color-panel-ink: var(--panel-ink);
+  --color-money: var(--money);
+  --color-money-soft: var(--money-soft);
+  --color-danger: var(--danger);
+
+  --font-display: var(--font-bricolage), "Helvetica Neue", Arial, sans-serif;
+  --font-body: var(--font-newsreader), Georgia, "Times New Roman", serif;
+  --font-mono: var(--font-plex-mono), "SF Mono", Menlo, Consolas, monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  text-wrap: balance;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+}
+
+button, a, input, select, textarea, label {
+  touch-action: manipulation;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: var(--mark-soft);
+  color: var(--ink);
+}
+
+@keyframes fade {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: none; }
+}
+
+/* Marker highlight for one word in a headline. Sits behind the text like a pen stroke. */
+@utility hl {
+  background-image: linear-gradient(transparent 62%, var(--mark) 62%, var(--mark) 92%, transparent 92%);
+  padding: 0 0.06em;
+  margin: 0 -0.06em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Utility classes for recurring type roles */
+@utility eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+@utility measure {
+  max-width: 66ch;
+}
+
+@utility btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  padding: 0 1.25rem;
+  border-radius: 4px;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 150ms ease, color 150ms ease, transform 100ms ease;
+  border: 1.5px solid transparent;
+}
+
+@utility btn-primary {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+@utility btn-ghost {
+  background: transparent;
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.btn-primary:hover { background: var(--accent-strong); }
+.btn-ghost:hover { background: var(--accent-soft); }
+.btn:active { transform: translateY(1px); }
+.btn:disabled { opacity: 0.6; cursor: progress; transform: none; }
+
+@utility field {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.65rem 0.9rem;
+  background: var(--surface);
+  border: 1.5px solid var(--line);
+  border-radius: 4px;
+  font-family: var(--font-body);
+  font-size: 17px;
+  color: var(--ink);
+}
+
+.field:focus { border-color: var(--accent); outline: none; box-shadow: 0 0 0 3px var(--accent-soft); }
+.field[aria-invalid="true"] { border-color: var(--danger); }
