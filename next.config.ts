@@ -22,8 +22,6 @@ const nextConfig: NextConfig = {
       { source: "/refund-policy", destination: "/refunds", permanent: true },
       { source: "/earning-disclaimer", destination: "/refunds", permanent: true },
       { source: "/resources", destination: "/fit", permanent: true },
-      { source: "/blog", destination: "/", permanent: true },
-      { source: "/blog/:path*", destination: "/", permanent: true },
     ];
   },
 };

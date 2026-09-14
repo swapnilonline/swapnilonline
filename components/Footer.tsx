@@ -28,6 +28,7 @@ export default function Footer() {
           <Link href="/fit" className="text-ink-soft no-underline hover:text-ink">Take the Fit Score</Link>
           <Link href="/program" className="text-ink-soft no-underline hover:text-ink">HOME → BUSINESS program</Link>
           <Link href="/call" className="text-ink-soft no-underline hover:text-ink">Apply for a Launch Call</Link>
+          <Link href="/blog" className="text-ink-soft no-underline hover:text-ink">Blog</Link>
           <Link href="/about" className="text-ink-soft no-underline hover:text-ink">About Swapnil</Link>
           <Link href="/privacy" className="text-ink-soft no-underline hover:text-ink">Privacy</Link>
           <Link href="/refunds" className="text-ink-soft no-underline hover:text-ink">Refunds and guarantee</Link>
