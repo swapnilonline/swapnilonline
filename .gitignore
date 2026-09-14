@@ -42,3 +42,6 @@ next-env.d.ts
 
 # keep the example env committed
 !.env.example
+
+# local working files (voice/video sources), never for the site
+video/

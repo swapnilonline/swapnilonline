@@ -95,16 +95,18 @@ export default function Home() {
         </div>
       </section>
 
-      {site.homeVideoId && (
-        <VideoSection
-          videoId={site.homeVideoId}
-          title="Consulting, Coaching or Services: which business fits you?"
-          eyebrow="Watch"
-          minutes="3 min"
-          heading="The three business models, and how to pick yours."
-          body="Same skill, three businesses. In three minutes Swapnil walks through Consulting, Coaching and Services, who each one suits, and the one trap in each. Then take the Fit Score to see which is yours."
-        />
-      )}
+      <VideoSection
+        source={
+          site.homeVideoId
+            ? { kind: "youtube", id: site.homeVideoId }
+            : { kind: "file", src: "/home-video.mp4", poster: "/home-video-poster.jpg" }
+        }
+        title="A word from Swapnil"
+        eyebrow="Watch"
+        minutes="90 seconds"
+        heading="Ninety seconds on why this works from home."
+        body="Swapnil on what twenty years of building businesses from a desk at home taught him, and why the first client is closer than most people think. Then take the Fit Score to see which stage is yours."
+      />
 
       {/* Who it's for */}
       <section className="border-t border-line py-16">

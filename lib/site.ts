@@ -16,7 +16,7 @@ export const site = {
   whatsapp: process.env.NEXT_PUBLIC_WHATSAPP ?? "",
   callsPerWeek: 6,
   teaches: "Teaches social media advertising at Mithibai College, Mumbai",
-  /** YouTube video id for the home-page explainer. Empty hides the section. */
+  /** Optional YouTube id for the home-page video. Empty means the self-hosted /home-video.mp4 is used. */
   homeVideoId: process.env.NEXT_PUBLIC_HOME_VIDEO_ID ?? "",
   tagline: "Teacher | Entrepreneur",
 } as const;
