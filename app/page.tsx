@@ -44,7 +44,7 @@ export default function Home() {
             source={
               site.homeVideoId
                 ? { kind: "youtube", id: site.homeVideoId }
-                : { kind: "file", src: "/home-video.mp4", poster: "/home-video-poster.jpg" }
+                : { kind: "file", src: "/home-video-v2.mp4", poster: "/home-video-poster-v2.jpg" }
             }
             title="90 seconds with Swapnil"
           />
