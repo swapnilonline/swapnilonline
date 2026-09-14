@@ -49,9 +49,10 @@ Your Fit Score says {model} business, {stage} stage. That is a real starting poi
 
 Over the next seven days I'll send you one short lesson a day, one per stage, so you can see the whole road from where you are to a business that runs.
 
-Two things you can do right now:
-1. Re-read your result: {result_url}
-2. If you want to talk it through, I do six free 30-minute Launch Calls a week: ${CALL_URL}
+Three things you can do right now:
+1. Download your copy of The Digital Business Blueprint, the seven stages with a worksheet for each: ${SITE}/digital-business-blueprint.pdf
+2. Re-read your result: {result_url}
+3. If you want to talk it through, I do six free 30-minute Launch Calls a week: ${CALL_URL}
 
 Lesson 1 arrives tomorrow morning.
 

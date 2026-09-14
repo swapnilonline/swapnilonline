@@ -1,0 +1,441 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Digital Business Blueprint</title>
+<style>
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:500;src:url(fonts/bricolagegrotesque-3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvSniyMg.woff2) format('woff2');}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:600;src:url(fonts/bricolagegrotesque-3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvcXlyMg.woff2) format('woff2');}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:700;src:url(fonts/bricolagegrotesque-3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvfzlyMg.woff2) format('woff2');}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:800;src:url(fonts/bricolagegrotesque-3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvZvlyMg.woff2) format('woff2');}
+@font-face{font-family:'Newsreader';font-style:italic;font-weight:400;src:url(fonts/newsreader-cY9kfjOCX1hbuyalUrK439vogqC9yFZCYg7oRZaLP4obnf7fTXglsMwoT-ZF.woff2) format('woff2');}
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:400;src:url(fonts/newsreader-cY9qfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBCzBDXXD9JVF438weI_ACQ.woff2) format('woff2');}
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:500;src:url(fonts/newsreader-cY9qfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBCzBDXXD9JVF438wSo_ACQ.woff2) format('woff2');}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;src:url(fonts/ibmplexmono--F63fjptAgt5VM-kVkqdyU8n5i0.woff2) format('woff2');}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;src:url(fonts/ibmplexmono--F6qfjptAgt5VM-kVkqdyU8n3twJ8lI.woff2) format('woff2');}
+  @page { size: A4; margin: 0; }
+  :root {
+    --ground:#F8F7F3; --surface:#fff; --surface-2:#EFEDE7; --ink:#14211B; --soft:#55615A; --line:#D9DBD3;
+    --accent:#0F5C4B; --mark:#F5C12E; --mark-soft:#FBEDC2; --panel:#123D33; --money:#9A5A14;
+    --display:"Bricolage Grotesque",Helvetica,Arial,sans-serif; --body:"Newsreader",Georgia,serif; --mono:"IBM Plex Mono",Menlo,monospace;
+  }
+  * { box-sizing:border-box; }
+  html, body { margin:0; padding:0; background:var(--ground); color:var(--ink); font-family:var(--body); font-size:12.5pt; line-height:1.5; }
+  .page { width:210mm; height:297mm; padding:18mm 18mm 16mm; page-break-after:always; position:relative; overflow:hidden; background:var(--ground); }
+  .page:last-child { page-break-after:auto; }
+  .rule { position:absolute; top:0; left:0; right:0; height:4mm; background:var(--mark); }
+  .foot { position:absolute; bottom:8mm; left:18mm; right:18mm; display:flex; justify-content:space-between; font-family:var(--mono); font-size:8pt; color:var(--soft); letter-spacing:.06em; }
+  h1,h2,h3,h4 { font-family:var(--display); margin:0; line-height:1.08; letter-spacing:-.015em; }
+  h1 { font-size:34pt; font-weight:800; }
+  h2 { font-size:22pt; font-weight:800; }
+  h3 { font-size:14pt; font-weight:700; }
+  p { margin:0 0 9pt; max-width:66ch; }
+  .eyebrow { font-family:var(--mono); font-size:8.5pt; letter-spacing:.14em; text-transform:uppercase; color:var(--soft); margin-bottom:6pt; }
+  .soft { color:var(--soft); }
+  .stage-n { font-family:var(--display); font-weight:800; font-size:64pt; line-height:.9; color:var(--accent); letter-spacing:-.03em; }
+  .hl { background:linear-gradient(transparent 62%, var(--mark) 62%, var(--mark) 92%, transparent 92%); padding:0 .05em; }
+  .callout { border-left:3pt solid var(--mark); background:var(--mark-soft); padding:9pt 12pt; margin:10pt 0; }
+  .callout .eyebrow { margin-bottom:3pt; }
+  .box { border:1pt solid var(--line); background:var(--surface); padding:8pt 11pt; margin:8pt 0; }
+  .work { border:1pt solid var(--ink); background:var(--surface); padding:9pt 12pt; margin:9pt 0; }
+  .work .lines { margin-top:6pt; }
+  .work .lines div { border-bottom:1pt solid var(--line); height:17pt; }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:10pt; }
+  .grid3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8pt; }
+  ul { margin:0 0 9pt; padding-left:16pt; } li { margin-bottom:3pt; }
+  .chk li { list-style:none; position:relative; padding-left:16pt; }
+  .chk li::before { content:""; position:absolute; left:0; top:4pt; width:9pt; height:9pt; border:1.2pt solid var(--ink); }
+  .stages { display:flex; flex-direction:column; }
+  .stages div { display:grid; grid-template-columns:34pt 1fr; gap:8pt; padding:6pt 0; border-top:1pt solid var(--line); }
+  .stages div:last-child { border-bottom:1pt solid var(--line); }
+  .stages b { font-family:var(--display); font-size:11.5pt; text-transform:uppercase; letter-spacing:.04em; }
+  .stages .n { font-family:var(--display); font-weight:800; font-size:18pt; color:var(--accent); line-height:1; }
+  .stages span { color:var(--soft); font-size:11pt; }
+  .panel { background:var(--panel); color:var(--ground); padding:16pt 18pt; margin-top:12pt; }
+  .panel h2 { color:var(--ground); } .panel .eyebrow { color:var(--mark); }
+  .panel a { color:var(--mark); text-decoration:none; font-family:var(--display); font-weight:700; }
+  table { border-collapse:collapse; width:100%; font-size:11pt; margin:6pt 0 10pt; }
+  th, td { text-align:left; vertical-align:top; padding:5pt 6pt 5pt 0; border-bottom:1pt solid var(--line); }
+  th { font-family:var(--mono); font-size:8pt; letter-spacing:.08em; text-transform:uppercase; color:var(--soft); font-weight:500; }
+  .mono { font-family:var(--mono); font-size:9.5pt; }
+  .cred { display:flex; gap:14pt; align-items:flex-end; margin-top:auto; }
+  .cred img { width:34mm; height:auto; }
+  .cover { display:flex; flex-direction:column; }
+  .cover .top { flex:1; }
+</style>
+</head>
+<body>
+
+<!-- ============ COVER ============ -->
+<section class="page cover">
+  <div class="rule"></div>
+  <div class="top">
+    <div class="eyebrow">For solopreneurs · freelancers · consultants</div>
+    <h1 style="font-size:44pt;max-width:12ch;margin-top:6pt">The Digital Business Blueprint</h1>
+    <p style="font-size:16pt;line-height:1.35;margin-top:14pt;max-width:30ch">The 7-stage map from <span class="hl">skill</span> to a business you can run from home. With the one question that unblocks each stage.</p>
+    <p class="mono soft" style="margin-top:10pt">Skill → Offer → Client → Business → Scale</p>
+    <div class="grid3" style="margin-top:28pt">
+      <div class="box" style="margin:0"><div class="eyebrow">Inside</div><b style="font-family:var(--display)">The three models</b><br><span class="soft" style="font-size:10.5pt">Services, Consulting, Coaching, and the trap in each.</span></div>
+      <div class="box" style="margin:0"><div class="eyebrow">Inside</div><b style="font-family:var(--display)">Seven stages</b><br><span class="soft" style="font-size:10.5pt">One page each, with a worksheet and a done-when test.</span></div>
+      <div class="box" style="margin:0"><div class="eyebrow">Inside</div><b style="font-family:var(--display)">The 90-day plan</b><br><span class="soft" style="font-size:10.5pt">Week by week, from a customer's name to a paid client.</span></div>
+    </div>
+  </div>
+  <div class="cred">
+    <img src="../../public/swapnil.png" alt="">
+    <div>
+      <div style="font-family:var(--display);font-weight:800;font-size:15pt">Swapnil Shiwalay</div>
+      <div class="soft">Digital Business Strategist</div>
+      <div class="mono soft" style="margin-top:4pt">20 years working from home · 2,500+ websites developed</div>
+      <div class="mono soft">swapnilonline.com</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HOW TO USE ============ -->
+<section class="page">
+  <div class="rule"></div>
+  <div class="eyebrow">Before you start</div>
+  <h2>Read this in 20 minutes. Use it for 90 days.</h2>
+  <p style="margin-top:10pt">I've built websites for more than 2,500 businesses from a desk at home. That is a lot of conversations with people at the very start of something. After a while the pattern is impossible to miss.</p>
+  <p>The people who get their first paying client within a month are not the most skilled. They are the ones who did seven things in the right order. The people still "working on it" a year later usually skipped stage 1 or stalled at stage 3 or stage 5.</p>
+  <p>This blueprint is those seven stages, one page each. Every page has the same four parts:</p>
+  <div class="grid2" style="margin:12pt 0">
+    <div class="box"><h3>What it is</h3><p class="soft" style="margin:0">The stage in plain words, and why people skip it.</p></div>
+    <div class="box"><h3>The one question</h3><p class="soft" style="margin:0">Answer it honestly and the stage is mostly done.</p></div>
+    <div class="box"><h3>Worksheet</h3><p class="soft" style="margin:0">Write in it. Print it if you can. Typing works too.</p></div>
+    <div class="box"><h3>Done when</h3><p class="soft" style="margin:0">A test you can pass or fail. No "kind of done".</p></div>
+  </div>
+  <div class="callout">
+    <div class="eyebrow">The rule</div>
+    <p style="margin:0">Do not move to the next stage until the "done when" test passes. Skipping ahead feels like progress. It is how people end up with a beautiful website and no customer.</p>
+  </div>
+  <h3 style="margin-top:14pt">The seven stages</h3>
+  <div class="stages" style="margin-top:6pt">
+    <div><span class="n">01</span><div><b>Discover</b><br><span>Find your expertise, opportunity and ideal customer.</span></div></div>
+    <div><span class="n">02</span><div><b>Design</b><br><span>Choose your business model: Consulting, Coaching or Services.</span></div></div>
+    <div><span class="n">03</span><div><b>Package</b><br><span>Turn your knowledge or skill into a clear, sellable offer.</span></div></div>
+    <div><span class="n">04</span><div><b>Build</b><br><span>Create your essential digital presence.</span></div></div>
+    <div><span class="n">05</span><div><b>Launch</b><br><span>Get your first prospects, conversations and clients.</span></div></div>
+    <div><span class="n">06</span><div><b>Systemize</b><br><span>Build repeatable processes for sales, delivery and operations.</span></div></div>
+    <div><span class="n">07</span><div><b>Scale</b><br><span>Increase revenue, improve margins, automate, build a team when needed.</span></div></div>
+  </div>
+  <div class="foot"><span>The Digital Business Blueprint</span><span>swapnilonline.com · 2</span></div>
+</section>
+
+<!-- ============ THREE MODELS ============ -->
+<section class="page">
+  <div class="rule"></div>
+  <div class="eyebrow">First, the map of models</div>
+  <h2>Same skill, three businesses.</h2>
+  <p style="margin-top:10pt">A designer can build the website (Services), advise on the brand (Consulting), or teach founders to do it themselves (Coaching). Same skill. Three completely different businesses, with different prices, different customers and different traps.</p>
+  <table>
+    <tr><th style="width:18%"></th><th>Services</th><th>Consulting</th><th>Coaching</th></tr>
+    <tr><td class="mono">You</td><td>Do the work for them</td><td>Tell them what to do</td><td>Teach them to do it</td></tr>
+    <tr><td class="mono">They pay for</td><td>A finished thing</td><td>A decision</td><td>A transformation</td></tr>
+    <tr><td class="mono">Best for</td><td>Anyone with a skill people already pay for</td><td>10+ years of experience in one field</td><td>People who can explain, and have a repeatable path</td></tr>
+    <tr><td class="mono">Fastest to</td><td>First rupee</td><td>High fees</td><td>Scale</td></tr>
+    <tr><td class="mono">The trap</td><td>Pricing by the hour. Hours are capped, outcomes are not.</td><td>Vague advice. "I help businesses grow" sells nothing.</td><td>Coaching a topic, not a result. Nobody buys "marketing coaching".</td></tr>
+    <tr><td class="mono">Say instead</td><td>"A 5-page clinic website, live in 14 days, ₹45,000."</td><td>"I'll tell you which two of your six products to kill."</td><td>"Your first ten customers, in eight weeks."</td></tr>
+  </table>
+  <div class="callout">
+    <div class="eyebrow">How to pick</div>
+    <p style="margin:0">Not by what pays most. By how you like to help. If you'd rather do it: Services. If you'd rather advise: Consulting. If you want them to be able to do it without you: Coaching. You can add a second model later. Start with one.</p>
+  </div>
+  <div class="work">
+    <div class="eyebrow">Worksheet</div>
+    <p style="margin:0 0 4pt">My skill, in one line:</p>
+    <div class="lines"><div></div></div>
+    <p style="margin:8pt 0 4pt">The model I'm starting with, and why:</p>
+    <div class="lines"><div></div><div></div></div>
+  </div>
+  <div class="foot"><span>The Digital Business Blueprint</span><span>swapnilonline.com · 3</span></div>
+</section>
+
+<!-- ============ STAGE 1 ============ -->
+<section class="page">
+  <div class="rule"></div>
+  <div class="stage-n">01</div>
+  <div class="eyebrow" style="margin-top:6pt">Stage one</div>
+  <h2>Discover: pick a customer, not an idea.</h2>
+  <p style="margin-top:10pt">Most people start with an idea. The ones who succeed start with a person. Ideas are cheap and abstract. A person who has already asked you for help is a business waiting to be named.</p>
+  <p>People skip this stage because it feels too small. "Just one customer?" Yes. One real person, whose problem you can describe in their words, is worth more than a market of ten thousand you've never spoken to.</p>
+  <div class="callout">
+    <div class="eyebrow">The one question</div>
+    <p style="margin:0;font-size:14pt;font-family:var(--display);font-weight:700">Who asked you for help with this in the last twelve months, and what did it cost them not to have it?</p>
+  </div>
+  <div class="work">
+    <div class="eyebrow">Worksheet</div>
+    <p style="margin:0 0 4pt">Three people who asked me for help (real names):</p>
+    <div class="lines"><div></div><div></div><div></div></div>
+    <p style="margin:8pt 0 4pt">The one I'll start with, and the problem in their words:</p>
+    <div class="lines"><div></div><div></div></div>
+    <p style="margin:8pt 0 4pt">What it costs them not to fix it (money, time, stress, missed opportunity):</p>
+    <div class="lines"><div></div></div>
+  </div>
+  <div class="grid2">
+    <div class="box"><h3>Common mistake</h3><p style="margin:0" class="soft">Writing a "target audience" description instead of a name. "Small business owners aged 30–45" is not a customer. "Dr. Mehta, who lost two patients last month because his clinic has no website" is.</p></div>
+    <div class="box"><h3>Done when</h3><p style="margin:0" class="soft">You can say one person's name and describe their problem in a sentence they would nod at.</p></div>
+  </div>
+  <div class="foot"><span>The Digital Business Blueprint</span><span>swapnilonline.com · 4</span></div>
+</section>
+
+<!-- ============ STAGE 2 ============ -->
+<section class="page">
+  <div class="rule"></div>
+  <div class="stage-n">02</div>
+  <div class="eyebrow" style="margin-top:6pt">Stage two</div>
+  <h2>Design: choose your model and commit.</h2>
+  <p style="margin-top:10pt">You've met the three models. Now choose one for this customer. Not forever. For the next 90 days.</p>
+  <p>The stall here is trying to offer all three at once. "I can build it, or advise you, or teach you." The customer hears indecision and picks none. Choose the one that matches how you like to help and how they want to be helped.</p>
+  <div class="callout">
+    <div class="eyebrow">The one question</div>
+    <p style="margin:0;font-size:14pt;font-family:var(--display);font-weight:700">For the customer on page 4: do they want it done, decided, or taught?</p>
+  </div>
+  <div class="work">
+    <div class="eyebrow">Worksheet</div>
+    <p style="margin:0 0 4pt">My model for the next 90 days:</p>
+    <div class="grid3" style="margin:4pt 0 8pt">
+      <div class="box" style="text-align:center;margin:0"><b style="font-family:var(--display)">Services</b><br><span class="soft" style="font-size:10pt">I do it</span></div>
+      <div class="box" style="text-align:center;margin:0"><b style="font-family:var(--display)">Consulting</b><br><span class="soft" style="font-size:10pt">I decide it</span></div>
+      <div class="box" style="text-align:center;margin:0"><b style="font-family:var(--display)">Coaching</b><br><span class="soft" style="font-size:10pt">I teach it</span></div>
+    </div>
+    <p style="margin:0 0 4pt">The trap for this model (from page 3), and how I'll avoid it:</p>
+    <div class="lines"><div></div><div></div></div>
+    <p style="margin:8pt 0 4pt">What I am deliberately NOT offering for 90 days:</p>
+    <div class="lines"><div></div></div>
+  </div>
+  <div class="grid2">
+    <div class="box"><h3>Common mistake</h3><p style="margin:0" class="soft">Choosing Coaching because it "scales", with no one to coach yet. Coaching scales a path that already works. If you have never done the thing for a paying client, start with Services and earn the path.</p></div>
+    <div class="box"><h3>Done when</h3><p style="margin:0" class="soft">You can say "I do X for Y" in one breath, and it is only one of the three.</p></div>
+  </div>
+  <div class="foot"><span>The Digital Business Blueprint</span><span>swapnilonline.com · 5</span></div>
+</section>
+
+<!-- ============ STAGE 3 ============ -->
+<section class="page">
+  <div class="rule"></div>
+  <div class="stage-n">03</div>
+  <div class="eyebrow" style="margin-top:6pt">Stage three</div>
+  <h2>Package: a skill is not an offer.</h2>
+  <p style="margin-top:10pt">This is where most people stall, and where a little outside help does the most good. An offer has four parts, and if any one is missing, the customer cannot say yes.</p>
+  <div class="grid2" style="margin:8pt 0">
+    <div class="box"><h3>1. The result</h3><p class="soft" style="margin:0">Not the activity. "Live website" not "web design".</p></div>
+    <div class="box"><h3>2. For whom</h3><p class="soft" style="margin:0">The person from stage 1, and people like them.</p></div>
+    <div class="box"><h3>3. The price</h3><p class="soft" style="margin:0">A number. Not "depends". Not "let's discuss".</p></div>
+    <div class="box"><h3>4. The timeframe</h3><p class="soft" style="margin:0">When it will be done. Deadlines sell.</p></div>
+  </div>
+  <p><b>"Website design"</b> is a skill. <b>"A 5-page website for a clinic, live in 14 days, ₹45,000"</b> is an offer. One of these gets bought. The other gets "let me think about it".</p>
+  <div class="callout">
+    <div class="eyebrow">The one question</div>
+    <p style="margin:0;font-size:14pt;font-family:var(--display);font-weight:700">What are the last three things you were paid for, and what result did each person get?</p>
+  </div>
+  <div class="work">
+    <div class="eyebrow">Worksheet</div>
+    <p style="margin:0 0 4pt">Last three paid pieces of work, and the result each client got:</p>
+    <div class="lines"><div></div><div></div><div></div></div>
+    <p style="margin:8pt 0 4pt">My offer in one sentence (result · for whom · price · timeframe):</p>
+    <div class="lines"><div></div><div></div></div>
+  </div>
+  <div class="grid2">
+    <div class="box"><h3>Pricing, quickly</h3><p style="margin:0" class="soft">Take what the result is worth to them and charge a fraction of it. A website that brings a clinic two patients a month is worth lakhs a year. ₹45,000 is easy. Never price from your hours.</p></div>
+    <div class="box"><h3>Done when</h3><p style="margin:0" class="soft">A friend can repeat your offer back to you, including the price, after hearing it once.</p></div>
+  </div>
+  <div class="foot"><span>The Digital Business Blueprint</span><span>swapnilonline.com · 6</span></div>
+</section>
+
+<!-- ============ STAGE 4 ============ -->
+<section class="page">
+  <div class="rule"></div>
+  <div class="stage-n">04</div>
+  <div class="eyebrow" style="margin-top:6pt">Stage four</div>
+  <h2>Build: one page beats a brand.</h2>
+  <p style="margin-top:10pt">The presence you need on day one is smaller than you think. After 2,500 websites, here is the pattern: the people who get their first client in a month put up one page in a week. The people still "working on the site" a year later started with a brand, a logo suite and twelve pages.</p>
+  <p>One page. Four things on it.</p>
+  <table>
+    <tr><th style="width:26%">Section</th><th>What goes there</th><th style="width:22%">Length</th></tr>
+    <tr><td class="mono">Who you help</td><td>The person from stage 1, in their words</td><td>One line</td></tr>
+    <tr><td class="mono">The offer</td><td>The sentence from stage 3, price included</td><td>One line</td></tr>
+    <tr><td class="mono">One proof</td><td>A result, a review, or a before-and-after. One is enough.</td><td>Two lines</td></tr>
+    <tr><td class="mono">One way to book you</td><td>A calendar link or a WhatsApp button. Not a contact form.</td><td>One button</td></tr>
+  </table>
+  <div class="callout">
+    <div class="eyebrow">The one question</div>
+    <p style="margin:0;font-size:14pt;font-family:var(--display);font-weight:700">If a stranger landed on your page for eight seconds, would they know who it's for, what it costs, and how to book?</p>
+  </div>
+  <div class="work">
+    <div class="eyebrow">Worksheet · draft the page here</div>
+    <p style="margin:0 0 4pt">Headline (who you help + the result):</p>
+    <div class="lines"><div></div></div>
+    <p style="margin:8pt 0 4pt">The offer line:</p>
+    <div class="lines"><div></div></div>
+    <p style="margin:8pt 0 4pt">One proof point I can use today:</p>
+    <div class="lines"><div></div></div>
+  </div>
+  <div class="grid2">
+    <div class="box"><h3>Common mistake</h3><p style="margin:0" class="soft">A contact form. Forms get ignored. A calendar link or a WhatsApp button starts a conversation. Also: spending three weeks on a logo. Use your name in a clean font.</p></div>
+    <div class="box"><h3>Done when</h3><p style="margin:0" class="soft">The page is live at a real address and you'd be comfortable sending the link to the person from stage 1.</p></div>
+  </div>
+  <div class="foot"><span>The Digital Business Blueprint</span><span>swapnilonline.com · 7</span></div>
+</section>
+
+<!-- ============ STAGE 5 ============ -->
+<section class="page">
+  <div class="rule"></div>
+  <div class="stage-n">05</div>
+  <div class="eyebrow" style="margin-top:6pt">Stage five</div>
+  <h2>Launch: your first client already knows you.</h2>
+  <p style="margin-top:10pt">This is the stage people avoid, because it means asking. So here is the asking, made small. Your first client will come from someone who already knows you, or from someone they know. Not from ads. Not from a viral post.</p>
+  <p>Send this three-line message to five people today. It asks for a referral, not a sale, so people answer it.</p>
+  <div class="box" style="font-size:13pt;font-style:italic;border-color:var(--ink)">
+    Hi [name]. I've started helping [who you help] with [the result]. Who do you know who's dealing with that right now?
+  </div>
+  <p class="soft">No link. No price. No deck. If they ask, send the page from stage 4.</p>
+  <div class="callout">
+    <div class="eyebrow">The one question</div>
+    <p style="margin:0;font-size:14pt;font-family:var(--display);font-weight:700">Which five people will you send the message to before you close this document?</p>
+  </div>
+  <div class="work">
+    <div class="eyebrow">Worksheet</div>
+    <p style="margin:0 0 4pt">Five people, and a tick when sent:</p>
+    <ul class="chk" style="margin-top:4pt">
+      <li style="border-bottom:1pt solid var(--line);height:17pt"></li>
+      <li style="border-bottom:1pt solid var(--line);height:17pt"></li>
+      <li style="border-bottom:1pt solid var(--line);height:17pt"></li>
+      <li style="border-bottom:1pt solid var(--line);height:17pt"></li>
+      <li style="border-bottom:1pt solid var(--line);height:17pt"></li>
+    </ul>
+  </div>
+  <div class="grid2">
+    <div class="box"><h3>The first conversation</h3><p style="margin:0" class="soft">Ask about their problem for ten minutes before you mention the offer. Then say the offer sentence once, price included, and stop talking. Silence is where the yes lives.</p></div>
+    <div class="box"><h3>Done when</h3><p style="margin:0" class="soft">Someone has paid you. Not agreed. Paid. Even a deposit counts.</p></div>
+  </div>
+  <div class="foot"><span>The Digital Business Blueprint</span><span>swapnilonline.com · 8</span></div>
+</section>
+
+<!-- ============ STAGE 6 ============ -->
+<section class="page">
+  <div class="rule"></div>
+  <div class="stage-n">06</div>
+  <div class="eyebrow" style="margin-top:6pt">Stage six</div>
+  <h2>Systemize: boring wins.</h2>
+  <p style="margin-top:10pt">Twenty years from home taught me this: a one-person business rarely dies from a lack of clients. It dies from chaos. Missed follow-ups, rewritten proposals, invoices sent late and chased for months.</p>
+  <p>Three boring things keep it alive. Set each one up once. They pay you back every week for years.</p>
+  <table>
+    <tr><th style="width:26%">System</th><th>What it is</th><th style="width:26%">Free tool</th></tr>
+    <tr><td class="mono">Proposal template</td><td>One document you fill in, never rewrite. Offer, price, timeline, what you need from them.</td><td>Google Docs</td></tr>
+    <tr><td class="mono">One calendar link</td><td>Nobody emails to find a time. They pick one.</td><td>Calendly (free plan)</td></tr>
+    <tr><td class="mono">One invoice flow</td><td>Invoice on the day you agree. Half up front. Same template every time.</td><td>Razorpay / Zoho Invoice</td></tr>
+    <tr><td class="mono">One follow-up rule</td><td>Every open conversation gets a nudge after 3 days, then 7. Written down, not remembered.</td><td>A Google Sheet</td></tr>
+  </table>
+  <div class="callout">
+    <div class="eyebrow">The one question</div>
+    <p style="margin:0;font-size:14pt;font-family:var(--display);font-weight:700">What did you do this week that you'll do again next week? That's the thing to template.</p>
+  </div>
+  <div class="work">
+    <div class="eyebrow">Worksheet</div>
+    <p style="margin:0 0 4pt">The three things I repeat every week:</p>
+    <div class="lines"><div></div><div></div><div></div></div>
+    <p style="margin:8pt 0 4pt">The one I'll template first, and by when:</p>
+    <div class="lines"><div></div></div>
+  </div>
+  <div class="grid2">
+    <div class="box"><h3>Common mistake</h3><p style="margin:0" class="soft">Buying a CRM before you have ten clients. A sheet with five columns (name, stage, last contact, next step, date) beats any tool you won't open.</p></div>
+    <div class="box"><h3>Done when</h3><p style="margin:0" class="soft">A new enquiry can go from "hello" to "paid" without you writing anything from scratch.</p></div>
+  </div>
+  <div class="foot"><span>The Digital Business Blueprint</span><span>swapnilonline.com · 9</span></div>
+</section>
+
+<!-- ============ STAGE 7 ============ -->
+<section class="page">
+  <div class="rule"></div>
+  <div class="stage-n">07</div>
+  <div class="eyebrow" style="margin-top:6pt">Stage seven</div>
+  <h2>Scale: more revenue, better margins, then people.</h2>
+  <p style="margin-top:10pt">Scale is the stage everyone wants to start at. It only works after the six before it. Once stages 1 to 6 are running, there are exactly four levers, and they go in this order.</p>
+  <table>
+    <tr><th style="width:8%"></th><th style="width:26%">Lever</th><th>What it means</th></tr>
+    <tr><td class="mono">1</td><td><b>Raise the price</b></td><td>Every third client, raise it 20%. Stop when two in a row say no. Most people are two raises below where they should be.</td></tr>
+    <tr><td class="mono">2</td><td><b>Sell the next thing</b></td><td>A client who paid once will pay again. Retainer, maintenance, the next phase. Cheaper than finding a stranger.</td></tr>
+    <tr><td class="mono">3</td><td><b>Automate the repeat</b></td><td>Anything you did three times by hand: template it, schedule it, or let a tool do it.</td></tr>
+    <tr><td class="mono">4</td><td><b>Then, a helper</b></td><td>Only for work that is documented in stage 6. Hire for the boring parts first, never for sales.</td></tr>
+  </table>
+  <div class="callout">
+    <div class="eyebrow">The one question</div>
+    <p style="margin:0;font-size:14pt;font-family:var(--display);font-weight:700">If you doubled your price tomorrow, who would still say yes? Those are your real customers. Find more of them.</p>
+  </div>
+  <div class="work">
+    <div class="eyebrow">Worksheet</div>
+    <p style="margin:0 0 4pt">Current price → next price, and the date I'll raise it:</p>
+    <div class="lines"><div></div></div>
+    <p style="margin:8pt 0 4pt">The "next thing" I can sell to an existing client:</p>
+    <div class="lines"><div></div></div>
+    <p style="margin:8pt 0 4pt">The first task I'd hand to a helper:</p>
+    <div class="lines"><div></div></div>
+  </div>
+  <div class="grid2">
+    <div class="box"><h3>Common mistake</h3><p style="margin:0" class="soft">Hiring to escape chaos. A helper inside chaos makes more chaos. Systemize first, then hire into the system.</p></div>
+    <div class="box"><h3>Done when</h3><p style="margin:0" class="soft">Revenue grew last quarter without your hours growing with it.</p></div>
+  </div>
+  <div class="foot"><span>The Digital Business Blueprint</span><span>swapnilonline.com · 10</span></div>
+</section>
+
+<!-- ============ 90 DAY PLAN ============ -->
+<section class="page">
+  <div class="rule"></div>
+  <div class="eyebrow">Putting it together</div>
+  <h2>The 90-day plan.</h2>
+  <p style="margin-top:10pt">Stages 1 to 5 fit in 90 days for almost everyone with a real skill and five to ten hours a week. Here is the pace. Tick each week off.</p>
+  <table>
+    <tr><th style="width:12%">Week</th><th style="width:18%">Stage</th><th>Ship this</th></tr>
+    <tr><td class="mono">1</td><td>Discover</td><td>One customer's name and problem, in their words.</td></tr>
+    <tr><td class="mono">2</td><td>Design</td><td>One model chosen. The other two written down as "not now".</td></tr>
+    <tr><td class="mono">3–4</td><td>Package</td><td>The offer sentence. Tested on three people who can repeat it back.</td></tr>
+    <tr><td class="mono">5–6</td><td>Build</td><td>One page, live, with a booking link. Sent to the customer from week 1.</td></tr>
+    <tr><td class="mono">7–8</td><td>Launch</td><td>Five three-line messages sent. Every reply answered within a day.</td></tr>
+    <tr><td class="mono">9–10</td><td>Launch</td><td>First conversations. Offer said out loud, price included, at least three times.</td></tr>
+    <tr><td class="mono">11–12</td><td>Launch → Systemize</td><td>First paying client. Proposal template and invoice flow set up from that first sale.</td></tr>
+  </table>
+  <div class="callout">
+    <div class="eyebrow">If you fall behind</div>
+    <p style="margin:0">Go back one stage, not forward. Nine times out of ten, a stall at Launch is a Package problem: the offer isn't clear enough for the other person to repeat. Fix the sentence, then send the messages again.</p>
+  </div>
+  <div class="work">
+    <div class="eyebrow">My start date</div>
+    <div class="lines"><div></div></div>
+    <p style="margin:8pt 0 4pt">Day 90 is:</p>
+    <div class="lines"><div></div></div>
+  </div>
+  <div class="foot"><span>The Digital Business Blueprint</span><span>swapnilonline.com · 11</span></div>
+</section>
+
+<!-- ============ NEXT STEP ============ -->
+<section class="page">
+  <div class="rule"></div>
+  <div class="eyebrow">What next</div>
+  <h2>You can walk this alone. Or not.</h2>
+  <p style="margin-top:10pt">Most people who walk the seven stages alone take two to three years and stall at stage 3 or stage 5. Not because they lack the skill, but because nobody is looking at their offer from the outside every week and telling them what to do next.</p>
+  <p>That is what I do. One 45-minute session a week, on your actual business, for 90 days. I build your website inside the program instead of assigning it as homework, because after 2,500 of them it's faster that way. There's a first-client guarantee: if you attend and ship, and you don't have a paying client by day 90, I keep working with you until you do.</p>
+  <div class="panel">
+    <div class="eyebrow">Free · 30 minutes · 1:1</div>
+    <h2 style="margin-top:4pt">Start with a Launch Call.</h2>
+    <p style="margin-top:8pt;color:rgba(248,247,243,.85)">We'll map your skill to a model, an offer, and your first three steps. You leave with a one-page Launch Map whether or not we work together. Six a week.</p>
+    <p style="margin:0"><a href="https://swapnilonline.com/call">swapnilonline.com/call</a></p>
+  </div>
+  <div class="grid2" style="margin-top:12pt">
+    <div class="box"><h3>Not sure which stage you're at?</h3><p style="margin:0" class="soft">The Fit Score tells you in two minutes. <br><span class="mono">swapnilonline.com/fit</span></p></div>
+    <div class="box"><h3>Questions</h3><p style="margin:0" class="soft">WhatsApp +91 98193 59393<br><span class="mono">contact@swapnilonline.com</span></p></div>
+  </div>
+  <div class="cred" style="margin-top:22pt">
+    <img src="../../public/swapnil.png" alt="" style="width:28mm">
+    <div>
+      <div style="font-family:var(--display);font-weight:800;font-size:14pt">Swapnil Shiwalay</div>
+      <div class="soft">Digital Business Strategist · Teacher | Entrepreneur</div>
+      <div class="mono soft" style="margin-top:4pt">20 years working from home · 2,500+ websites developed</div>
+      <div class="mono soft">Rated Excellent on Trustpilot</div>
+    </div>
+  </div>
+  <div class="foot"><span>The Digital Business Blueprint · © Swapnil Shiwalay</span><span>swapnilonline.com · 12</span></div>
+</section>
+
+</body>
+</html>

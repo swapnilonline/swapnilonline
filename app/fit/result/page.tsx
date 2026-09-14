@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { redirect } from "next/navigation";
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight, FileDown, MessageCircle } from "lucide-react";
 import Journey from "@/components/Journey";
 import {
   parseResult,
@@ -68,21 +68,35 @@ export default async function ResultPage({
         </div>
       </section>
 
-      {waHref && (
-        <section className="border-t border-line py-10">
-          <div className="flex flex-col gap-4 border-l-[3px] border-mark bg-mark-soft/60 px-6 py-6 sm:flex-row sm:items-center sm:justify-between">
+      <section className="grid gap-4 border-t border-line py-10 lg:grid-cols-2">
+        <div className="flex flex-col gap-4 border-l-[3px] border-mark bg-mark-soft/60 px-6 py-6">
+          <div className="flex flex-col gap-1">
+            <p className="eyebrow">Your free copy</p>
+            <p className="font-display text-[20px] font-bold">The Digital Business Blueprint</p>
+            <p className="text-[16.5px] text-ink-soft">
+              The seven stages, one page each, with a worksheet and a done-when test. Plus the three
+              models and the 90-day plan. 12 pages, PDF.
+            </p>
+          </div>
+          <a href="/digital-business-blueprint.pdf" download className="btn btn-primary self-start">
+            <FileDown size={18} aria-hidden="true" /> Download the Blueprint
+          </a>
+        </div>
+        {waHref && (
+          <div className="flex flex-col gap-4 border-l-[3px] border-mark bg-mark-soft/60 px-6 py-6">
             <div className="flex flex-col gap-1">
+              <p className="eyebrow">Day by day</p>
               <p className="font-display text-[20px] font-bold">Start your 7-Day Launch Map</p>
               <p className="text-[16.5px] text-ink-soft">
                 One short lesson a day on WhatsApp, one per stage. Send the first message and it starts tomorrow morning.
               </p>
             </div>
-            <a href={waHref} target="_blank" rel="noreferrer" className="btn btn-primary shrink-0">
+            <a href={waHref} target="_blank" rel="noreferrer" className="btn btn-ghost self-start">
               <MessageCircle size={18} aria-hidden="true" /> Message Swapnil on WhatsApp
             </a>
           </div>
-        </section>
-      )}
+        )}
+      </section>
 
       <section className="grid gap-10 border-t border-line py-14 lg:grid-cols-[1fr_1.4fr]">
         <div className="flex flex-col gap-4">
