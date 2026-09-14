@@ -120,26 +120,32 @@ export default function AboutPage() {
         </p>
       </section>
 
-      <section className="grid gap-10 border-t border-line py-16 lg:grid-cols-[1fr_1.4fr] lg:items-center">
-        <div className="flex flex-col gap-4">
-          <p className="eyebrow">Teaching</p>
-          <h2 className="text-[30px] font-bold sm:text-[36px]">
-            I also teach. It&rsquo;s the same job.
-          </h2>
+      <section className="border-t border-line py-16">
+        <div className="grid gap-6 lg:grid-cols-[1fr_1.4fr] lg:items-end">
+          <div className="flex flex-col gap-3">
+            <p className="eyebrow">Teaching</p>
+            <h2 className="text-[30px] font-bold sm:text-[36px]">I also teach. It&rsquo;s the same job.</h2>
+          </div>
           <p className="text-[17px] text-ink-soft">
             I teach social media advertising at Mithibai College, Mumbai. Explaining something to
             a room of students every week is the best training there is for explaining it to one
             person building a business. Nothing in {site.program} is jargon you have to decode.
           </p>
         </div>
-        <Image
-          src="/mithibai.jpg"
-          alt="Swapnil with a group of students in front of the Mithibai College sign"
-          width={1600}
-          height={1180}
-          sizes="(min-width: 1024px) 600px, 100vw"
-          className="h-auto w-full border border-line"
-        />
+        {/* Full-bleed: breaks out of the 5xl column to run edge to edge. */}
+        <div className="relative left-1/2 mt-10 w-screen -translate-x-1/2">
+          <Image
+            src="/mithibai-wide.jpg"
+            alt="Swapnil with a group of students in front of the SVKM and Mithibai College sign"
+            width={1774}
+            height={887}
+            sizes="100vw"
+            className="h-auto w-full"
+          />
+          <p className="mx-auto mt-3 max-w-5xl px-5 font-mono text-[12.5px] text-ink-soft">
+            With students at SVKM&rsquo;s Mithibai College, Vile Parle, Mumbai.
+          </p>
+        </div>
       </section>
 
       <AllReviews />

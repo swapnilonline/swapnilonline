@@ -59,6 +59,8 @@
 html {
   color-scheme: dark;
   scroll-behavior: smooth;
+  /* Full-bleed bands use 100vw, which includes the scrollbar; clip so no sideways scroll appears. */
+  overflow-x: clip;
 }
 
 body {
