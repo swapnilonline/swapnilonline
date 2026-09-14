@@ -2,33 +2,33 @@
 
 /*
   swapnilonline.com — design tokens
-  Single dark theme, chosen deliberately: premium, quiet, warm.
+  Single dark theme, sampled from the studio portrait so the photo and the
+  page share one backdrop.
 
-  ground   green-black, not pure black, so the studio portrait's backdrop blends in
-  surface  one step up for cards and inputs
+  ground   #050506  the portrait's edges: near-black, a touch cool
+  surface  #111213  the tone behind the head; cards and inputs
   ink      warm off-white; every text colour derives from it
-  accent   marigold, lifted from the @swapnilonline avatar. On a dark ground it is
-           the action colour: buttons, links, focus. Ink-dark text sits on it at 11:1.
-  green    bottle green for the closing panels and quiet emphasis
+  accent   marigold, from the @swapnilonline avatar. Buttons, links, focus.
+  panel    charcoal for the closing blocks, with a marigold eyebrow
   money    soft amber for prices
 */
 :root {
-  --ground: #0e1512;
-  --surface: #151e1a;
-  --surface-2: #1c2721;
-  --ink: #f1efe8;
-  --ink-soft: #a9b1aa;
-  --line: #27322c;
+  --ground: #050506;
+  --surface: #111213;
+  --surface-2: #1a1b1d;
+  --ink: #f2f1ee;
+  --ink-soft: #a6a6a3;
+  --line: #27282b;
   --accent: #f5c12e;
   --accent-strong: #ffd257;
-  --accent-ink: #14211b;
-  --accent-soft: #2a2a18;
+  --accent-ink: #0b0b0c;
+  --accent-soft: #2a2414;
   --mark: #f5c12e;
-  --mark-soft: #2e2a16;
-  --panel: #123d33;
-  --panel-ink: #f1efe8;
+  --mark-soft: #2a2414;
+  --panel: #141517;
+  --panel-ink: #f2f1ee;
   --money: #e3b263;
-  --money-soft: #2e2618;
+  --money-soft: #2a2416;
   --danger: #e8767a;
 }
 

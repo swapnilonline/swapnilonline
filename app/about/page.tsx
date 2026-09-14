@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { site, personalBrands, corporateBrandsExtra } from "@/lib/site";
-import { portrait } from "@/lib/assets";
 import ParallaxBand from "@/components/ParallaxBand";
 import { AllReviews } from "@/components/Reviews";
 
@@ -14,73 +13,78 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
-  const photo = portrait();
   return (
     <div className="mx-auto max-w-5xl px-5">
-      <section className="grid gap-10 py-16 sm:py-20 lg:grid-cols-[1.3fr_1fr]">
-        <div className="flex flex-col gap-6">
-          <p className="eyebrow">About</p>
-          <h1 className="max-w-[16ch] text-[40px] font-extrabold sm:text-[56px]">
-            I&rsquo;ve worked from home for twenty years. Here&rsquo;s what that taught me.
-          </h1>
-          <div className="flex flex-col gap-5 text-[19px]">
-            <p className="measure">
-              I&rsquo;m {site.name}, a {site.role.toLowerCase()}. Since the mid-2000s I have built and
-              run digital businesses from a desk at home, developing more than 2,500 websites for
-              people who had a skill, an idea or a service and needed it to exist online.
-            </p>
-            <p className="measure">
-              Two and a half thousand websites is a lot of conversations with people at the very
-              start of a business. I have watched what separates the ones who get their first
-              client in a month from the ones who are still &ldquo;working on the site&rdquo; a year later.
-              It is almost never the skill. It is the offer, the first conversation, and having
-              someone to check in with every week.
-            </p>
-            <p className="measure">
-              That is what {site.program} is: the part of my work I always did informally, made
-              into a proper 1:1 program for solopreneurs, freelancers and consultants who want to
-              build something of their own without leaving their life to do it.
-            </p>
-          </div>
-          <div className="flex flex-col gap-3 sm:flex-row">
-            <Link href="/fit" className="btn btn-primary">
-              Get your Fit Score <ArrowRight size={18} aria-hidden="true" />
-            </Link>
-            <Link href="/program" className="btn btn-ghost">
-              See the program
-            </Link>
+      {/* Full-bleed hero: the wide studio portrait is the backdrop; the page ground is sampled from it, so the edges dissolve. */}
+      <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden">
+        {/* Portrait pinned to the viewport's left edge on large screens; stacked above the text on small ones. */}
+        <div className="relative aspect-[16/9] lg:absolute lg:inset-y-0 lg:left-0 lg:aspect-auto lg:w-[56%]">
+          <Image
+            src="/swapnil-wide.jpg"
+            alt="Swapnil Shiwalay, arms folded, studio portrait"
+            fill
+            priority
+            sizes="(min-width: 1024px) 56vw, 100vw"
+            className="object-cover object-left"
+          />
+          <div className="absolute inset-y-0 right-0 hidden w-2/5 bg-gradient-to-r from-transparent to-ground lg:block" aria-hidden="true" />
+          <div className="absolute inset-x-0 bottom-0 h-1/4 bg-gradient-to-b from-transparent to-ground lg:hidden" aria-hidden="true" />
+        </div>
+        <div className="relative mx-auto grid max-w-5xl px-5 lg:min-h-[680px] lg:grid-cols-2 lg:items-center">
+          <div className="hidden lg:block" aria-hidden="true" />
+          <div className="relative flex flex-col gap-6 py-8 lg:py-20 lg:pl-8">
+            <p className="eyebrow">About</p>
+            <h1 className="max-w-[16ch] text-[40px] font-extrabold sm:text-[52px]">
+              I&rsquo;ve worked from home for twenty years. Here&rsquo;s what that taught me.
+            </h1>
+            <div className="flex flex-col gap-1">
+              <p className="font-display text-[20px] font-extrabold">{site.name}</p>
+              <p className="font-mono text-[12.5px] uppercase tracking-wider text-ink-soft">{site.tagline}</p>
+            </div>
+            <dl className="grid grid-cols-[120px_1fr] gap-x-4 gap-y-3 text-[16px]">
+              <dt className="font-mono text-[12.5px] uppercase tracking-wider text-ink-soft">Years</dt>
+              <dd>20, all of them from home</dd>
+              <dt className="font-mono text-[12.5px] uppercase tracking-wider text-ink-soft">Websites</dt>
+              <dd>2,500+ developed and launched</dd>
+              <dt className="font-mono text-[12.5px] uppercase tracking-wider text-ink-soft">Teaches</dt>
+              <dd>Social media advertising at Mithibai College, Mumbai</dd>
+              <dt className="font-mono text-[12.5px] uppercase tracking-wider text-ink-soft">Works with</dt>
+              <dd>Solopreneurs, freelancers, consultants</dd>
+              <dt className="font-mono text-[12.5px] uppercase tracking-wider text-ink-soft">Format</dt>
+              <dd>1:1 only. No cohorts, no courses.</dd>
+            </dl>
+            <div className="flex flex-col gap-3 sm:flex-row">
+              <Link href="/fit" className="btn btn-primary">
+                See what&rsquo;s in your way <ArrowRight size={18} aria-hidden="true" />
+              </Link>
+              <Link href="/program" className="btn btn-ghost">
+                See the program
+              </Link>
+            </div>
           </div>
         </div>
+      </section>
 
-        <aside className="flex flex-col gap-6 border-t-2 border-ink pt-5 lg:mt-14">
-          <div className={`overflow-hidden ${photo.studio ? "bg-black" : "flex items-end justify-center bg-surface-2 pt-8"}`}>
-            <Image
-              src={photo.src}
-              alt="Swapnil Shiwalay, arms folded, studio portrait"
-              width={photo.width}
-              height={photo.height}
-              priority
-              sizes="(min-width: 1024px) 420px, 80vw"
-              className={photo.studio ? "h-auto w-full" : "h-auto w-[82%] max-w-[420px]"}
-            />
-          </div>
-          <div className="flex flex-col gap-1">
-            <p className="font-display text-[20px] font-extrabold">{site.name}</p>
-            <p className="font-mono text-[12.5px] uppercase tracking-wider text-ink-soft">{site.tagline}</p>
-          </div>
-          <dl className="grid grid-cols-[120px_1fr] gap-x-4 gap-y-3 text-[16px]">
-            <dt className="font-mono text-[12.5px] uppercase tracking-wider text-ink-soft">Years</dt>
-            <dd>20, all of them from home</dd>
-            <dt className="font-mono text-[12.5px] uppercase tracking-wider text-ink-soft">Websites</dt>
-            <dd>2,500+ developed and launched</dd>
-            <dt className="font-mono text-[12.5px] uppercase tracking-wider text-ink-soft">Teaches</dt>
-            <dd>Social media advertising at Mithibai College, Mumbai</dd>
-            <dt className="font-mono text-[12.5px] uppercase tracking-wider text-ink-soft">Works with</dt>
-            <dd>Solopreneurs, freelancers, consultants</dd>
-            <dt className="font-mono text-[12.5px] uppercase tracking-wider text-ink-soft">Format</dt>
-            <dd>1:1 only. No cohorts, no courses.</dd>
-          </dl>
-        </aside>
+      <section className="border-t border-line py-16">
+        <div className="flex max-w-[68ch] flex-col gap-5 text-[19px]">
+          <p>
+            I&rsquo;m {site.name}, a {site.role.toLowerCase()}. Since the mid-2000s I have built and
+            run digital businesses from a desk at home, developing more than 2,500 websites for
+            people who had a skill, an idea or a service and needed it to exist online.
+          </p>
+          <p>
+            Two and a half thousand websites is a lot of conversations with people at the very
+            start of a business. I have watched what separates the ones who get their first
+            client in a month from the ones who are still &ldquo;working on the site&rdquo; a year later.
+            It is almost never the skill. It is the offer, the first conversation, and having
+            someone to check in with every week.
+          </p>
+          <p>
+            That is what {site.program} is: the part of my work I always did informally, made
+            into a proper 1:1 program for solopreneurs, freelancers and consultants who want to
+            build something of their own without leaving their life to do it.
+          </p>
+        </div>
       </section>
 
       <section className="border-t border-line py-16">

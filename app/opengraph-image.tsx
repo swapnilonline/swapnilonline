@@ -23,8 +23,8 @@ export default async function OpenGraphImage() {
           width: "100%",
           height: "100%",
           display: "flex",
-          background: "#0E1512",
-          color: "#F1EFE8",
+          background: "#050506",
+          color: "#F2F1EE",
           fontFamily: "Helvetica, Arial, sans-serif",
           position: "relative",
         }}
@@ -39,20 +39,20 @@ export default async function OpenGraphImage() {
             width: portrait ? 760 : 1100,
           }}
         >
-          <div style={{ fontSize: 20, letterSpacing: 4, color: "#A9B1AA" }}>
+          <div style={{ fontSize: 20, letterSpacing: 4, color: "#A6A6A3" }}>
             FOR FREELANCERS · CONSULTANTS · SOLOPRENEURS
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
             <div style={{ fontSize: 70, fontWeight: 800, lineHeight: 1.04, letterSpacing: -2 }}>
               Turn your skill into paying clients in 90 days.
             </div>
-            <div style={{ fontSize: 27, color: "#A9B1AA", lineHeight: 1.35 }}>
+            <div style={{ fontSize: 27, color: "#A6A6A3", lineHeight: 1.35 }}>
               From home. 1:1 guidance from someone who has done it for 20 years. Ends with a client, or we keep going.
             </div>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
             <div style={{ fontSize: 28, fontWeight: 800 }}>{site.name}</div>
-            <div style={{ fontSize: 20, color: "#A9B1AA" }}>{`${site.years} · ${site.websites}`}</div>
+            <div style={{ fontSize: 20, color: "#A6A6A3" }}>{`${site.years} · ${site.websites}`}</div>
             <div style={{ fontSize: 22, fontWeight: 800, color: "#F5C12E", marginTop: 6 }}>{site.domain}</div>
           </div>
         </div>
