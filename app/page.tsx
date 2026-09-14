@@ -5,13 +5,13 @@ import Journey from "@/components/Journey";
 import { site } from "@/lib/site";
 import { segmentCopy } from "@/lib/quiz";
 import { ReviewsSection, TrustLine } from "@/components/Reviews";
-import VideoSection from "@/components/VideoSection";
+import VideoPlayer from "@/components/VideoPlayer";
 
 export default function Home() {
   return (
     <div className="mx-auto max-w-5xl px-5">
       {/* Hero */}
-      <section className="grid gap-10 py-16 sm:py-24 lg:grid-cols-[1.25fr_1fr] lg:items-end">
+      <section className="grid gap-10 py-12 sm:py-16 lg:grid-cols-[1.1fr_1fr] lg:items-center">
         <div className="flex flex-col gap-7">
           <p className="eyebrow">For freelancers · consultants · solopreneurs</p>
           <h1 className="text-[44px] font-extrabold leading-[1.02] sm:text-[64px]">
@@ -37,30 +37,34 @@ export default function Home() {
           <TrustLine />
         </div>
 
-        <div className="flex flex-col gap-4 border-t-2 border-ink pt-5">
-          <div className="flex items-end gap-5">
+        <div className="flex flex-col gap-4">
+          <VideoPlayer
+            source={
+              site.homeVideoId
+                ? { kind: "youtube", id: site.homeVideoId }
+                : { kind: "file", src: "/home-video.mp4", poster: "/home-video-poster.jpg" }
+            }
+            title="90 seconds with Swapnil"
+          />
+          <div className="flex items-center gap-4 border-t-2 border-ink pt-4">
             <Image
               src="/swapnil.png"
               alt="Swapnil Shiwalay"
               width={610}
               height={564}
               priority
-              sizes="120px"
-              className="h-auto w-[96px] shrink-0 sm:w-[120px]"
+              sizes="72px"
+              className="h-auto w-[64px] shrink-0"
             />
-            <p className="font-display text-[26px] font-extrabold leading-tight sm:text-[30px]">
-              20 Years. Work From Home.
-              <br />
-              2,500+ Websites.
-            </p>
+            <div className="flex flex-col gap-0.5">
+              <p className="font-display text-[19px] font-extrabold leading-tight">
+                20 Years. Work From Home. 2,500+ Websites.
+              </p>
+              <p className="text-[15px] text-ink-soft">
+                {site.name}, {site.role}. Teaches social media advertising at Mithibai College, Mumbai.
+              </p>
+            </div>
           </div>
-          <p className="text-[17px] text-ink-soft">
-            {site.name}, {site.role}. Twenty years of running digital businesses from a desk at
-            home, and 2,500+ websites built for people at the exact moment they were starting
-            out. He has watched what separates the ones who get a client in a month from the
-            ones still &ldquo;working on it&rdquo; a year later. He also teaches social media
-            advertising at Mithibai College, Mumbai.
-          </p>
         </div>
       </section>
 
@@ -94,19 +98,6 @@ export default function Home() {
           </p>
         </div>
       </section>
-
-      <VideoSection
-        source={
-          site.homeVideoId
-            ? { kind: "youtube", id: site.homeVideoId }
-            : { kind: "file", src: "/home-video.mp4", poster: "/home-video-poster.jpg" }
-        }
-        title="A word from Swapnil"
-        eyebrow="Watch"
-        minutes="90 seconds"
-        heading="Ninety seconds on why this works from home."
-        body="Swapnil on what twenty years of building businesses from a desk at home taught him, and why the first client is closer than most people think. Then take the Fit Score to see which stage is yours."
-      />
 
       {/* Who it's for */}
       <section className="border-t border-line py-16">
