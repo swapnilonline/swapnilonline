@@ -8,7 +8,7 @@ import { ReviewsSection } from "@/components/Reviews";
 export const metadata: Metadata = {
   title: "HOME → BUSINESS, the 1:1 Digital Business Launch Program",
   description:
-    "90 days of weekly 1:1 sessions, your website built inside the program, and a first-client guarantee. For solopreneurs, freelancers and consultants.",
+    "90 days of 1:1 work that ends with your first paying client. Your offer written, your website live by week 4, and a guarantee that we keep going until the client is real.",
 };
 
 const tiers = [
@@ -16,11 +16,11 @@ const tiers = [
     name: "Offer Design Intensive",
     price: "₹7,500",
     per: "one session",
-    who: "For people who want to test the water before committing to the program.",
+    who: "One session. You leave with an offer you could sell tomorrow.",
     items: [
-      "90-minute 1:1 working session",
-      "Written one-page offer: result, customer, price, timeline",
-      "Credited in full toward the program within 60 days",
+      "90 minutes 1:1, on your skill and your last three paid jobs",
+      "A written one-page offer: result, customer, price, timeline",
+      "Fee credited in full toward the program within 60 days",
     ],
     core: false,
   },
@@ -28,13 +28,14 @@ const tiers = [
     name: "LAUNCH",
     price: "₹75,000",
     per: "90 days · or 3 × ₹27,500 · $950",
-    who: "Stages 1 to 5. From skill to first paying client.",
+    who: "Stages 1 to 5. Ends with your first paying client.",
     items: [
-      "12 weekly 1:1 sessions, 45 minutes each",
-      "Your one-page website built and live by week 4",
-      "Offer, pricing, proposal and outreach scripts written with you",
-      "WhatsApp access on working days",
-      "First-client guarantee",
+      "Week 1: a customer you can name",
+      "Week 3: an offer with a price you've said out loud",
+      "Week 4: your website live, built by me",
+      "Week 8: five real conversations started",
+      "Day 90: a paying client, or we keep going at no cost",
+      "12 weekly 1:1 sessions plus WhatsApp on working days",
     ],
     core: true,
   },
@@ -42,12 +43,13 @@ const tiers = [
     name: "LAUNCH + SCALE",
     price: "₹1,40,000",
     per: "6 months · or 6 × ₹25,000 · $1,750",
-    who: "Stages 1 to 7. For people who want the business to run without them.",
+    who: "Stages 1 to 7. Ends with a business that runs without you in every seat.",
     items: [
-      "24 weekly 1:1 sessions",
       "Everything in Launch",
-      "Sales, delivery and operations systems set up",
-      "Hiring plan for your first helper",
+      "Month 4: sales, delivery and operations on templates, not memory",
+      "Month 5: prices raised and a second offer sold to existing clients",
+      "Month 6: your first helper hired into a system, not into chaos",
+      "24 weekly 1:1 sessions",
     ],
     core: false,
   },
@@ -88,11 +90,12 @@ export default function ProgramPage() {
           {site.program} · {site.programSub}
         </p>
         <h1 className="max-w-[18ch] text-[40px] font-extrabold sm:text-[56px]">
-          Launch your work-from-home digital business.
+          Leave with a business, not a to-do list.
         </h1>
         <p className="measure text-[21px] leading-[1.45]">
-          Consulting, coaching or services. From idea to first offer to first client to systems
-          to scale, with 1:1 hand-holding at every step. You build it. I guide you.
+          Ninety days of 1:1 work that ends with a paying client. Consulting, coaching or
+          services. You bring the skill. We build the offer, the page and the first sale
+          together, and I don&rsquo;t stop at day 90 until the client is real.
         </p>
         <div className="flex flex-col gap-3 sm:flex-row">
           <Link href="/call" className="btn btn-primary">
@@ -107,10 +110,11 @@ export default function ProgramPage() {
       <section className="grid gap-10 border-t border-line py-16 lg:grid-cols-[1fr_1.4fr]">
         <div className="flex flex-col gap-4">
           <p className="eyebrow">What we build, in order</p>
-          <h2 className="text-[30px] font-bold sm:text-[36px]">The seven stages</h2>
+          <h2 className="text-[30px] font-bold sm:text-[36px]">Seven stages. Seven things you&rsquo;ll have.</h2>
           <p className="text-[17px] text-ink-soft">
-            Launch covers stages 1 to 5. Launch + Scale covers all seven. We start wherever you
-            actually are, not at the beginning.
+            Each stage ends with something real, not a lesson learned. Launch covers stages 1 to 5.
+            Launch + Scale covers all seven. We start wherever you actually are, not at the
+            beginning.
           </p>
         </div>
         <Journey />
@@ -118,7 +122,7 @@ export default function ProgramPage() {
 
       <section className="border-t border-line py-16">
         <p className="eyebrow">Ways to work together</p>
-        <h2 className="mt-3 text-[30px] font-bold sm:text-[36px]">One program. Two lengths. One small first step.</h2>
+        <h2 className="mt-3 text-[30px] font-bold sm:text-[36px]">Pick the outcome you want. The price follows.</h2>
         <div className="mt-10 grid gap-4 lg:grid-cols-3">
           {tiers.map((t) => (
             <div
@@ -151,10 +155,11 @@ export default function ProgramPage() {
           ))}
         </div>
         <div className="mt-8 flex flex-col gap-4 border-l-[3px] border-mark bg-mark-soft/60 px-6 py-5">
-          <p className="font-display text-[19px] font-bold">The first-client guarantee</p>
+          <p className="font-display text-[19px] font-bold">You end with a paying client. That&rsquo;s the deal.</p>
           <p className="measure text-[17px]">
-            If you attend your sessions and ship what we agree each week, and you don&rsquo;t have a
-            paying client by day 90, I keep working with you at no cost until you do.
+            Attend your sessions, ship what we agree each week, and if you don&rsquo;t have a paying
+            client by day 90, I keep working with you at no cost until you do. Not a refund. A
+            result.
           </p>
         </div>
       </section>
@@ -180,11 +185,11 @@ export default function ProgramPage() {
             Free · 30 minutes · 1:1
           </p>
           <h2 className="max-w-[22ch] text-[32px] font-extrabold text-panel-ink sm:text-[40px]">
-            Start with a free 30-minute Launch Call.
+            In 30 minutes, know your next three moves.
           </h2>
           <p className="max-w-[52ch] text-[18px] text-panel-ink/85">
-            We&rsquo;ll map your skill to a model, an offer, and the first three steps. You leave with
-            a one-page Launch Map whether or not we work together. {site.callsPerWeek} calls a week.
+            We map your skill to a model, an offer and the first three steps. You leave with a
+            one-page Launch Map whether or not we work together. {site.callsPerWeek} calls a week.
           </p>
           <div>
             <Link href="/call" className="btn bg-mark text-ink hover:bg-mark-soft">

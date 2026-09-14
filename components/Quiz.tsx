@@ -171,11 +171,12 @@ export default function Quiz() {
           </div>
           <div className="flex flex-col gap-3">
             <h2 className="text-[28px] font-bold leading-tight sm:text-[34px]">
-              Where should I send your 7-Day Launch Map?
+              Where should I send your result and the Blueprint?
             </h2>
             <p className="measure text-[17px] text-ink-soft">
-              Your result is on the next page. Over the next seven days I&rsquo;ll also send one short
-              lesson a day on WhatsApp, one per stage of the journey. Reply STOP anytime.
+              Your result is on the next page, with a free copy of The Digital Business Blueprint.
+              Over the next seven days I&rsquo;ll also send one short lesson a day, one per stage,
+              so you know exactly what to do next. Reply STOP anytime.
             </p>
           </div>
 

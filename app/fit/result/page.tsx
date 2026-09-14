@@ -58,7 +58,7 @@ export default async function ResultPage({
             Stage {stage.n}: {stage.title}
           </h2>
           <p className="text-[17px]">
-            You told me {seg.line.charAt(0).toLowerCase() + seg.line.slice(1)}
+            As a {seg.title.toLowerCase()}, the move is: {seg.line.charAt(0).toLowerCase() + seg.line.slice(1)}
           </p>
           <p className="text-[17px] text-ink-soft">{blockerCopy[r.blocker]}</p>
         </div>

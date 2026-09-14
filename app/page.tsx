@@ -13,25 +13,26 @@ export default function Home() {
       {/* Hero */}
       <section className="grid gap-10 py-16 sm:py-24 lg:grid-cols-[1.25fr_1fr] lg:items-end">
         <div className="flex flex-col gap-7">
-          <p className="eyebrow">For solopreneurs · freelancers · consultants</p>
+          <p className="eyebrow">For freelancers · consultants · solopreneurs</p>
           <h1 className="text-[44px] font-extrabold leading-[1.02] sm:text-[64px]">
-            Your <span className="hl">home</span> can be your business.
+            Turn your skill into <span className="hl">paying clients</span> in 90 days.
           </h1>
           <p className="measure text-[21px] leading-[1.45] text-ink sm:text-[23px]">
-            Launch a digital business with 1:1 guidance from someone who has worked from home for
-            20 years. Turn your skill, knowledge or experience into a profitable business, from
-            where you are.
+            From home, without quitting your life. For people who are done trading hours for
+            projects. You bring what you already know.
+            Together we turn it into an offer people buy, a page that books you, and your first
+            client. If there&rsquo;s no paying client by day 90, we keep going until there is.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link href="/fit" className="btn btn-primary">
-              Get your Fit Score <ArrowRight size={18} aria-hidden="true" />
+              See what&rsquo;s in your way <ArrowRight size={18} aria-hidden="true" />
             </Link>
             <Link href="/program" className="btn btn-ghost">
-              See the program
+              See the 90-day program
             </Link>
           </div>
           <p className="font-mono text-[12.5px] text-ink-soft">
-            2 minutes · 8 questions · no course pitch at the end
+            Free Fit Score · 8 questions · 2 minutes · no pitch at the end
           </p>
           <TrustLine />
         </div>
@@ -54,9 +55,10 @@ export default function Home() {
             </p>
           </div>
           <p className="text-[17px] text-ink-soft">
-            {site.name}, {site.role}. For two decades, Swapnil has built and operated digital
-            businesses from home, developing 2,500+ websites and helping people turn ideas,
-            expertise and services into digital opportunities. He also teaches social media
+            {site.name}, {site.role}. Twenty years of running digital businesses from a desk at
+            home, and 2,500+ websites built for people at the exact moment they were starting
+            out. He has watched what separates the ones who get a client in a month from the
+            ones still &ldquo;working on it&rdquo; a year later. He also teaches social media
             advertising at Mithibai College, Mumbai.
           </p>
         </div>
@@ -65,16 +67,27 @@ export default function Home() {
       {/* Promise */}
       <section className="grid gap-8 border-t border-line py-16 lg:grid-cols-[1fr_1.4fr]">
         <h2 className="text-[30px] font-bold sm:text-[36px]">
-          You don&rsquo;t need to quit your life to start a business.
+          In 90 days, this is what changes.
         </h2>
         <div className="flex flex-col gap-5 text-[19px]">
-          <p className="measure">
-            You don&rsquo;t need an office, a big team, or a huge investment. You need the right
-            digital business model, a clear offer, and someone who has done it before.
-          </p>
-          <p className="measure">
-            Start with what you already know. Build it from where you are. Not another course
-            where you watch videos and figure it out yourself. You build it. I guide you 1:1.
+          <ul className="flex flex-col gap-3 pl-0">
+            {[
+              ["Day 7", "You can name your first customer. A person, not a \u201ctarget audience\u201d."],
+              ["Week 3", "You have an offer you can say in one sentence, with a price you\u2019ve said out loud."],
+              ["Week 4", "Your page is live and books you. Built for you, not assigned as homework."],
+              ["Week 8", "Five conversations started with people who already know you."],
+              ["Day 90", "Your first paying client. Or we keep working, free, until you have one."],
+            ].map(([when, what]) => (
+              <li key={when} className="grid grid-cols-[72px_1fr] gap-3 border-t border-line pt-3">
+                <span className="font-mono text-[12.5px] text-money pt-1">{when}</span>
+                <span>{what}</span>
+              </li>
+            ))}
+          </ul>
+          <p className="measure text-ink-soft">
+            No office, no team, no big investment. You don&rsquo;t quit your life to do this. You
+            need five to ten hours a week, a skill people already ask you for, and someone who has
+            done it before looking at your business every week.
           </p>
           <p className="font-display text-[22px] font-bold text-accent">
             Skill → Offer → Client → Business → Scale
@@ -96,7 +109,7 @@ export default function Home() {
       {/* Who it's for */}
       <section className="border-t border-line py-16">
         <p className="eyebrow">Who it&rsquo;s for</p>
-        <h2 className="mt-3 text-[30px] font-bold sm:text-[36px]">Three people, one road.</h2>
+        <h2 className="mt-3 text-[30px] font-bold sm:text-[36px]">Three starting points. One place you end up.</h2>
         <div className="mt-10 grid gap-px overflow-hidden border border-line bg-line sm:grid-cols-3">
           {(Object.keys(segmentCopy) as (keyof typeof segmentCopy)[]).map((k) => (
             <div key={k} className="flex flex-col gap-3 bg-surface p-7">
@@ -120,11 +133,12 @@ export default function Home() {
         <div className="flex flex-col gap-4">
           <p className="eyebrow">The 1:1 journey</p>
           <h2 className="text-[30px] font-bold sm:text-[36px]">
-            From &ldquo;I have an idea&rdquo; to &ldquo;I have a business.&rdquo;
+            From &ldquo;I have a skill&rdquo; to &ldquo;I have clients.&rdquo;
           </h2>
           <p className="text-[17px] text-ink-soft">
-            Seven stages, in order, with 1:1 guidance at every step. Most people are stuck at
-            stage 3 or stage 5. The Fit Score tells you which.
+            Seven stages. Each one ends with something you have, not something you learned.
+            Most people are stuck at stage 3 or stage 5 without knowing it. The Fit Score tells
+            you which.
           </p>
         </div>
         <Journey />
@@ -134,14 +148,14 @@ export default function Home() {
       <section className="border-t border-line py-16">
         <p className="eyebrow">Why this and not a course</p>
         <h2 className="mt-3 text-[30px] font-bold sm:text-[36px]">
-          Your website gets built. Your offer gets written. With you, not for you to figure out.
+          You don&rsquo;t finish with notes. You finish with a business.
         </h2>
         <ul className="mt-10 grid gap-x-10 gap-y-6 sm:grid-cols-2">
           {[
-            ["Weekly 1:1 sessions", "45 minutes, every week, on your actual business. Not a cohort call with 40 people."],
-            ["Website built inside the program", "After 2,500 websites, I don't assign it as homework. Your page is live by week 4."],
-            ["Offer, pricing and scripts written together", "You leave every session with something finished, not a to-do list."],
-            ["First-client guarantee", "Attend, ship what we agree, and if you don't have a paying client by day 90, I keep working with you until you do."],
+            ["Every week ends with something shipped", "45 minutes 1:1 on your actual business, not a cohort call with 40 people. You leave each session with a finished piece, never a to-do list."],
+            ["Your website is live by week 4", "After 2,500 of them, I build it inside the program. You never lose a month to \u201cworking on the site\u201d."],
+            ["You say your price out loud by week 3", "Offer, pricing and outreach scripts are written together, then tested on real people before you send them."],
+            ["You end with a paying client, or we keep going", "Attend, ship what we agree, and if there is no paying client by day 90, I keep working with you at no cost until there is."],
           ].map(([t, d]) => (
             <li key={t} className="grid grid-cols-[28px_1fr] gap-3">
               <Check size={22} className="mt-1 text-accent" aria-hidden="true" />
@@ -163,15 +177,16 @@ export default function Home() {
             {site.program} · {site.programSub}
           </p>
           <h2 className="max-w-[22ch] text-[32px] font-extrabold text-panel-ink sm:text-[40px]">
-            Find out which digital business fits you.
+            Find out what&rsquo;s between you and your first client.
           </h2>
           <p className="max-w-[52ch] text-[18px] text-panel-ink/85">
-            Answer 8 questions. You&rsquo;ll get your model, your stage, and the one thing to do this
-            week. Then, if you want, a free 30-minute Launch Call.
+            Eight questions, two minutes. You get the business you&rsquo;re actually building, the
+            stage that&rsquo;s blocking you, and the one thing to do this week. Then, if you want, a
+            free 30-minute Launch Call.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link href="/fit" className="btn bg-mark text-ink hover:bg-mark-soft">
-              Get your Fit Score <ArrowRight size={18} aria-hidden="true" />
+              See what&rsquo;s in your way <ArrowRight size={18} aria-hidden="true" />
             </Link>
             <Link href="/call" className="btn border-panel-ink/60 text-panel-ink hover:bg-panel-ink/10">
               Apply for a Launch Call

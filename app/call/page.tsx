@@ -5,7 +5,7 @@ import { site } from "@/lib/site";
 export const metadata: Metadata = {
   title: "Apply for a free 30-minute Launch Call",
   description:
-    "We'll map your skill to a model, an offer, and the first 3 steps. You'll leave with a one-page Launch Map whether or not we work together.",
+    "In 30 minutes, know your next three moves. We map your skill to a model, an offer and the first steps. You leave with a one-page Launch Map either way.",
 };
 
 export default async function CallPage({
@@ -22,11 +22,12 @@ export default async function CallPage({
         <aside className="flex flex-col gap-5">
           <p className="eyebrow">Free · 30 minutes · 1:1</p>
           <h1 className="text-[34px] font-extrabold leading-tight sm:text-[40px]">
-            Apply for a Launch Call.
+            In 30 minutes, know your next three moves.
           </h1>
           <p className="text-[17px] text-ink-soft">
-            We&rsquo;ll map your skill to a model, an offer, and the first three steps. You&rsquo;ll
-            leave with a one-page Launch Map whether or not we work together.
+            We map your skill to a model, an offer, and the first three steps. You leave with a
+            one-page Launch Map whether or not we work together. If I can&rsquo;t help, I&rsquo;ll
+            say so and tell you what to do instead.
           </p>
           <ul className="flex flex-col gap-3 border-t border-line pt-5 text-[16px]">
             {[

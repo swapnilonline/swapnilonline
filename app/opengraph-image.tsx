@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { site } from "@/lib/site";
 
-export const alt = "Your home can be your business. Swapnil Shiwalay, Digital Business Strategist.";
+export const alt = "Turn your skill into paying clients. In 90 days, from home. Swapnil Shiwalay.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -23,14 +23,14 @@ export default function OpenGraphImage() {
       >
         <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 12, background: "#F5C12E" }} />
         <div style={{ fontSize: 22, letterSpacing: 4, color: "#55615A" }}>
-          FOR SOLOPRENEURS · FREELANCERS · CONSULTANTS
+          FOR FREELANCERS · CONSULTANTS · SOLOPRENEURS
         </div>
         <div style={{ display: "flex", flexDirection: "column", gap: 24 }}>
-          <div style={{ fontSize: 88, fontWeight: 800, lineHeight: 1.02, letterSpacing: -2, maxWidth: 900 }}>
-            Your home can be your business.
+          <div style={{ fontSize: 78, fontWeight: 800, lineHeight: 1.04, letterSpacing: -2, maxWidth: 1000 }}>
+            Turn your skill into paying clients in 90 days.
           </div>
-          <div style={{ fontSize: 30, color: "#55615A", maxWidth: 900, lineHeight: 1.35 }}>
-            Launch a digital business with 1:1 guidance from someone who has worked from home for 20 years.
+          <div style={{ fontSize: 30, color: "#55615A", maxWidth: 940, lineHeight: 1.35 }}>
+            From home. 1:1 guidance from someone who has done it for 20 years. Ends with a client, or we keep going.
           </div>
         </div>
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-end" }}>

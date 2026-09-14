@@ -191,15 +191,15 @@ export function resultPath(r: Result) {
 export const segmentCopy: Record<Segment, { title: string; line: string }> = {
   solopreneur: {
     title: "Solopreneur",
-    line: "You want to build a business around your expertise, idea or passion, without building a traditional company.",
+    line: "From an idea you keep talking about to a business people pay for, without building a company to do it.",
   },
   freelancer: {
     title: "Freelancer",
-    line: "You have a skill and want to move from chasing projects to a predictable, higher-value business.",
+    line: "From chasing the next project to clients who come to you, at prices you set, month after month.",
   },
   consultant: {
     title: "Consultant",
-    line: "You have experience and knowledge and want to package it, position yourself and attract better clients.",
+    line: "From \u201cI know this\u201d to a packaged offer that attracts better clients and finally pays for your experience.",
   },
 };
 
