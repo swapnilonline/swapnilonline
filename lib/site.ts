@@ -5,7 +5,7 @@ export const site = {
   title: "Turn Your Skill Into Paying Clients",
   description:
     "Your first paying client in 90 days, from home, with 1:1 guidance from someone who has done it for 20 years. For freelancers, consultants and solopreneurs. Ends with a client, or we keep going.",
-  role: "Digital Business Strategist",
+  role: "Digital Business Consultant",
   years: "20 years working from home",
   websites: "2,500+ websites developed",
   program: "HOME → BUSINESS",

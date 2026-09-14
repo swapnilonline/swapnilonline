@@ -9,7 +9,7 @@ import { AllReviews } from "@/components/Reviews";
 export const metadata: Metadata = {
   title: "About Swapnil Shiwalay",
   description:
-    "Digital Business Strategist. 20 years working from home, 2,500+ websites developed, now helping solopreneurs, freelancers and consultants launch 1:1.",
+    "Digital Business Consultant. 20 years working from home, 2,500+ websites developed, now helping solopreneurs, freelancers and consultants launch 1:1.",
 };
 
 export default function AboutPage() {
