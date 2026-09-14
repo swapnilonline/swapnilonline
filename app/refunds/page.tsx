@@ -47,7 +47,7 @@ export default function RefundsPage() {
 
         <Section title="An honest note on earnings">
           <p>
-            No income is promised. ₹3,00,000 a month of recurring income is the target the
+            No income is promised. A 6-figure monthly recurring income is the target the
             Challenge is designed around, and the plan to reach it is worked out for your case on
             the free call. What you
             actually earn depends on your skill, your market, your price and the work you put in.

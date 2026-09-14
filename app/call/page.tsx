@@ -34,7 +34,7 @@ export default async function CallPage({
               ["Positioning", "The one line that makes the right people notice you"],
               ["Market", "Who pays for this, and who among them pays best"],
               ["Offer", "The result, for whom, at a price, in a timeframe"],
-              ["Earning", "Price × clients × hours: what this can realistically make, and the path to ₹3,00,000 a month"],
+              ["Earning", "Price × clients × hours: what this can realistically make, and the path to a 6-figure monthly recurring income"],
             ].map(([t, d]) => (
               <li key={t} className="grid grid-cols-[96px_1fr] gap-3">
                 <span className="font-mono text-[12.5px] text-ink-soft pt-1">{t}</span>

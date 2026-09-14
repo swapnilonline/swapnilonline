@@ -18,13 +18,13 @@ export default function Home() {
         <div className="flex flex-col gap-7">
           <p className="eyebrow">Digital services · digital consulting · digital products</p>
           <h1 className="text-[44px] font-extrabold leading-[1.02] sm:text-[64px]">
-            Build <span className="hl">₹3 lakh a month</span> of recurring income. From home, without a job.
+            Build a <span className="hl">6-figure recurring income</span>. From home, without a job.
           </h1>
           <p className="measure text-[21px] leading-[1.45] text-ink sm:text-[23px]">
             For anyone who wants to start an online business: selling digital services, digital
             consulting or digital products. You bring what you already know. On a free call we map
             your skill, your positioning, your market, your offer and what it can earn. Then we
-            build it, 1:1, toward one number: {site.target}. No employer, no salary, no office.
+            build it, 1:1, toward {site.target}. No employer, no salary, no office.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link href="/call" className="btn btn-primary">
@@ -80,7 +80,7 @@ export default function Home() {
       {/* Promise */}
       <section className="grid gap-8 border-t border-line py-16 lg:grid-cols-[1fr_1.4fr]">
         <h2 className="text-[30px] font-bold sm:text-[36px]">
-          The road to {site.target}, in order.
+          The road to a 6-figure recurring income, in order.
         </h2>
         <div className="flex flex-col gap-5 text-[19px]">
           <ul className="flex flex-col gap-3 pl-0">
@@ -99,7 +99,7 @@ export default function Home() {
           </ul>
           <p className="measure text-ink-soft">
             Recurring means retainers, repeat clients and products that sell again, not one-off
-            projects you chase every month. {site.target} is not a promise. It is arithmetic we do
+            projects you chase every month. A 6-figure month is not a promise. It is arithmetic we do
             together on the first call: your price, times the clients you can serve, times the hours
             you actually have. Then the Challenge builds the offer, the page, the pipeline and the
             systems that make it recur. No employer, no office, no team, no big investment. Five to

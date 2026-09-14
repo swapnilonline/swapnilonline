@@ -174,7 +174,7 @@ That's the whole map: Discover, Design, Package, Build, Launch, Systemize, Scale
 
 You can walk it alone. Most people take two to three years and stall at stage 3 or stage 5.
 
-In the 90-Day Digital Business Setup Challenge we do all seven stages together, one 45-minute session a week, built toward ₹3,00,000 a month of recurring income from home, without a job, and I build your website inside the program instead of assigning it as homework. There's a first-client guarantee. If you'd rather start smaller, the 7-Day Foundation is seven days of hand-holding before launch, for 100% clarity on your digital business, at ₹7,500.
+In the 90-Day Digital Business Setup Challenge we do all seven stages together, one 45-minute session a week, built toward a 6-figure recurring income from home, without a job, and I build your website inside the program instead of assigning it as homework. There's a first-client guarantee. If you'd rather start smaller, the 7-Day Foundation is seven days of hand-holding before launch, for 100% clarity on your digital business, at ₹7,500.
 
 This is the last message from me for now. If you'd like to talk it through: ${CALL_URL}
 

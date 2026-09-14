@@ -8,7 +8,7 @@ import { ReviewsSection } from "@/components/Reviews";
 export const metadata: Metadata = {
   title: "The 7-Day Foundation and the 90-Day Setup Challenge",
   description:
-    "Two ways to build an online business from home, 1:1: a 7-day foundation for ₹7,500, or the 90-day setup challenge for ₹75,000, built toward ₹3,00,000 a month. Both start with a free call.",
+    "Two ways to build an online business from home, 1:1: a 7-day foundation for ₹7,500, or the 90-day setup challenge for ₹75,000, built toward a 6-figure recurring income. Both start with a free call.",
 };
 
 const tiers = [
@@ -23,7 +23,7 @@ const tiers = [
       "Day 1: your customer, named. Your model chosen: services, consulting or products",
       "Day 3: your offer in one sentence, with a price you have said out loud",
       "Day 5: the one-page plan and the first five outreach messages",
-      "Day 7: a written recurring-income plan: price × clients × hours, toward ₹3,00,000 a month",
+      "Day 7: a written recurring-income plan: price × clients × hours, toward a 6-figure monthly recurring income",
       "Fee credited in full toward the Challenge within 60 days",
     ],
     core: false,
@@ -48,8 +48,8 @@ const tiers = [
 
 const faqs = [
   [
-    "Is ₹3,00,000 a month of recurring income guaranteed?",
-    "No income is guaranteed, and anyone who promises one is lying to you. ₹3 lakh a month, recurring, without an employer, is the number the Challenge is designed around: retainers, repeat clients and products that sell again, not one-off projects. On the free call we do the arithmetic for your case: your price, times the clients you can serve, times the hours you have. Some people get there in months, some take longer, and the plan shows you which. What is guaranteed is the first paying client, or we keep working.",
+    "Is a 6-figure recurring income guaranteed?",
+    "No income is guaranteed, and anyone who promises one is lying to you. A 6-figure monthly recurring income, without an employer, is what the Challenge is designed around: retainers, repeat clients and products that sell again, not one-off projects. On the free call we do the arithmetic for your case: your price, times the clients you can serve, times the hours you have. Some people get there in months, some take longer, and the plan shows you which. What is guaranteed is the first paying client, or we keep working.",
   ],
   [
     "Is this a course?",
@@ -87,7 +87,7 @@ export default function ProgramPage() {
       <section className="flex flex-col gap-6 py-16 sm:py-20">
         <p className="eyebrow">Two programs · both 1:1 · both start with a free call</p>
         <h1 className="max-w-[18ch] text-[40px] font-extrabold sm:text-[56px]">
-          From your skill to {site.target}. From home, without a job.
+          From your skill to a 6-figure recurring income. From home, without a job.
         </h1>
         <p className="measure text-[21px] leading-[1.45]">
           Digital services, digital consulting or digital products. The free call maps your
@@ -158,7 +158,7 @@ export default function ProgramPage() {
           <p className="measure text-[17px]">
             In the 90-Day Challenge: attend your sessions, ship what we agree each week, and if you
             don&rsquo;t have a paying client by day 90, I keep working with you at no cost until you
-            do. Not a refund. A result. {site.target} is the number we build toward; the guarantee
+            do. Not a refund. A result. A 6-figure monthly recurring income is what we build toward; the guarantee
             is the first client, because recurring income is that client, repeated.
           </p>
         </div>
