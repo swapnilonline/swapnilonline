@@ -5,9 +5,11 @@ import Journey from "@/components/Journey";
 import { site } from "@/lib/site";
 import { segmentCopy } from "@/lib/quiz";
 import { ReviewsSection, TrustLine } from "@/components/Reviews";
+import { portrait } from "@/lib/assets";
 import VideoPlayer from "@/components/VideoPlayer";
 
 export default function Home() {
+  const photo = portrait();
   return (
     <div className="mx-auto max-w-5xl px-5">
       {/* Hero */}
@@ -48,13 +50,13 @@ export default function Home() {
           />
           <div className="flex items-center gap-4 border-t-2 border-ink pt-4">
             <Image
-              src="/swapnil.png"
+              src={photo.src}
               alt="Swapnil Shiwalay"
-              width={610}
-              height={564}
+              width={photo.width}
+              height={photo.height}
               priority
               sizes="72px"
-              className="h-auto w-[64px] shrink-0"
+              className={`h-[64px] w-[64px] shrink-0 object-cover ${photo.studio ? "rounded-full" : ""}`}
             />
             <div className="flex flex-col gap-0.5">
               <p className="font-display text-[19px] font-extrabold leading-tight">
@@ -178,7 +180,7 @@ export default function Home() {
             free 30-minute Launch Call.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Link href="/fit" className="btn bg-mark text-ink hover:bg-mark-soft">
+            <Link href="/fit" className="btn bg-mark text-accent-ink hover:bg-accent-strong">
               See what&rsquo;s in your way <ArrowRight size={18} aria-hidden="true" />
             </Link>
             <Link href="/call" className="btn border-panel-ink/60 text-panel-ink hover:bg-panel-ink/10">

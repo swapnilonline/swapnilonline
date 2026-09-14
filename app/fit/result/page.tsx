@@ -129,7 +129,7 @@ export default async function ResultPage({
             with a one-page Launch Map whether or not we work together.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Link href={`/call?${callQuery}`} className="btn bg-mark text-ink hover:bg-mark-soft">
+            <Link href={`/call?${callQuery}`} className="btn bg-mark text-accent-ink hover:bg-accent-strong">
               Apply for a Launch Call <ArrowRight size={18} aria-hidden="true" />
             </Link>
             <Link href="/program" className="btn border-panel-ink/60 text-panel-ink hover:bg-panel-ink/10">

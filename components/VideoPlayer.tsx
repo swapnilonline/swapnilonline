@@ -78,8 +78,8 @@ export default function VideoPlayer({ source, title }: { source: VideoSource; ti
             className="object-cover opacity-90 transition-opacity group-hover:opacity-100"
             unoptimized={source.kind === "youtube"}
           />
-          <span className="relative flex h-[72px] w-[72px] items-center justify-center rounded-full bg-mark text-ink shadow-lg transition-transform group-hover:scale-105 motion-reduce:transition-none">
-            <Play size={30} className="ml-1 fill-ink" aria-hidden="true" />
+          <span className="relative flex h-[72px] w-[72px] items-center justify-center rounded-full bg-mark text-accent-ink shadow-lg transition-transform group-hover:scale-105 motion-reduce:transition-none">
+            <Play size={30} className="ml-1 fill-accent-ink" aria-hidden="true" />
           </span>
           <span className="absolute bottom-4 left-4 rounded-sm bg-ink/85 px-3 py-1.5 font-mono text-[12px] text-ground">
             {title}

@@ -132,7 +132,7 @@ export default function ProgramPage() {
               }`}
             >
               {t.core && (
-                <span className="self-start rounded-sm bg-mark px-2 py-0.5 font-mono text-[11px] font-medium uppercase tracking-wider text-ink">
+                <span className="self-start rounded-sm bg-mark px-2 py-0.5 font-mono text-[11px] font-medium uppercase tracking-wider text-accent-ink">
                   Most people start here
                 </span>
               )}
@@ -192,7 +192,7 @@ export default function ProgramPage() {
             one-page Launch Map whether or not we work together. {site.callsPerWeek} calls a week.
           </p>
           <div>
-            <Link href="/call" className="btn bg-mark text-ink hover:bg-mark-soft">
+            <Link href="/call" className="btn bg-mark text-accent-ink hover:bg-accent-strong">
               Apply for a Launch Call <ArrowRight size={18} aria-hidden="true" />
             </Link>
           </div>

@@ -2,35 +2,34 @@
 
 /*
   swapnilonline.com — design tokens
-  Single light theme, chosen deliberately.
+  Single dark theme, chosen deliberately: premium, quiet, warm.
 
-  ground   chalk paper, barely warm, so black-and-white photos sit naturally
-  ink      green-black, not pure black; every text colour derives from it
-  accent   bottle green for every action. Deep enough for 7:1 on white.
-  mark     marigold, lifted from the @swapnilonline avatar. The one loud
-           colour, spent only where attention is earned: the top rule, a
-           highlighted word, "you are here", stars, callouts. Never on buttons.
-  panel    deep green ground for the closing call-to-action blocks
-  money    amber for prices, dark enough to read as text
+  ground   green-black, not pure black, so the studio portrait's backdrop blends in
+  surface  one step up for cards and inputs
+  ink      warm off-white; every text colour derives from it
+  accent   marigold, lifted from the @swapnilonline avatar. On a dark ground it is
+           the action colour: buttons, links, focus. Ink-dark text sits on it at 11:1.
+  green    bottle green for the closing panels and quiet emphasis
+  money    soft amber for prices
 */
 :root {
-  --ground: #f8f7f3;
-  --surface: #ffffff;
-  --surface-2: #efede7;
-  --ink: #14211b;
-  --ink-soft: #55615a;
-  --line: #d9dbd3;
-  --accent: #0f5c4b;
-  --accent-strong: #0b483b;
-  --accent-ink: #ffffff;
-  --accent-soft: #ddefe7;
+  --ground: #0e1512;
+  --surface: #151e1a;
+  --surface-2: #1c2721;
+  --ink: #f1efe8;
+  --ink-soft: #a9b1aa;
+  --line: #27322c;
+  --accent: #f5c12e;
+  --accent-strong: #ffd257;
+  --accent-ink: #14211b;
+  --accent-soft: #2a2a18;
   --mark: #f5c12e;
-  --mark-soft: #fbedc2;
+  --mark-soft: #2e2a16;
   --panel: #123d33;
-  --panel-ink: #f8f7f3;
-  --money: #9a5a14;
-  --money-soft: #f6e8d2;
-  --danger: #b4373a;
+  --panel-ink: #f1efe8;
+  --money: #e3b263;
+  --money-soft: #2e2618;
+  --danger: #e8767a;
 }
 
 @theme inline {
@@ -58,7 +57,7 @@
 }
 
 html {
-  color-scheme: light;
+  color-scheme: dark;
   scroll-behavior: smooth;
 }
 
@@ -101,9 +100,7 @@ button, a, input, select, textarea, label {
 
 /* Marker highlight for one word in a headline. Sits behind the text like a pen stroke. */
 @utility hl {
-  background-image: linear-gradient(transparent 62%, var(--mark) 62%, var(--mark) 92%, transparent 92%);
-  padding: 0 0.06em;
-  margin: 0 -0.06em;
+  color: var(--mark);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -153,11 +150,13 @@ button, a, input, select, textarea, label {
 
 @utility btn-ghost {
   background: transparent;
-  color: var(--accent);
-  border-color: var(--accent);
+  color: var(--ink);
+  border-color: var(--line);
 }
 
 .btn-primary:hover { background: var(--accent-strong); }
+.btn-ghost { color: var(--ink); border-color: var(--line); }
+.btn-ghost:hover { border-color: var(--accent); color: var(--accent); background: transparent; }
 .btn-ghost:hover { background: var(--accent-soft); }
 .btn:active { transform: translateY(1px); }
 .btn:disabled { opacity: 0.6; cursor: progress; transform: none; }

@@ -31,7 +31,7 @@ export default function Journey({
               <span className="font-display text-[19px] font-bold uppercase tracking-wide">
                 {s.name}
                 {here && (
-                  <span className="ml-3 rounded-sm bg-mark px-2 py-0.5 font-mono text-[11px] font-medium normal-case tracking-wider text-ink">
+                  <span className="ml-3 rounded-sm bg-mark px-2 py-0.5 font-mono text-[11px] font-medium normal-case tracking-wider text-accent-ink">
                     You are here
                   </span>
                 )}

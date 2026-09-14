@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { site, personalBrands, corporateBrandsExtra } from "@/lib/site";
+import { portrait } from "@/lib/assets";
 import { AllReviews } from "@/components/Reviews";
 
 export const metadata: Metadata = {
@@ -12,6 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const photo = portrait();
   return (
     <div className="mx-auto max-w-5xl px-5">
       <section className="grid gap-10 py-16 sm:py-20 lg:grid-cols-[1.3fr_1fr]">
@@ -50,15 +52,15 @@ export default function AboutPage() {
         </div>
 
         <aside className="flex flex-col gap-6 border-t-2 border-ink pt-5 lg:mt-14">
-          <div className="flex items-end justify-center bg-surface-2 pt-8">
+          <div className={`overflow-hidden ${photo.studio ? "bg-black" : "flex items-end justify-center bg-surface-2 pt-8"}`}>
             <Image
-              src="/swapnil.png"
-              alt="Swapnil Shiwalay, arms folded, black and white portrait"
-              width={610}
-              height={564}
+              src={photo.src}
+              alt="Swapnil Shiwalay, arms folded, studio portrait"
+              width={photo.width}
+              height={photo.height}
               priority
               sizes="(min-width: 1024px) 420px, 80vw"
-              className="h-auto w-[82%] max-w-[420px]"
+              className={photo.studio ? "h-auto w-full" : "h-auto w-[82%] max-w-[420px]"}
             />
           </div>
           <div className="flex flex-col gap-1">
@@ -102,7 +104,7 @@ export default function AboutPage() {
         <h2 className="mt-3 text-[30px] font-bold sm:text-[36px]">
           Some of the brands behind the 2,500 websites.
         </h2>
-        <div className="mt-8 bg-white p-6 sm:p-10">
+        <div className="mt-8 rounded-sm bg-white p-6 sm:p-10">
           <Image
             src="/brands.jpg"
             alt="Logos of HCC, NMIMS, Asian American Heritage Festival, Horizon, Schneider Electric, TVF, Sagar Pictures Entertainment, Pooja Entertainment, Vijayta Films, Classics Films, Hatim Glazing and Cladding, Litmus Marine, Old Harbor, HTOA, ACCI, Yasham, Expo Universe, GRL, Forstar, Premier Logistics and Green Cells"
