@@ -60,8 +60,8 @@ export default async function OpenGraphImage() {
           <div style={{ position: "absolute", right: 0, bottom: 0, top: 12, width: 440, display: "flex", alignItems: "flex-end", justifyContent: "flex-end", overflow: "hidden" }}>
             <img src={portrait} alt="" width={520} height={468} style={{ objectFit: "cover", objectPosition: "top", marginRight: -40 }} />
             {/* Dissolve the crop's edges into the page ground. */}
-            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to right, #050506 0%, rgba(5,5,6,0) 45%)" }} />
-            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to bottom, #050506 0%, rgba(5,5,6,0) 40%)" }} />
+            <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "linear-gradient(to right, #050506 0%, rgba(5,5,6,0) 45%)" }} />
+            <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "linear-gradient(to bottom, #050506 0%, rgba(5,5,6,0) 40%)" }} />
           </div>
         )}
       </div>
