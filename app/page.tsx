@@ -48,6 +48,10 @@ export default function Home() {
             }
             title="90 seconds with Swapnil"
           />
+          {/* The video ends with "the link is right below this video". This is that link. */}
+          <Link href="/fit" className="btn btn-primary w-full">
+            Take the free Fit Score <ArrowRight size={18} aria-hidden="true" />
+          </Link>
           <div className="flex items-center gap-4 border-t-2 border-ink pt-4">
             <Image
               src={photo.src}
