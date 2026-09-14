@@ -15,7 +15,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-5 py-4">
         <Link
           href="/"
-          className="font-display text-[17px] font-extrabold tracking-tight text-ink no-underline"
+          className="font-display text-[22px] font-extrabold tracking-tight text-ink no-underline sm:text-[26px]"
           onClick={() => setOpen(false)}
         >
           swapnil<span className="text-accent">online</span>
