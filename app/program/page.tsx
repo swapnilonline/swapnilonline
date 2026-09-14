@@ -77,6 +77,10 @@ const faqs = [
     "Yes. Launch is three payments of ₹27,500. Launch + Scale is six payments of ₹25,000. Overseas clients pay in USD.",
   ],
   [
+    "What if I'm afraid nobody will buy?",
+    "Almost everyone is, and it is the most fixable part. You say your price out loud to me in a rehearsal before you say it to a client, we fix the sentence until it sits right, and the first five messages go to people who already know you. If nobody has bought by day 90, we keep going. The fear does not survive the first yes.",
+  ],
+  [
     "Why is there an application?",
     `I take ${site.callsPerWeek} Launch Calls a week and work with around ten clients at a time. The application makes sure the call is useful for both of us.`,
   ],
@@ -120,7 +124,7 @@ export default function ProgramPage() {
         <Journey />
       </section>
 
-      <section className="border-t border-line py-16">
+      <section id="intensive" className="scroll-mt-6 border-t border-line py-16">
         <p className="eyebrow">Ways to work together</p>
         <h2 className="mt-3 text-[30px] font-bold sm:text-[36px]">Pick the outcome you want. The price follows.</h2>
         <div className="mt-10 grid gap-4 lg:grid-cols-3">

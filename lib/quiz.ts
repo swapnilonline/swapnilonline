@@ -7,7 +7,7 @@
 export type Segment = "solopreneur" | "freelancer" | "consultant";
 export type Model = "services" | "consulting" | "coaching";
 export type Stage = "discover" | "package" | "build" | "launch";
-export type Blocker = "sell" | "who" | "presence" | "clients" | "time";
+export type Blocker = "launch" | "niche" | "content" | "tech" | "busy" | "fear";
 export type Hours = "lt5" | "5to10" | "10plus";
 
 export type ChoiceQuestion = {
@@ -101,13 +101,14 @@ export const questions: Question[] = [
   {
     kind: "choice",
     id: "blocker",
-    prompt: "What's stopping you most right now?",
+    prompt: "Which of these sounds most like you right now?",
     options: [
-      { value: "sell", label: "Not sure what to sell" },
-      { value: "who", label: "Not sure who would pay" },
-      { value: "presence", label: "No online presence" },
-      { value: "clients", label: "Getting clients" },
-      { value: "time", label: "Time" },
+      { value: "launch", label: "I keep learning. Nothing is live, nothing earns." },
+      { value: "niche", label: "I can't decide my niche. I've changed it more than once." },
+      { value: "content", label: "I post a lot. It brings attention, not clients." },
+      { value: "tech", label: "Funnels, pages, automations. The tech feels like a wall." },
+      { value: "busy", label: "I'm busy, paid by the hour, and not growing." },
+      { value: "fear", label: "The offer is ready. I'm afraid nobody will buy." },
     ],
   },
 ];
@@ -142,8 +143,8 @@ export function score(a: Answers): Result {
           ? "build"
           : "launch";
 
-  const blockers: Blocker[] = ["sell", "who", "presence", "clients", "time"];
-  const blocker = blockers.includes(a.blocker as Blocker) ? (a.blocker as Blocker) : "clients";
+  const blockers: Blocker[] = ["launch", "niche", "content", "tech", "busy", "fear"];
+  const blocker = blockers.includes(a.blocker as Blocker) ? (a.blocker as Blocker) : "launch";
 
   const hoursList: Hours[] = ["lt5", "5to10", "10plus"];
   const hours = hoursList.includes(a.hours as Hours) ? (a.hours as Hours) : "5to10";
@@ -157,13 +158,13 @@ export function parseResult(p: Record<string, string | string[] | undefined>): R
   const segment = one("seg");
   const model = one("model");
   const stage = one("stage");
-  const blocker = one("blocker") ?? "clients";
+  const blocker = one("blocker") ?? "launch";
   const hours = one("hours") ?? "5to10";
   const ok =
     ["solopreneur", "freelancer", "consultant"].includes(segment ?? "") &&
     ["services", "consulting", "coaching"].includes(model ?? "") &&
     ["discover", "package", "build", "launch"].includes(stage ?? "") &&
-    ["sell", "who", "presence", "clients", "time"].includes(blocker) &&
+    ["launch", "niche", "content", "tech", "busy", "fear"].includes(blocker) &&
     ["lt5", "5to10", "10plus"].includes(hours);
   if (!ok) return null;
   return {
@@ -260,9 +261,16 @@ export const stageCopy: Record<
 };
 
 export const blockerCopy: Record<Blocker, string> = {
-  sell: "You said the biggest block is not knowing what to sell. That is a Package problem, and it is the most common one. It is also the one that clears fastest with someone looking at your skill from the outside.",
-  who: "You said you're not sure who would pay. That is a Discover problem. The answer is almost always someone who has already asked you for help.",
-  presence: "You said you have no online presence. That is a Build problem, and with 2,500 websites behind me it is the one I can fix fastest.",
-  clients: "You said getting clients is the block. That is a Launch problem, and it usually means the offer isn't clear enough to be repeated by someone else.",
-  time: "You said time is the block. That's honest. The program needs 45 minutes with me and about four hours of doing per week. If that's not there yet, start with the one action above.",
+  launch:
+    "You said you keep learning and nothing is live. That is not a knowledge gap, it is stages 4 and 5 skipped. The fix is a date: a page live in week 4, five conversations by week 8. Learning stops being the excuse when something is already out there.",
+  niche:
+    "You said you can't decide your niche. Clarity isn't found by thinking harder. Stage 1 is one question, who asked you for help in the last year, and the answer is a name, not a category. Once there is a name, the niche stops being a decision.",
+  content:
+    "You said you post a lot and it brings attention, not clients. Visible but not valuable, because there is no offer behind the posts. That is stage 3. An offer you can say in one sentence, with a price, gives every post somewhere to send people.",
+  tech:
+    "You said the tech feels like a wall. You don't need to learn funnels, pages and automations. You need them built. In the program I build your page myself, and the funnel is three steps on templates you fill in.",
+  busy:
+    "You said you're busy, paid by the hour, and not growing. More hours won't fix it. Stages 6 and 7 replace the hourly rate with a priced offer, add a second thing to sell to the clients you already have, and put in the systems that let revenue grow without your time.",
+  fear:
+    "You said the offer is ready and you're afraid nobody will buy. That fear is universal, and it is fixable. We rehearse saying the price out loud before you say it to a client, and if nobody has bought by day 90, we keep going together.",
 };

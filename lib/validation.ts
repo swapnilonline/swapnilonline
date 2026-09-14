@@ -28,7 +28,7 @@ export const leadSchema = z.object({
     segment: z.enum(["solopreneur", "freelancer", "consultant"]),
     model: z.enum(["services", "consulting", "coaching"]),
     stage: z.enum(["discover", "package", "build", "launch"]),
-    blocker: z.enum(["sell", "who", "presence", "clients", "time"]),
+    blocker: z.enum(["launch", "niche", "content", "tech", "busy", "fear"]),
     hours: z.enum(["lt5", "5to10", "10plus"]),
   }),
   source: z.string().max(80).optional(),

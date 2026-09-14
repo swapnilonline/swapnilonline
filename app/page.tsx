@@ -6,6 +6,7 @@ import { site } from "@/lib/site";
 import { segmentCopy } from "@/lib/quiz";
 import { ReviewsSection, TrustLine } from "@/components/Reviews";
 import { portrait } from "@/lib/assets";
+import Stalls from "@/components/Stalls";
 import VideoPlayer from "@/components/VideoPlayer";
 
 export default function Home() {
@@ -73,6 +74,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <Stalls />
 
       {/* Promise */}
       <section className="grid gap-8 border-t border-line py-16 lg:grid-cols-[1fr_1.4fr]">
