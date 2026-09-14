@@ -174,7 +174,7 @@ That's the whole map: Discover, Design, Package, Build, Launch, Systemize, Scale
 
 You can walk it alone. Most people take two to three years and stall at stage 3 or stage 5.
 
-In the 90-Day Digital Business Setup Challenge we do all seven stages together, one 45-minute session a week, built toward ₹3,00,000 a month from home, and I build your website inside the program instead of assigning it as homework. There's a first-client guarantee. If you'd rather start smaller, the 7-Day Foundation lays the groundwork for ₹7,500.
+In the 90-Day Digital Business Setup Challenge we do all seven stages together, one 45-minute session a week, built toward ₹3,00,000 a month of recurring income from home, without a job, and I build your website inside the program instead of assigning it as homework. There's a first-client guarantee. If you'd rather start smaller, the 7-Day Foundation is seven days of hand-holding before launch, for 100% clarity on your digital business, at ₹7,500.
 
 This is the last message from me for now. If you'd like to talk it through: ${CALL_URL}
 
@@ -239,7 +239,7 @@ Swapnil`,
     email:
 `{name},
 
-Closing the loop. If the program isn't the right size right now, the 7-Day Digital Business Foundation is a smaller first step: one call, seven days of guided tasks, you leave with your customer, model, offer, page plan and earning plan. Rs 7,500, credited in full toward the Challenge within 60 days.
+Closing the loop. If the program isn't the right size right now, the 7-Day Digital Business Foundation is a smaller first step: seven days of hand-holding before launch, and you finish with 100% clarity on your digital business. Rs 7,500, credited in full toward the Challenge within 60 days.
 
 If you'd like it, reply "foundation" and I'll send the details.
 
@@ -247,7 +247,7 @@ Either way, I'll send a short note once a month. Good luck with stage 1.
 
 Swapnil`,
     whatsapp:
-`{name}, closing the loop. If the program isn't the right size right now, the 7-Day Foundation is a smaller first step: one call plus seven days of guided tasks. Rs 7,500, credited toward the Challenge within 60 days. Reply "foundation" if you'd like it.`,
+`{name}, closing the loop. If the program isn't the right size right now, the 7-Day Foundation is a smaller first step: seven days of hand-holding before launch, 100% clarity on your digital business. Rs 7,500, credited toward the Challenge within 60 days. Reply "foundation" if you'd like it.`,
   },
 };
 

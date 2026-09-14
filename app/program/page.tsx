@@ -16,14 +16,14 @@ const tiers = [
     id: "foundation",
     name: "The 7-Day Digital Business Foundation",
     price: "₹7,500",
-    per: "7 days · one 1:1 call · daily tasks on WhatsApp",
-    who: "The first six fixes, in a week. For people who want the foundation right before they build.",
+    per: "7 days · 1:1 hand-holding · before you launch",
+    who: "Seven days of hand-holding before launch. You finish with 100% clarity on your digital business.",
     items: [
-      "A 90-minute 1:1 call with Swapnil, then seven days of guided tasks",
+      "Daily 1:1 with Swapnil for seven days, on WhatsApp and calls",
       "Day 1: your customer, named. Your model chosen: services, consulting or products",
       "Day 3: your offer in one sentence, with a price you have said out loud",
       "Day 5: the one-page plan and the first five outreach messages",
-      "Day 7: a written earning plan: price × clients × hours, toward ₹3,00,000 a month",
+      "Day 7: a written recurring-income plan: price × clients × hours, toward ₹3,00,000 a month",
       "Fee credited in full toward the Challenge within 60 days",
     ],
     core: false,
@@ -39,7 +39,7 @@ const tiers = [
       "Week 4: your website live, built by me, not assigned as homework",
       "Week 8: five real conversations and the first yes",
       "Week 12: proposal, calendar and invoice flow set up from your first sale",
-      "Day 90: paying clients, a repeatable pipeline, and the plan to the number, or we keep going at no cost",
+      "Day 90: paying clients, retainers and repeat work that recur, and the plan to the number, or we keep going at no cost",
       "12 weekly 1:1 sessions plus WhatsApp on working days",
     ],
     core: true,
@@ -48,8 +48,8 @@ const tiers = [
 
 const faqs = [
   [
-    "Is ₹3,00,000 a month guaranteed?",
-    "No income is guaranteed, and anyone who promises one is lying to you. ₹3 lakh a month is the number the Challenge is designed around, and on the free call we do the arithmetic for your case: your price, times the clients you can serve, times the hours you have. Some people get there in months, some take longer, and the plan shows you which. What is guaranteed is the first paying client, or we keep working.",
+    "Is ₹3,00,000 a month of recurring income guaranteed?",
+    "No income is guaranteed, and anyone who promises one is lying to you. ₹3 lakh a month, recurring, without an employer, is the number the Challenge is designed around: retainers, repeat clients and products that sell again, not one-off projects. On the free call we do the arithmetic for your case: your price, times the clients you can serve, times the hours you have. Some people get there in months, some take longer, and the plan shows you which. What is guaranteed is the first paying client, or we keep working.",
   ],
   [
     "Is this a course?",
@@ -87,13 +87,13 @@ export default function ProgramPage() {
       <section className="flex flex-col gap-6 py-16 sm:py-20">
         <p className="eyebrow">Two programs · both 1:1 · both start with a free call</p>
         <h1 className="max-w-[18ch] text-[40px] font-extrabold sm:text-[56px]">
-          From your skill to a business built for {site.target}. From home.
+          From your skill to {site.target}. From home, without a job.
         </h1>
         <p className="measure text-[21px] leading-[1.45]">
           Digital services, digital consulting or digital products. The free call maps your
           potential, positioning, market, offer and earning. If you qualify, you choose: seven days
-          to lay the foundation, or ninety days to build the whole thing with me, ending with
-          paying clients or we keep going.
+          of hand-holding before launch for 100% clarity, or ninety days to build the whole thing
+          with me, ending with paying clients or we keep going.
         </p>
         <div className="flex flex-col gap-3 sm:flex-row">
           <Link href="/call" className="btn btn-primary">
@@ -159,7 +159,7 @@ export default function ProgramPage() {
             In the 90-Day Challenge: attend your sessions, ship what we agree each week, and if you
             don&rsquo;t have a paying client by day 90, I keep working with you at no cost until you
             do. Not a refund. A result. {site.target} is the number we build toward; the guarantee
-            is the first client, because everything after that is repetition.
+            is the first client, because recurring income is that client, repeated.
           </p>
         </div>
       </section>

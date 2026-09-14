@@ -86,9 +86,10 @@ export default function ApplyForm({
         <div className="flex flex-col gap-4 border border-line bg-surface p-6">
           <p className="font-display text-[20px] font-bold">The 7-Day Digital Business Foundation</p>
           <p className="text-[17px] text-ink-soft">
-            One 1:1 call, then seven days of guided tasks. You finish with a named customer, a chosen
-            model, an offer with a price, the page plan and an earning plan. ₹7,500, credited in
-            full toward the 90-Day Challenge within 60 days.
+            Seven days of hand-holding with Swapnil before you launch. You finish with 100% clarity
+            on your digital business: a named customer, a chosen model, an offer with a price, the
+            page plan and a recurring-income plan. ₹7,500, credited in full toward the 90-Day
+            Challenge within 60 days.
           </p>
           <Link href="/program#foundation" className="btn btn-ghost self-start">
             See the Foundation

@@ -18,13 +18,13 @@ export default function Home() {
         <div className="flex flex-col gap-7">
           <p className="eyebrow">Digital services · digital consulting · digital products</p>
           <h1 className="text-[44px] font-extrabold leading-[1.02] sm:text-[64px]">
-            Build a <span className="hl">₹3 lakh a month</span> business from home.
+            Build <span className="hl">₹3 lakh a month</span> of recurring income. From home, without a job.
           </h1>
           <p className="measure text-[21px] leading-[1.45] text-ink sm:text-[23px]">
             For anyone who wants to start an online business: selling digital services, digital
             consulting or digital products. You bring what you already know. On a free call we map
             your skill, your positioning, your market, your offer and what it can earn. Then we
-            build it, 1:1, toward one number: {site.target}, from home.
+            build it, 1:1, toward one number: {site.target}. No employer, no salary, no office.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link href="/call" className="btn btn-primary">
@@ -86,10 +86,10 @@ export default function Home() {
           <ul className="flex flex-col gap-3 pl-0">
             {[
               ["Free call", "Your skill, positioning, target market, offer and earning potential, mapped in 30 minutes."],
-              ["Day 7", "A named customer, a chosen model, an offer with a price, the page plan, the first five messages. The Foundation."],
+              ["Day 7", "The Foundation: seven days of hand-holding before launch. A named customer, a chosen model, an offer with a price, the page plan. 100% clarity on your digital business."],
               ["Week 4", "Your page is live and books you. Built for you inside the Challenge, not assigned as homework."],
               ["Week 8", "Five real conversations. The price said out loud, and the first yes."],
-              ["Day 90", "Paying clients, a repeatable way to get the next one, and the plan to the number. Or we keep going."],
+              ["Day 90", "Paying clients, retainers and repeat work that recur without a fresh sale, and the plan to the number. Or we keep going."],
             ].map(([when, what]) => (
               <li key={when} className="grid grid-cols-[72px_1fr] gap-3 border-t border-line pt-3">
                 <span className="font-mono text-[12.5px] text-money pt-1">{when}</span>
@@ -98,11 +98,12 @@ export default function Home() {
             ))}
           </ul>
           <p className="measure text-ink-soft">
-            {site.target} is not a promise. It is arithmetic we do together on the first call: your
-            price, times the clients you can serve, times the hours you actually have. Then the
-            Challenge builds the offer, the page, the pipeline and the systems that get there. No
-            office, no team, no big investment. Five to ten hours a week, and a skill people already
-            ask you for.
+            Recurring means retainers, repeat clients and products that sell again, not one-off
+            projects you chase every month. {site.target} is not a promise. It is arithmetic we do
+            together on the first call: your price, times the clients you can serve, times the hours
+            you actually have. Then the Challenge builds the offer, the page, the pipeline and the
+            systems that make it recur. No employer, no office, no team, no big investment. Five to
+            ten hours a week, and a skill people already ask you for.
           </p>
           <p className="font-display text-[22px] font-bold text-accent">
             Skill → Offer → Client → Business → Scale

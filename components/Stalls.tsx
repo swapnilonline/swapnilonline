@@ -78,10 +78,11 @@ export default function Stalls() {
             Every barrier above has a system-level fix. The 7-Day Foundation gives you all six.
           </p>
           <p className="text-[17px] text-ink-soft">
-            The 7-Day Digital Business Foundation: one 1:1 call with me, then seven days of daily
-            tasks on WhatsApp. You finish with a named customer, a chosen model, an offer with a
-            price, the page plan, the first five messages, and the price said out loud. ₹7,500,
-            credited in full if you join the 90-Day Challenge within 60 days.
+            The 7-Day Digital Business Foundation: seven days of hand-holding with me before you
+            launch. You finish with 100% clarity on your digital business: a named customer, a
+            chosen model, an offer with a price, the page plan, the first five messages, and the
+            price said out loud. ₹7,500, credited in full if you join the 90-Day Challenge within
+            60 days.
           </p>
         </div>
         <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">

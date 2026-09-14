@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { site } from "@/lib/site";
 
-export const alt = "Build a ₹3 lakh a month business from home. Swapnil Shiwalay.";
+export const alt = "₹3 lakh a month of recurring income, from home, without a job. Swapnil Shiwalay.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -44,10 +44,10 @@ export default async function OpenGraphImage() {
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
             <div style={{ fontSize: 70, fontWeight: 800, lineHeight: 1.04, letterSpacing: -2 }}>
-              Build a ₹3 lakh a month business from home.
+              ₹3 lakh a month of recurring income. From home, without a job.
             </div>
             <div style={{ fontSize: 27, color: "#A6A6A3", lineHeight: 1.35 }}>
-              A free call maps your skill, positioning, market, offer and earning. Then 7 days or 90 days, 1:1.
+              A free call maps your skill, positioning, market, offer and earning. Then 7 days of hand-holding, or 90 days, 1:1.
             </div>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
