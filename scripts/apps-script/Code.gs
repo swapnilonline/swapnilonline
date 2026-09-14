@@ -19,6 +19,7 @@
 
 const NOTIFY_EMAIL = "contact@swapnilonline.com";
 const SECRET = "change-me-to-a-long-random-string";
+const CAL_URL = "https://calendly.com/swapnilonline/launch-call";
 
 function doPost(e) {
   try {
@@ -33,6 +34,8 @@ function doPost(e) {
     const row = type === "applications" ? applicationRow(body) : leadRow(body);
     sheet.appendRow(row);
     notify(type, body);
+    // Nurture.gs: instant welcome email + a one-tap WhatsApp welcome link sent to you.
+    if (type === "leads" && typeof onNewLead === "function") onNewLead(body.data || {});
     return json({ ok: true });
   } catch (err) {
     return json({ ok: false, error: String(err) });
@@ -47,7 +50,7 @@ function leadRow(b) {
     b.at, d.name, d.whatsapp, d.email,
     r.segment, r.model, r.stage, r.blocker, r.hours,
     a.skill, a.situation, a.how, a.paid, a.offer, a.website,
-    d.source || "", "new",
+    d.source || "", "new", "", "",
   ];
 }
 
@@ -55,15 +58,15 @@ function applicationRow(b) {
   const d = b.data || {};
   return [
     b.at, d.name, d.whatsapp, d.email, d.skill, d.ninety, d.hours, d.ready,
-    d.notes || "", d.segment || "", d.stage || "", "new",
+    d.notes || "", d.segment || "", d.stage || "", "new", "", "",
   ];
 }
 
 const HEADERS = {
   leads: ["at", "name", "whatsapp", "email", "segment", "model", "stage", "blocker", "hours",
-          "skill", "situation", "how", "paid", "offer", "website", "source", "status"],
+          "skill", "situation", "how", "paid", "offer", "website", "source", "status", "nurture_day", "last_sent"],
   applications: ["at", "name", "whatsapp", "email", "skill", "ninety_days", "hours", "ready",
-                 "notes", "segment", "stage", "status"],
+                 "notes", "segment", "stage", "status", "nurture_day", "last_sent"],
 };
 
 function getSheet(name) {

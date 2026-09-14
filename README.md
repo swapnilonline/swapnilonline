@@ -34,6 +34,27 @@ Leads need somewhere to land. The included Google Apps Script writes each one to
 4. Deploy → New deployment → Web app. Execute as **Me**. Who has access: **Anyone**. Copy the web app URL.
 5. Run the `test` function once from the editor and approve the permissions. Check the sheet got a row and you got an email.
 
+### 1b. Lead nurture (5 more minutes, free)
+
+The 7-Day Launch Map and the Launch Call follow-ups run from the same Apps Script project.
+
+1. In the Apps Script editor: File → New → Script, name it `Nurture`, paste `scripts/apps-script/Nurture.gs`.
+2. Run `installTriggers` once and approve the permissions (Gmail is needed to send and to read STOP replies).
+3. Optionally run `previewCopy` and open the log to read every message with sample data.
+
+What it does from then on:
+
+| Who | Email (automatic, from your Google account) | WhatsApp (one tap each, from your morning digest) |
+|---|---|---|
+| New Fit Score lead | Day 0 welcome instantly, then lessons on day 1 to 7, 9am IST | Welcome link emailed to you instantly; lesson links in the 9am digest |
+| Launch Call applicant who hasn't booked | Day 2 story, day 4 question, day 7 slot-hold, day 14 smaller step | Same steps, in the digest |
+
+Each digest line is a `wa.me` link that opens WhatsApp with the message already typed for that person and that day. Ten leads takes about three minutes.
+
+Stopping someone: set their `status` cell to `stopped`, `booked`, `client` or `lost`. Anyone who replies STOP to an email is stopped automatically within the hour.
+
+All copy lives in `Nurture.gs` under `LEAD_SEQUENCE` and `APPLICANT_SEQUENCE`. Edit it there, save, done. No redeploy needed for the triggers; only `doPost` changes need a new web app version.
+
 ### 2. Environment variables (Vercel → Project → Settings → Environment Variables)
 
 | Variable | Value |
@@ -79,6 +100,7 @@ The old WordPress site stays reachable at its host until DNS moves, so there is 
 - `components/Quiz.tsx`, `components/ApplyForm.tsx`: the two client forms.
 - `app/globals.css`: design tokens. Fonts load in `app/layout.tsx`.
 - `scripts/apps-script/Code.gs`: the free lead receiver.
+- `scripts/apps-script/Nurture.gs`: the 7-day email sequence, applicant follow-ups, and the daily WhatsApp digest.
 
 ## Checks
 
