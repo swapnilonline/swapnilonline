@@ -114,7 +114,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
                 Take the free Fit Score <ArrowRight size={18} aria-hidden="true" />
               </Link>
               <Link href="/call" className="btn border-panel-ink/60 text-panel-ink hover:bg-panel-ink/10">
-                Apply for a Launch Call
+                Book your free call
               </Link>
             </div>
           </aside>

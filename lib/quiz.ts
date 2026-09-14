@@ -57,7 +57,7 @@ export const questions: Question[] = [
     options: [
       { value: "do", label: "Do the work for them" },
       { value: "advise", label: "Advise them on what to do" },
-      { value: "teach", label: "Teach them to do it themselves" },
+      { value: "teach", label: "Package what I know so they can buy it and do it themselves" },
     ],
   },
   {
@@ -216,9 +216,9 @@ export const modelCopy: Record<Model, { title: string; why: string; trap: string
     trap: "The trap is vague advice. Consulting sells when it is attached to a specific decision or a specific number.",
   },
   coaching: {
-    title: "Coaching",
-    why: "You want people to be able to do it themselves. Coaching scales better than the other two once you have a repeatable path to walk people down.",
-    trap: "The trap is coaching a topic instead of a transformation. Nobody buys 'marketing coaching'. They buy 'your first 10 customers'.",
+    title: "Digital Products",
+    why: "You want people to be able to do it themselves, so you package what you know: a course, a template kit, a program. Products scale further than the other two once you have a path that already works for real clients.",
+    trap: "The trap is a product about a topic instead of a result. Nobody buys 'a marketing course'. They buy 'your first 10 customers, in 8 weeks'.",
   },
 };
 

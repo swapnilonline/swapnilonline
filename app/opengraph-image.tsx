@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { site } from "@/lib/site";
 
-export const alt = "Turn your skill into paying clients in 90 days. Swapnil Shiwalay.";
+export const alt = "Build a ₹3 lakh a month business from home. Swapnil Shiwalay.";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -40,14 +40,14 @@ export default async function OpenGraphImage() {
           }}
         >
           <div style={{ fontSize: 20, letterSpacing: 4, color: "#A6A6A3" }}>
-            FOR FREELANCERS · CONSULTANTS · SOLOPRENEURS
+            DIGITAL SERVICES · CONSULTING · PRODUCTS
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 22 }}>
             <div style={{ fontSize: 70, fontWeight: 800, lineHeight: 1.04, letterSpacing: -2 }}>
-              Turn your skill into paying clients in 90 days.
+              Build a ₹3 lakh a month business from home.
             </div>
             <div style={{ fontSize: 27, color: "#A6A6A3", lineHeight: 1.35 }}>
-              From home. 1:1 guidance from someone who has done it for 20 years. Ends with a client, or we keep going.
+              A free call maps your skill, positioning, market, offer and earning. Then 7 days or 90 days, 1:1.
             </div>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>

@@ -2,14 +2,23 @@ export const site = {
   name: "Swapnil Shiwalay",
   domain: "swapnilonline.com",
   url: "https://swapnilonline.com",
-  title: "Turn Your Skill Into Paying Clients",
+  title: "Build a ₹3 Lakh a Month Business From Home",
   description:
-    "Your first paying client in 90 days, from home, with 1:1 guidance from someone who has done it for 20 years. For freelancers, consultants and solopreneurs. Ends with a client, or we keep going.",
+    "Start an online business selling digital services, consulting or products, and build it toward ₹3,00,000 a month from home. A free call maps your skill, positioning, market, offer and earning potential. Then a 7-day foundation or a 90-day setup challenge, 1:1.",
   role: "Digital Business Consultant",
   years: "20 years working from home",
   websites: "2,500+ websites developed",
-  program: "HOME → BUSINESS",
-  programSub: "The 1:1 Digital Business Launch Program",
+  program: "The 90-Day Digital Business Setup Challenge",
+  programShort: "90-Day Setup Challenge",
+  programSub: "1:1, from your skill to a business built for ₹3,00,000 a month, from home",
+  programPrice: "₹75,000",
+  programInstalments: "3 × ₹27,500",
+  foundation: "The 7-Day Digital Business Foundation",
+  foundationShort: "7-Day Foundation",
+  foundationPrice: "₹7,500",
+  /** The number the whole offer is designed around. Framed as a target, never a promise. */
+  target: "₹3,00,000 a month",
+  audience: "Anyone who wants to start an online business selling digital services, digital consulting or digital products.",
   /** Booking page shown after a qualified application. Set in .env */
   calUrl: process.env.NEXT_PUBLIC_CAL_URL ?? "",
   /** WhatsApp click-to-chat number in international format, digits only. */

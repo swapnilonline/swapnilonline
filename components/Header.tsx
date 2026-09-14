@@ -35,7 +35,7 @@ export default function Header() {
             </Link>
           ))}
           <Link href="/call" className="btn btn-primary !min-h-[42px]">
-            Apply for a Launch Call
+            Book your free call
           </Link>
         </nav>
 
@@ -72,7 +72,7 @@ export default function Header() {
             ))}
             <li className="pt-2">
               <Link href="/call" onClick={() => setOpen(false)} className="btn btn-primary w-full">
-                Apply for a Launch Call
+                Book your free call
               </Link>
             </li>
           </ul>

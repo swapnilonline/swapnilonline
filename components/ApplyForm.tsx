@@ -80,17 +80,18 @@ export default function ApplyForm({
           Thanks, {f.name.split(" ")[0]}. Let&rsquo;s start smaller.
         </h2>
         <p className="measure text-[18px]">
-          The Launch Call is for people ready to build in the next 90 days, so I&rsquo;ll hold it for
-          now. Two things that will help you today:
+          The free call is for people ready to build in the next 90 days, so I&rsquo;ll hold it for
+          now. The right first step when you are still exploring:
         </p>
         <div className="flex flex-col gap-4 border border-line bg-surface p-6">
-          <p className="font-display text-[20px] font-bold">Offer Design Intensive</p>
+          <p className="font-display text-[20px] font-bold">The 7-Day Digital Business Foundation</p>
           <p className="text-[17px] text-ink-soft">
-            One 90-minute 1:1 session. You leave with a written one-page offer: result, customer,
-            price, timeline. ₹7,500, credited in full toward the program within 60 days.
+            One 1:1 call, then seven days of guided tasks. You finish with a named customer, a chosen
+            model, an offer with a price, the page plan and an earning plan. ₹7,500, credited in
+            full toward the 90-Day Challenge within 60 days.
           </p>
-          <Link href="/program" className="btn btn-ghost self-start">
-            Read about it
+          <Link href="/program#foundation" className="btn btn-ghost self-start">
+            See the Foundation
           </Link>
         </div>
         <p className="text-[17px] text-ink-soft">
@@ -108,8 +109,9 @@ export default function ApplyForm({
           Application received. Pick a time.
         </h2>
         <p className="measure text-[18px]">
-          Thanks, {f.name.split(" ")[0]}. I&rsquo;ll read your answers before we speak. Choose a slot
-          below. You&rsquo;ll get a WhatsApp reminder the day before and an hour before.
+          Thanks, {f.name.split(" ")[0]}. I&rsquo;ll read your answers before we speak, so the thirty
+          minutes go on your potential, positioning, market, offer and earning, not on introductions.
+          Choose a slot below.
         </p>
         {site.calUrl ? (
           <>
@@ -205,7 +207,7 @@ export default function ApplyForm({
           If we&rsquo;re a fit, are you in a position to invest in 1:1 guidance?
         </legend>
         <p className="-mt-1 text-[15px] text-ink-soft">
-          The program starts at ₹75,000, with instalments. Honest answers make the call useful.
+          The Foundation is ₹7,500 and the 90-Day Challenge is ₹75,000 with instalments. Honest answers make the call useful.
         </p>
         <div className="flex flex-col gap-2" role="radiogroup" aria-describedby={errors.ready ? "ready-err" : undefined}>
           {readyOptions.map((o) => (

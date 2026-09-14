@@ -130,7 +130,7 @@ export default async function ResultPage({
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link href={`/call?${callQuery}`} className="btn bg-mark text-accent-ink hover:bg-accent-strong">
-              Apply for a Launch Call <ArrowRight size={18} aria-hidden="true" />
+              Book your free call <ArrowRight size={18} aria-hidden="true" />
             </Link>
             <Link href="/program" className="btn border-panel-ink/60 text-panel-ink hover:bg-panel-ink/10">
               See how the program works

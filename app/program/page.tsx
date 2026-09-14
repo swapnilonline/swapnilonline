@@ -6,67 +6,62 @@ import { site } from "@/lib/site";
 import { ReviewsSection } from "@/components/Reviews";
 
 export const metadata: Metadata = {
-  title: "HOME → BUSINESS, the 1:1 Digital Business Launch Program",
+  title: "The 7-Day Foundation and the 90-Day Setup Challenge",
   description:
-    "90 days of 1:1 work that ends with your first paying client. Your offer written, your website live by week 4, and a guarantee that we keep going until the client is real.",
+    "Two ways to build an online business from home, 1:1: a 7-day foundation for ₹7,500, or the 90-day setup challenge for ₹75,000, built toward ₹3,00,000 a month. Both start with a free call.",
 };
 
 const tiers = [
   {
-    name: "Offer Design Intensive",
+    id: "foundation",
+    name: "The 7-Day Digital Business Foundation",
     price: "₹7,500",
-    per: "one session",
-    who: "One session. You leave with an offer you could sell tomorrow.",
+    per: "7 days · one 1:1 call · daily tasks on WhatsApp",
+    who: "The first six fixes, in a week. For people who want the foundation right before they build.",
     items: [
-      "90 minutes 1:1, on your skill and your last three paid jobs",
-      "A written one-page offer: result, customer, price, timeline",
-      "Fee credited in full toward the program within 60 days",
+      "A 90-minute 1:1 call with Swapnil, then seven days of guided tasks",
+      "Day 1: your customer, named. Your model chosen: services, consulting or products",
+      "Day 3: your offer in one sentence, with a price you have said out loud",
+      "Day 5: the one-page plan and the first five outreach messages",
+      "Day 7: a written earning plan: price × clients × hours, toward ₹3,00,000 a month",
+      "Fee credited in full toward the Challenge within 60 days",
     ],
     core: false,
   },
   {
-    name: "LAUNCH",
+    id: "challenge",
+    name: "The 90-Day Digital Business Setup Challenge",
     price: "₹75,000",
-    per: "90 days · or 3 × ₹27,500 · $950",
-    who: "Stages 1 to 5. Ends with your first paying client.",
+    per: "90 days · or 3 × ₹27,500 · weekly 1:1",
+    who: "The whole build, 1:1, for people who qualify on the free call. Ends with paying clients and the system that brings the next one.",
     items: [
-      "Week 1: a customer you can name",
-      "Week 3: an offer with a price you've said out loud",
-      "Week 4: your website live, built by me",
-      "Week 8: five real conversations started",
-      "Day 90: a paying client, or we keep going at no cost",
+      "Everything in the Foundation, in week 1",
+      "Week 4: your website live, built by me, not assigned as homework",
+      "Week 8: five real conversations and the first yes",
+      "Week 12: proposal, calendar and invoice flow set up from your first sale",
+      "Day 90: paying clients, a repeatable pipeline, and the plan to the number, or we keep going at no cost",
       "12 weekly 1:1 sessions plus WhatsApp on working days",
     ],
     core: true,
-  },
-  {
-    name: "LAUNCH + SCALE",
-    price: "₹1,40,000",
-    per: "6 months · or 6 × ₹25,000 · $1,750",
-    who: "Stages 1 to 7. Ends with a business that runs without you in every seat.",
-    items: [
-      "Everything in Launch",
-      "Month 4: sales, delivery and operations on templates, not memory",
-      "Month 5: prices raised and a second offer sold to existing clients",
-      "Month 6: your first helper hired into a system, not into chaos",
-      "24 weekly 1:1 sessions",
-    ],
-    core: false,
   },
 ];
 
 const faqs = [
   [
+    "Is ₹3,00,000 a month guaranteed?",
+    "No income is guaranteed, and anyone who promises one is lying to you. ₹3 lakh a month is the number the Challenge is designed around, and on the free call we do the arithmetic for your case: your price, times the clients you can serve, times the hours you have. Some people get there in months, some take longer, and the plan shows you which. What is guaranteed is the first paying client, or we keep working.",
+  ],
+  [
     "Is this a course?",
-    "No. There are no videos to watch. Every week we sit down 1:1 and work on your business: your offer, your page, your outreach. You leave each session with something finished.",
+    "No. There are no videos to watch. In both programs we work 1:1 on your business: your offer, your page, your outreach, your pipeline. You leave every session with something finished, not notes.",
   ],
   [
     "I have a full-time job. Can I do this?",
-    "Yes, if you have 5 to 10 hours a week. The program needs 45 minutes with me and about four hours of doing. Many people launch while employed and leave when the business can carry them.",
+    "Yes, if you have 5 to 10 hours a week. The Challenge needs 45 minutes with me and about four hours of doing. Many people build while employed and leave when the business can carry them. The earning plan on the free call is worked out for the hours you actually have.",
   ],
   [
     "What if I don't know what my business would be?",
-    "That is stage 1, and it is where most people start. Take the Fit Score first. If your result says Discover, the Launch Call will focus on finding the one customer who already needs what you do.",
+    "That is what the free call is for. In 30 minutes we identify the potential in your skills and expertise, who would pay for it, how to position it, what the offer is, and what it can earn. Most people arrive with a skill and leave with a business they can describe in one sentence.",
   ],
   [
     "How does the guarantee work?",
@@ -74,15 +69,15 @@ const faqs = [
   ],
   [
     "Can I pay in instalments?",
-    "Yes. Launch is three payments of ₹27,500. Launch + Scale is six payments of ₹25,000. Overseas clients pay in USD.",
+    "Yes. The Challenge is three payments of ₹27,500. The Foundation is a single payment of ₹7,500, credited in full if you join the Challenge within 60 days. Overseas clients pay in USD.",
   ],
   [
     "What if I'm afraid nobody will buy?",
     "Almost everyone is, and it is the most fixable part. You say your price out loud to me in a rehearsal before you say it to a client, we fix the sentence until it sits right, and the first five messages go to people who already know you. If nobody has bought by day 90, we keep going. The fear does not survive the first yes.",
   ],
   [
-    "Why is there an application?",
-    `I take ${site.callsPerWeek} Launch Calls a week and work with around ten clients at a time. The application makes sure the call is useful for both of us.`,
+    "What does 'if you qualify' mean?",
+    `I take ${site.callsPerWeek} free calls a week and work with around ten Challenge clients at a time. You qualify when you have a real skill people already ask you for, five to ten hours a week, and are ready to build in the next 90 days. If not yet, the Foundation is the right first step, and I will say so.`,
   ],
 ];
 
@@ -90,23 +85,22 @@ export default function ProgramPage() {
   return (
     <div className="mx-auto max-w-5xl px-5">
       <section className="flex flex-col gap-6 py-16 sm:py-20">
-        <p className="eyebrow">
-          {site.program} · {site.programSub}
-        </p>
+        <p className="eyebrow">Two programs · both 1:1 · both start with a free call</p>
         <h1 className="max-w-[18ch] text-[40px] font-extrabold sm:text-[56px]">
-          Leave with a business, not a to-do list.
+          From your skill to a business built for {site.target}. From home.
         </h1>
         <p className="measure text-[21px] leading-[1.45]">
-          Ninety days of 1:1 work that ends with a paying client. Consulting, coaching or
-          services. You bring the skill. We build the offer, the page and the first sale
-          together, and I don&rsquo;t stop at day 90 until the client is real.
+          Digital services, digital consulting or digital products. The free call maps your
+          potential, positioning, market, offer and earning. If you qualify, you choose: seven days
+          to lay the foundation, or ninety days to build the whole thing with me, ending with
+          paying clients or we keep going.
         </p>
         <div className="flex flex-col gap-3 sm:flex-row">
           <Link href="/call" className="btn btn-primary">
-            Apply for a Launch Call <ArrowRight size={18} aria-hidden="true" />
+            Book your free call <ArrowRight size={18} aria-hidden="true" />
           </Link>
-          <Link href="/fit" className="btn btn-ghost">
-            Not sure yet? Take the Fit Score
+          <Link href="#foundation" className="btn btn-ghost">
+            Compare the two programs
           </Link>
         </div>
       </section>
@@ -116,28 +110,29 @@ export default function ProgramPage() {
           <p className="eyebrow">What we build, in order</p>
           <h2 className="text-[30px] font-bold sm:text-[36px]">Seven stages. Seven things you&rsquo;ll have.</h2>
           <p className="text-[17px] text-ink-soft">
-            Each stage ends with something real, not a lesson learned. Launch covers stages 1 to 5.
-            Launch + Scale covers all seven. We start wherever you actually are, not at the
-            beginning.
+            Each stage ends with something real, not a lesson learned. The Foundation covers stages
+            1 to 3 in a week. The Challenge covers all seven in ninety days. We start wherever you
+            actually are, not at the beginning.
           </p>
         </div>
         <Journey />
       </section>
 
-      <section id="intensive" className="scroll-mt-6 border-t border-line py-16">
-        <p className="eyebrow">Ways to work together</p>
-        <h2 className="mt-3 text-[30px] font-bold sm:text-[36px]">Pick the outcome you want. The price follows.</h2>
-        <div className="mt-10 grid gap-4 lg:grid-cols-3">
+      <section id="foundation" className="scroll-mt-6 border-t border-line py-16">
+        <p className="eyebrow">Two ways in</p>
+        <h2 className="mt-3 text-[30px] font-bold sm:text-[36px]">Seven days to lay the foundation. Ninety to build the business.</h2>
+        <div className="mt-10 grid gap-4 lg:grid-cols-2">
           {tiers.map((t) => (
             <div
               key={t.name}
-              className={`flex flex-col gap-4 border bg-surface p-7 ${
+              id={t.id}
+              className={`flex scroll-mt-6 flex-col gap-4 border bg-surface p-7 ${
                 t.core ? "border-accent shadow-[inset_0_0_0_1px_var(--accent)]" : "border-line"
               }`}
             >
               {t.core && (
                 <span className="self-start rounded-sm bg-mark px-2 py-0.5 font-mono text-[11px] font-medium uppercase tracking-wider text-accent-ink">
-                  Most people start here
+                  If you qualify on the call
                 </span>
               )}
               <h3 className="font-display text-[22px] font-extrabold">{t.name}</h3>
@@ -161,9 +156,10 @@ export default function ProgramPage() {
         <div className="mt-8 flex flex-col gap-4 border-l-[3px] border-mark bg-mark-soft/60 px-6 py-5">
           <p className="font-display text-[19px] font-bold">You end with a paying client. That&rsquo;s the deal.</p>
           <p className="measure text-[17px]">
-            Attend your sessions, ship what we agree each week, and if you don&rsquo;t have a paying
-            client by day 90, I keep working with you at no cost until you do. Not a refund. A
-            result.
+            In the 90-Day Challenge: attend your sessions, ship what we agree each week, and if you
+            don&rsquo;t have a paying client by day 90, I keep working with you at no cost until you
+            do. Not a refund. A result. {site.target} is the number we build toward; the guarantee
+            is the first client, because everything after that is repetition.
           </p>
         </div>
       </section>
@@ -189,15 +185,16 @@ export default function ProgramPage() {
             Free · 30 minutes · 1:1
           </p>
           <h2 className="max-w-[22ch] text-[32px] font-extrabold text-panel-ink sm:text-[40px]">
-            In 30 minutes, know your next three moves.
+            Start with the free call.
           </h2>
           <p className="max-w-[52ch] text-[18px] text-panel-ink/85">
-            We map your skill to a model, an offer and the first three steps. You leave with a
-            one-page Launch Map whether or not we work together. {site.callsPerWeek} calls a week.
+            Thirty minutes, 1:1. Your skill&rsquo;s potential, your positioning, your target market,
+            your offer, and what it can earn, on one page you keep either way. {site.callsPerWeek}{" "}
+            calls a week.
           </p>
           <div>
             <Link href="/call" className="btn bg-mark text-accent-ink hover:bg-accent-strong">
-              Apply for a Launch Call <ArrowRight size={18} aria-hidden="true" />
+              Book your free call <ArrowRight size={18} aria-hidden="true" />
             </Link>
           </div>
         </div>

@@ -33,7 +33,7 @@ export default function PrivacyPage() {
         <Section title="Why">
           <p>
             To send you your result and the 7-Day Launch Map, to prepare for your call, and to
-            contact you about the HOME → BUSINESS program. You agree to WhatsApp and email
+            contact you about the 7-Day Foundation and the 90-Day Setup Challenge. You agree to WhatsApp and email
             messages when you tick the box on the form. You can stop them at any time by replying
             STOP or emailing the address below.
           </p>

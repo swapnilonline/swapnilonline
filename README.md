@@ -1,6 +1,6 @@
 # swapnilonline.com
 
-The website and 3-step funnel for **HOME → BUSINESS**, the 1:1 Digital Business Launch Program by Swapnil Shiwalay.
+The website and 3-step funnel for Swapnil Shiwalay's 1:1 programs: the 7-Day Digital Business Foundation and the 90-Day Digital Business Setup Challenge.
 
 ## The funnel
 

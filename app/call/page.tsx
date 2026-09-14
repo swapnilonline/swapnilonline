@@ -3,9 +3,9 @@ import ApplyForm from "@/components/ApplyForm";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Apply for a free 30-minute Launch Call",
+  title: "Book your free call: your skill, positioning, market, offer and earning potential",
   description:
-    "In 30 minutes, know your next three moves. We map your skill to a model, an offer and the first steps. You leave with a one-page Launch Map either way.",
+    "A free 30-minute 1:1 call. We identify the potential in your skills and expertise, your positioning, your target market, your offer, and what it can earn from home. You keep the map either way.",
 };
 
 export default async function CallPage({
@@ -22,21 +22,21 @@ export default async function CallPage({
         <aside className="flex flex-col gap-5">
           <p className="eyebrow">Free · 30 minutes · 1:1</p>
           <h1 className="text-[34px] font-extrabold leading-tight sm:text-[40px]">
-            In 30 minutes, know your next three moves.
+            Find out what your skill can earn from home.
           </h1>
           <p className="text-[17px] text-ink-soft">
-            We map your skill to a model, an offer, and the first three steps. You leave with a
-            one-page Launch Map whether or not we work together. If I can&rsquo;t help, I&rsquo;ll
-            say so and tell you what to do instead.
+            Thirty minutes, 1:1, free. You leave with a one-page map whether or not we work
+            together. If I can&rsquo;t help, I&rsquo;ll say so and tell you what to do instead.
           </p>
           <ul className="flex flex-col gap-3 border-t border-line pt-5 text-[16px]">
             {[
-              ["0 to 3 min", "What the call is and isn't"],
-              ["3 to 12", "Where you are, what you've tried, what a good 90 days looks like"],
-              ["12 to 20", "The seven stages against your situation, and your blocking stage"],
-              ["20 to 30", "If I think I can help, how. If not, what to do instead"],
+              ["Potential", "What your skills and expertise can be sold as: services, consulting or products"],
+              ["Positioning", "The one line that makes the right people notice you"],
+              ["Market", "Who pays for this, and who among them pays best"],
+              ["Offer", "The result, for whom, at a price, in a timeframe"],
+              ["Earning", "Price × clients × hours: what this can realistically make, and the path to ₹3,00,000 a month"],
             ].map(([t, d]) => (
-              <li key={t} className="grid grid-cols-[84px_1fr] gap-3">
+              <li key={t} className="grid grid-cols-[96px_1fr] gap-3">
                 <span className="font-mono text-[12.5px] text-ink-soft pt-1">{t}</span>
                 <span>{d}</span>
               </li>

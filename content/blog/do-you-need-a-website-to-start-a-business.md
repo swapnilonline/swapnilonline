@@ -71,7 +71,7 @@ Yes. See point two. The only time to hide the price is for bespoke engagements o
 
 ### Do I need a professional to build it?
 
-Not for the one page. Any builder will do. Where a professional earns their fee is in the words, the structure, and the booking flow. That is why in HOME → BUSINESS the page is built inside the program in week four rather than assigned as homework.
+Not for the one page. Any builder will do. Where a professional earns their fee is in the words, the structure, and the booking flow. That is why in the 90-Day Setup Challenge the page is built inside the program in week four rather than assigned as homework.
 
 ### What if I'm not sure I'm at the Build stage yet?
 

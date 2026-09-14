@@ -75,17 +75,18 @@ export default function Stalls() {
       <div className="mt-10 grid gap-6 border-t-2 border-mark pt-8 lg:grid-cols-[1.3fr_1fr] lg:items-center">
         <div className="flex flex-col gap-3">
           <p className="font-display text-[26px] font-extrabold leading-tight sm:text-[30px]">
-            Every barrier above has a system-level fix. One 90-minute session gives you all six.
+            Every barrier above has a system-level fix. The 7-Day Foundation gives you all six.
           </p>
           <p className="text-[17px] text-ink-soft">
-            The Offer Design Intensive: ninety minutes, 1:1, and you leave with a named customer, a
-            chosen model, an offer with a price, the page plan, the first five messages, and the
-            price rehearsed out loud. ₹7,500, credited in full if you join the program within 60 days.
+            The 7-Day Digital Business Foundation: one 1:1 call with me, then seven days of daily
+            tasks on WhatsApp. You finish with a named customer, a chosen model, an offer with a
+            price, the page plan, the first five messages, and the price said out loud. ₹7,500,
+            credited in full if you join the 90-Day Challenge within 60 days.
           </p>
         </div>
         <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-          <Link href="/program#intensive" className="btn btn-primary">
-            See the 90-minute Intensive <ArrowRight size={18} aria-hidden="true" />
+          <Link href="/program#foundation" className="btn btn-primary">
+            See the 7-Day Foundation <ArrowRight size={18} aria-hidden="true" />
           </Link>
           <Link href="/fit" className="btn btn-ghost">
             Not sure which is yours? Take the Fit Score

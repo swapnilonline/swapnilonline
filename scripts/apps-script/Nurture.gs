@@ -174,7 +174,7 @@ That's the whole map: Discover, Design, Package, Build, Launch, Systemize, Scale
 
 You can walk it alone. Most people take two to three years and stall at stage 3 or stage 5.
 
-In HOME → BUSINESS we do stages 1 to 5 together in 90 days, one 45-minute session a week, and I build your website inside the program instead of assigning it as homework. There's a first-client guarantee.
+In the 90-Day Digital Business Setup Challenge we do all seven stages together, one 45-minute session a week, built toward ₹3,00,000 a month from home, and I build your website inside the program instead of assigning it as homework. There's a first-client guarantee. If you'd rather start smaller, the 7-Day Foundation lays the groundwork for ₹7,500.
 
 This is the last message from me for now. If you'd like to talk it through: ${CALL_URL}
 
@@ -183,7 +183,7 @@ Whatever you decide, start with the customer's name from day 1.
 Swapnil
 ${SITE}`,
     whatsapp:
-`Stage 7: Scale. That's the whole map. You can walk it alone; most people take 2–3 years and stall at stage 3 or 5. In HOME → BUSINESS we do stages 1–5 together in 90 days, and I build your website. Last message from me for now. If you want to talk it through: ${CALL_URL}`,
+`Stage 7: Scale. That's the whole map. You can walk it alone; most people take 2–3 years and stall at stage 3 or 5. In the 90-Day Setup Challenge we do all seven stages together, and I build your website. Or start with the 7-Day Foundation. Last message from me for now. If you want to talk it through: ${CALL_URL}`,
   },
 };
 
@@ -239,15 +239,15 @@ Swapnil`,
     email:
 `{name},
 
-Closing the loop. If the program isn't the right size right now, the Offer Design Intensive is a smaller first step: one 90-minute session, you leave with a written one-page offer. Rs 7,500, credited in full toward the program within 60 days.
+Closing the loop. If the program isn't the right size right now, the 7-Day Digital Business Foundation is a smaller first step: one call, seven days of guided tasks, you leave with your customer, model, offer, page plan and earning plan. Rs 7,500, credited in full toward the Challenge within 60 days.
 
-If you'd like it, reply "intensive" and I'll send the details.
+If you'd like it, reply "foundation" and I'll send the details.
 
 Either way, I'll send a short note once a month. Good luck with stage 1.
 
 Swapnil`,
     whatsapp:
-`{name}, closing the loop. If the program isn't the right size right now, the Offer Design Intensive is a smaller first step: one 90-min session, you leave with a written one-page offer. Rs 7,500, credited toward the program within 60 days. Reply "intensive" if you'd like it.`,
+`{name}, closing the loop. If the program isn't the right size right now, the 7-Day Foundation is a smaller first step: one call plus seven days of guided tasks. Rs 7,500, credited toward the Challenge within 60 days. Reply "foundation" if you'd like it.`,
   },
 };
 
