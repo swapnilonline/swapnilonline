@@ -13,6 +13,17 @@ Goal: rank for the questions people search in the weeks before they would take t
 | First client without ads | Generic: network, cold outreach, communities, portfolio. | A specific message, a specific number of people, a specific week. |
 | Do I need a website to start | Web-design agencies selling packages. | 2,500 websites of evidence that one page beats a brand. |
 
+## Second batch: digital marketing questions (traffic, leads, funnels, digital products)
+
+| Cluster | What ranks now | The gap we fill |
+|---|---|---|
+| Increase website traffic without paid ads | Agency listicles: SEO, content, social, local SEO, forums. Written for shops and media sites. | A service business needs thirty right visitors, not ten thousand. Direct sends first, search second, one platform third. |
+| Get clients from LinkedIn as a consultant | "Post every day, be authentic" plus automation tools. | A three-hour-a-week method: profile as a page, two proof posts, ten messages, comments where buyers are. |
+| Generate leads for a service business in India | Lead-list sellers and pay-per-lead platforms. | Five free sources ranked by quality, with a cost and yield table, and why lists fail. |
+| What is a lead magnet | Format lists: ebook, checklist, webinar. | The one rule: it must be the first ten percent of the paid work. The follow-up is the product. |
+| What is a sales funnel, how to build one | Seven-stage diagrams and software pitches. | A three-step funnel with real numbers, using this site's own funnel as the worked example. |
+| Create and sell digital products in India | Product-idea lists and platform comparisons. | A product comes from a service you already deliver. Rupee price points, UPI, and where it slots into the funnel. |
+
 ## Keyword map
 
 Primary keyword first, then the long-tail variants each article is written to catch.
@@ -24,6 +35,13 @@ Primary keyword first, then the long-tail variants each article is written to ca
 5. **how to get your first client** · first consulting client, first freelance client without ads, referral message template
 6. **do i need a website to start a business** · one page website for consultants, freelancer website india, simple website for coaching business
 
+7. **how to increase website traffic without paid ads** · organic traffic india, free ways to get website traffic, traffic for consultants
+8. **how to get clients from linkedin** · linkedin for consultants india, linkedin posting strategy, linkedin lead generation freelancers
+9. **how to generate leads for a service business** · lead generation small business india, leads without buying lists
+10. **what is a lead magnet** · lead magnet examples for consultants, lead magnet ideas for coaches
+11. **what is a sales funnel** · how to build a sales funnel, sales funnel for coaches, funnel for consultants
+12. **how to create and sell digital products in india** · digital products to sell online india, sell templates online india
+
 ## Publishing calendar
 
 | Week | Post | Promotion |
@@ -34,6 +52,13 @@ Primary keyword first, then the long-tail variants each article is written to ca
 | 4 | Pricing in India | LinkedIn carousel: hourly vs offer, with the ₹45,000 clinic example |
 | 5 | Freelancer to business | Instagram reel: "you don't have a client problem, you have an offer problem" |
 | 6 | The one-page website | Post the four-section layout as an image |
+
+| 7 | What is a sales funnel | LinkedIn: the three-step table as an image |
+| 8 | Generate leads without buying lists | LinkedIn: the cost-and-yield table |
+| 9 | LinkedIn for consultants | LinkedIn, naturally: the weekly schedule |
+| 10 | What is a lead magnet | Instagram carousel: the one rule |
+| 11 | Traffic without paid ads | Quora answer + link |
+| 12 | Digital products from a service | LinkedIn: the three worked examples |
 
 Then one post every two weeks. Next six topics, in order: "How to write an offer in one sentence", "Launch Call vs discovery call: what to say in the first 30 minutes", "Retainers for freelancers in India", "Proposal template for consultants", "How much time does a side business need", "LinkedIn for consultants in India who hate posting".
 
