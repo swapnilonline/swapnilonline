@@ -4,6 +4,7 @@ import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { site, personalBrands, corporateBrandsExtra } from "@/lib/site";
 import { portrait } from "@/lib/assets";
+import ParallaxBand from "@/components/ParallaxBand";
 import { AllReviews } from "@/components/Reviews";
 
 export const metadata: Metadata = {
@@ -132,19 +133,14 @@ export default function AboutPage() {
             person building a business. Nothing in {site.program} is jargon you have to decode.
           </p>
         </div>
-        {/* Full-bleed: breaks out of the 5xl column to run edge to edge. */}
-        <div className="relative left-1/2 mt-10 w-screen -translate-x-1/2">
-          <Image
+        <div className="mt-10">
+          <ParallaxBand
             src="/mithibai-wide.jpg"
             alt="Swapnil with a group of students in front of the SVKM and Mithibai College sign"
             width={1774}
             height={887}
-            sizes="100vw"
-            className="h-auto w-full"
+            caption="With students at SVKM\u2019s Mithibai College, Vile Parle, Mumbai."
           />
-          <p className="mx-auto mt-3 max-w-5xl px-5 font-mono text-[12.5px] text-ink-soft">
-            With students at SVKM&rsquo;s Mithibai College, Vile Parle, Mumbai.
-          </p>
         </div>
       </section>
 
