@@ -54,9 +54,9 @@ export const corporateBrandsExtra = [
 ] as const;
 
 export const nav = [
+  { href: "/about", label: "About" },
   { href: "/program", label: "Program" },
   { href: "/blog", label: "Blog" },
-  { href: "/about", label: "About" },
   { href: "/fit", label: "Fit Score" },
 ] as const;
 
