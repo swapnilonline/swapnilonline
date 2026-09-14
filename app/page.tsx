@@ -5,6 +5,7 @@ import Journey from "@/components/Journey";
 import { site } from "@/lib/site";
 import { segmentCopy } from "@/lib/quiz";
 import { ReviewsSection, TrustLine } from "@/components/Reviews";
+import VideoSection from "@/components/VideoSection";
 
 export default function Home() {
   return (
@@ -80,6 +81,17 @@ export default function Home() {
           </p>
         </div>
       </section>
+
+      {site.homeVideoId && (
+        <VideoSection
+          videoId={site.homeVideoId}
+          title="Consulting, Coaching or Services: which business fits you?"
+          eyebrow="Watch"
+          minutes="3 min"
+          heading="The three business models, and how to pick yours."
+          body="Same skill, three businesses. In three minutes Swapnil walks through Consulting, Coaching and Services, who each one suits, and the one trap in each. Then take the Fit Score to see which is yours."
+        />
+      )}
 
       {/* Who it's for */}
       <section className="border-t border-line py-16">
