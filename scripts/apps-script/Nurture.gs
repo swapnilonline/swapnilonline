@@ -45,7 +45,7 @@ const LEAD_SEQUENCE = {
     email:
 `Hi {name},
 
-Your Fit Score says {model} business, {stage} stage. That is a real starting point, not a label. It tells us which of the seven stages is blocking you, and that is where we start.
+Your Fit Score is {score}/14, lane: {lane}. Your weakest stage is {weakest}. That is a real starting point, not a label. It tells us exactly where to begin, and the seven lessons below start there.
 
 Over the next seven days I'll send you one short lesson a day, one per stage, so you can see the whole road from where you are to a business that runs.
 
@@ -59,7 +59,7 @@ Lesson 1 arrives tomorrow morning.
 Swapnil
 20 years working from home · 2,500+ websites developed`,
     whatsapp:
-`Hi {name}, Swapnil here. Your Fit Score says {model} at the {stage} stage. Over the next 7 days I'll send you one short lesson a day, one per stage, so you can see the whole road from where you are to a business that runs. Reply STOP anytime. Lesson 1 tomorrow morning.`,
+`Hi {name}, Swapnil here. Your Fit Score is {score}/14, {lane}, weakest stage {weakest}. Over the next 7 days I'll send you one short lesson a day, one per stage, so you can see the whole road from where you are to a business that runs. Reply STOP anytime. Lesson 1 tomorrow morning.`,
   },
   1: {
     subject: "Day 1 · Discover: pick a customer, not an idea",
@@ -174,7 +174,7 @@ That's the whole map: Discover, Design, Package, Build, Launch, Systemize, Scale
 
 You can walk it alone. Most people take two to three years and stall at stage 3 or stage 5.
 
-In the 90-Day Digital Business Setup Challenge we do all seven stages together, one 45-minute session a week, built toward a 6-figure recurring income from home, without a job, and I build your website inside the program instead of assigning it as homework. There's a first-client guarantee. If you'd rather start smaller, the 7-Day Foundation is seven days of hand-holding before launch, for 100% clarity on your digital business, at ₹7,500.
+With me, 1:1, we do all seven stages together, one 45-minute session a week, built toward a 6-figure recurring income from home, without a job, and I build your website with you instead of assigning it as homework. There's a first-client guarantee. The details are shared with people who qualify on the Fit Score and on the free call.
 
 This is the last message from me for now. If you'd like to talk it through: ${CALL_URL}
 
@@ -183,14 +183,14 @@ Whatever you decide, start with the customer's name from day 1.
 Swapnil
 ${SITE}`,
     whatsapp:
-`Stage 7: Scale. That's the whole map. You can walk it alone; most people take 2–3 years and stall at stage 3 or 5. In the 90-Day Setup Challenge we do all seven stages together, and I build your website. Or start with the 7-Day Foundation. Last message from me for now. If you want to talk it through: ${CALL_URL}`,
+`Stage 7: Scale. That's the whole map. You can walk it alone; most people take 2–3 years and stall at stage 3 or 5. With me, 1:1, we do all seven stages together, and I build your website. Details for people who qualify. Last message from me for now. If you want to talk it through: ${CALL_URL}`,
   },
 };
 
 const MODEL_TRAPS = {
   services: "pricing by the hour. Hours are capped, outcomes are not.",
   consulting: "vague advice. Consulting sells when it is attached to a specific decision or number.",
-  coaching: "coaching a topic instead of a transformation. Nobody buys 'marketing coaching'; they buy 'your first 10 customers'.",
+  products: "a product about a topic instead of a result. Nobody buys 'a marketing course'; they buy 'your first 10 customers, in 8 weeks'.",
 };
 
 /** Launch Call applicants who have not booked. Days counted from the application. */
@@ -239,9 +239,9 @@ Swapnil`,
     email:
 `{name},
 
-Closing the loop. If the program isn't the right size right now, the 7-Day Digital Business Foundation is a smaller first step: seven days of hand-holding before launch, and you finish with 100% clarity on your digital business. Rs 7,500, credited in full toward the Challenge within 60 days.
+Closing the loop. If the program isn't the right size right now, there is a smaller first step: seven days of hand-holding before launch, and you finish with 100% clarity on your digital business.
 
-If you'd like it, reply "foundation" and I'll send the details.
+If you'd like the details, reply "foundation" and I'll send them.
 
 Either way, I'll send a short note once a month. Good luck with stage 1.
 
@@ -317,9 +317,10 @@ function nurtureSheet(name, sequence, atCol, digest, bucket) {
 /** Called from Code.gs when a lead arrives: instant welcome email + a WhatsApp welcome in tomorrow's digest. */
 function onNewLead(d) {
   const msg = LEAD_SEQUENCE[0];
+  const r = d.result || {};
   const ctx = context({
     name: d.name, email: d.email, whatsapp: d.whatsapp,
-    segment: (d.result || {}).segment, model: (d.result || {}).model, stage: (d.result || {}).stage,
+    lane: r.lane, score: r.total, weakest: r.weakest, model: r.model,
     skill: (d.answers || {}).skill,
   });
   if (d.email) {
@@ -332,7 +333,7 @@ function onNewLead(d) {
   if (d.whatsapp && NOTIFY_EMAIL) {
     const link = waLink(d.whatsapp, fill(msg.whatsapp, ctx));
     MailApp.sendEmail({ to: NOTIFY_EMAIL, subject: "New lead: " + d.name + " · send WhatsApp welcome",
-      htmlBody: "<p><b>" + esc(d.name) + "</b> · " + esc(ctx.segment) + " · " + esc(ctx.model) + " · " + esc(ctx.stage) + "</p>" +
+      htmlBody: "<p><b>" + esc(d.name) + "</b> · " + esc(ctx.score) + "/14 · " + esc(ctx.lane) + " · weakest: " + esc(ctx.weakest) + " · " + esc(ctx.model) + "</p>" +
                 "<p>Skill: " + esc(ctx.skill) + "</p>" +
                 "<p><a href=\"" + link + "\">Send the WhatsApp welcome</a> (opens WhatsApp with the message typed)</p>" });
   }
@@ -393,19 +394,27 @@ function processStops() {
 /* Helpers                                                            */
 /* ------------------------------------------------------------------ */
 
+const LANE_NAMES = { challenge: "Qualified", foundation: "Almost there", notyet: "Not yet" };
+const STAGE_NAMES = { person: "ONE PERSON", problem: "ONE PROBLEM", product: "ONE PRODUCT", promise: "ONE PROMISE", proof: "PROOF", capacity: "CAPACITY", commitment: "COMMITMENT" };
+const MODEL_NAMES = { services: "Digital services", consulting: "Digital consulting", products: "Digital products" };
+
 function context(rec) {
-  const model = String(rec.model || "").toLowerCase();
   const first = String(rec.name || "").trim().split(/\s+/)[0] || "there";
-  const r = { seg: rec.segment, model: rec.model, stage: rec.stage, blocker: rec.blocker, hours: rec.hours };
-  const q = Object.keys(r).filter(k => r[k]).map(k => k + "=" + encodeURIComponent(r[k])).join("&");
+  const lane = String(rec.lane || "foundation");
+  const weakest = String(rec.weakest || "person");
+  const model = String(rec.model || "services").toLowerCase();
   return {
     name: first,
-    segment: cap(rec.segment),
-    model: cap(rec.model),
-    stage: cap(rec.stage),
+    lane: LANE_NAMES[lane] || lane,
+    score: rec.score !== undefined && rec.score !== "" ? String(rec.score) : "",
+    weakest: STAGE_NAMES[weakest] || weakest,
+    model: MODEL_NAMES[model] || model,
+    // Kept for older templates.
+    stage: STAGE_NAMES[weakest] || weakest,
+    segment: LANE_NAMES[lane] || lane,
     skill: rec.skill || "your skill",
     model_trap: MODEL_TRAPS[model] || MODEL_TRAPS.services,
-    result_url: SITE + "/fit/result?" + q,
+    result_url: SITE + "/fit",
     cal_url: (typeof CAL_URL !== "undefined" && CAL_URL) || "https://calendly.com/swapnilonline/launch-call",
     swapnil: FROM_NAME,
   };
@@ -431,7 +440,7 @@ function esc(s) { return String(s || "").replace(/[&<>"]/g, c => ({ "&": "&amp;"
 
 /** Preview every message for a sample lead in the log, without sending anything. */
 function previewCopy() {
-  const ctx = context({ name: "Priya Nair", segment: "freelancer", model: "services", stage: "package", skill: "I design websites for small clinics" });
+  const ctx = context({ name: "Priya Nair", lane: "foundation", score: 9, weakest: "promise", model: "services", skill: "I design websites for small clinics" });
   Object.keys(LEAD_SEQUENCE).forEach(d => {
     Logger.log("=== LEAD DAY " + d + " · " + fill(LEAD_SEQUENCE[d].subject, ctx) + "\n" + fill(LEAD_SEQUENCE[d].email, ctx) + "\n--- WhatsApp:\n" + fill(LEAD_SEQUENCE[d].whatsapp, ctx));
   });

@@ -95,7 +95,8 @@ export default function Quiz() {
           className="flex flex-col gap-6"
         >
           <fieldset className="flex flex-col gap-5">
-            <legend className="text-[28px] font-bold leading-tight sm:text-[34px]">{q.prompt}</legend>
+            <p className="eyebrow">{q.eyebrow}</p>
+            <legend className="text-[26px] font-bold leading-tight sm:text-[32px]">{q.prompt}</legend>
             {q.help && <p className="text-[17px] text-ink-soft">{q.help}</p>}
 
             {q.kind === "choice" ? (
@@ -157,7 +158,7 @@ export default function Quiz() {
               <ArrowLeft size={18} aria-hidden="true" /> Back
             </button>
             <button type="submit" className="btn btn-primary">
-              {step === total - 1 ? "See my result" : "Next"} <ArrowRight size={18} aria-hidden="true" />
+              {step === total - 1 ? "Get my score" : "Next"} <ArrowRight size={18} aria-hidden="true" />
             </button>
           </div>
         </form>
@@ -171,12 +172,13 @@ export default function Quiz() {
           </div>
           <div className="flex flex-col gap-3">
             <h2 className="text-[28px] font-bold leading-tight sm:text-[34px]">
-              Where should I send your result and the Blueprint?
+              Your score is ready. Where should I send it?
             </h2>
             <p className="measure text-[17px] text-ink-soft">
-              Your result is on the next page, with a free copy of The Digital Business Blueprint.
-              Over the next seven days I&rsquo;ll also send one short lesson a day, one per stage,
-              so you know exactly what to do next. Reply STOP anytime.
+              Your Fit Score out of 14, your lane, and your map across all seven stages are on the
+              next page, with a free copy of The Digital Business Blueprint. Over the next seven
+              days I&rsquo;ll also send one short lesson a day, starting with your weakest stage.
+              Reply STOP anytime.
             </p>
           </div>
 

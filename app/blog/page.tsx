@@ -50,7 +50,7 @@ export default function BlogIndex() {
           </h2>
           <div>
             <Link href="/fit" className="btn bg-mark text-accent-ink hover:bg-accent-strong">
-              Take the free Fit Score <ArrowRight size={18} aria-hidden="true" />
+              Check your eligibility <ArrowRight size={18} aria-hidden="true" />
             </Link>
           </div>
         </div>

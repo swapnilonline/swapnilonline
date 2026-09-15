@@ -81,18 +81,17 @@ export default function ApplyForm({
         </h2>
         <p className="measure text-[18px]">
           The free call is for people ready to build in the next 90 days, so I&rsquo;ll hold it for
-          now. The right first step when you are still exploring:
+          now. The right first step while you are exploring:
         </p>
         <div className="flex flex-col gap-4 border border-line bg-surface p-6">
-          <p className="font-display text-[20px] font-bold">The 7-Day Digital Business Foundation</p>
+          <p className="font-display text-[20px] font-bold">Work your weakest stage, then retake the Fit Score</p>
           <p className="text-[17px] text-ink-soft">
-            Seven days of hand-holding with Swapnil before you launch. You finish with 100% clarity
-            on your digital business: a named customer, a chosen model, an offer with a price, the
-            page plan and a recurring-income plan. ₹7,500, credited in full toward the 90-Day
-            Challenge within 60 days.
+            The Blueprint has a worksheet for every stage of the framework. Spend this month on the
+            one your score marked, retake the score in 30 days, and the call opens the moment you
+            qualify.
           </p>
-          <Link href="/program#foundation" className="btn btn-ghost self-start">
-            See the Foundation
+          <Link href="/fit" className="btn btn-ghost self-start">
+            Back to the Fit Score
           </Link>
         </div>
         <p className="text-[17px] text-ink-soft">
@@ -208,7 +207,7 @@ export default function ApplyForm({
           If we&rsquo;re a fit, are you in a position to invest in 1:1 guidance?
         </legend>
         <p className="-mt-1 text-[15px] text-ink-soft">
-          The Foundation is ₹7,500 and the 90-Day Challenge is ₹75,000 with instalments. Honest answers make the call useful.
+          Honest answers make the call useful. The details and the numbers are shared on the call.
         </p>
         <div className="flex flex-col gap-2" role="radiogroup" aria-describedby={errors.ready ? "ready-err" : undefined}>
           {readyOptions.map((o) => (

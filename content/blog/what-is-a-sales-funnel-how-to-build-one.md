@@ -23,13 +23,13 @@ The standard funnel diagram has awareness, interest, consideration, intent, eval
 
 ## The funnel behind this site, as a worked example
 
-I run exactly this funnel for the 90-Day Digital Business Setup Challenge, so here it is with the real parts.
+I run exactly this funnel for my own 1:1 program, so here it is with the real parts.
 
 **Step 1, Attract.** An eight-question quiz, [the Fit Score](/fit), that tells a person their business model and the stage blocking them. It is the first thing done on a paid call, given away. People leave a name, WhatsApp number and email to see their result, and they get a PDF, [The Digital Business Blueprint](/digital-business-blueprint.pdf), with it.
 
 **Step 2, Convert.** Seven short messages over seven days, one per stage of the journey, each teaching one thing. Day three invites people to book a free thirty-minute call. The [application](/call) asks about their skill, their goals, hours available and whether they are in a position to invest. People who say "just exploring" get a smaller offer instead of a calendar slot.
 
-**Step 3, Enrol.** The call diagnoses the stage, draws the seven stages against their situation, and, if it fits, offers the program once, clearly, with the price. The person leaves with a one-page Launch Map whether or not they join.
+**Step 3, Enrol.** The call diagnoses the stage, draws the seven stages against their situation, and, if it fits, shares the program once, clearly. The person leaves with a one-page Launch Map whether or not they join.
 
 Three steps. One offer at the end. Every piece of it exists to get one person onto one call.
 

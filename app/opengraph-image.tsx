@@ -47,7 +47,7 @@ export default async function OpenGraphImage() {
               A 6-figure recurring income. From home, without a job.
             </div>
             <div style={{ fontSize: 27, color: "#A6A6A3", lineHeight: 1.35 }}>
-              A free call maps your skill, positioning, market, offer and earning. Then 7 days of hand-holding, or 90 days, 1:1.
+              Digital services, consulting or products. Check your eligibility in three minutes.
             </div>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>

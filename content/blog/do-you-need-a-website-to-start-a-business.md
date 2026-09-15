@@ -33,7 +33,7 @@ One sentence: the result, for whom, at a price, in a timeframe. "A five-page cli
 
 One. A result, a review, or a before-and-after. "Dr. Mehta's clinic went from zero online enquiries to eleven a month." A screenshot of a WhatsApp message saying thank you counts. A logo wall of twelve brands you have never worked with does not.
 
-If you have no proof yet, use a promise instead: "If you don't have a paying client by day 90, I keep working until you do." That is the [first-client guarantee](/program) on this site, and it exists because proof takes time and a promise does not.
+If you have no proof yet, use a promise instead: "If you don't have a paying client by day 90, I keep working until you do." That is the first-client guarantee behind the program on this site, and it exists because proof takes time and a promise does not.
 
 ### 4. One way to book you
 
@@ -71,7 +71,7 @@ Yes. See point two. The only time to hide the price is for bespoke engagements o
 
 ### Do I need a professional to build it?
 
-Not for the one page. Any builder will do. Where a professional earns their fee is in the words, the structure, and the booking flow. That is why in the 90-Day Setup Challenge the page is built inside the program in week four rather than assigned as homework.
+Not for the one page. Any builder will do. Where a professional earns their fee is in the words, the structure, and the booking flow. That is why, when I work with someone 1:1, the page is built together in week four rather than assigned as homework.
 
 ### What if I'm not sure I'm at the Build stage yet?
 

@@ -8,7 +8,8 @@ import { ReviewsSection } from "@/components/Reviews";
 export const metadata: Metadata = {
   title: "The 7-Day Foundation and the 90-Day Setup Challenge",
   description:
-    "Two ways to build an online business from home, 1:1: a 7-day foundation for ₹7,500, or the 90-day setup challenge for ₹75,000, built toward a 6-figure recurring income. Both start with a free call.",
+    "Program details for people who qualified on the Fit Score.",
+  robots: { index: false, follow: false },
 };
 
 const tiers = [
@@ -85,7 +86,7 @@ export default function ProgramPage() {
   return (
     <div className="mx-auto max-w-5xl px-5">
       <section className="flex flex-col gap-6 py-16 sm:py-20">
-        <p className="eyebrow">Two programs · both 1:1 · both start with a free call</p>
+        <p className="eyebrow">Program details · for people who qualified on the Fit Score</p>
         <h1 className="max-w-[18ch] text-[40px] font-extrabold sm:text-[56px]">
           From your skill to a 6-figure recurring income. From home, without a job.
         </h1>
@@ -99,8 +100,8 @@ export default function ProgramPage() {
           <Link href="/call" className="btn btn-primary">
             Book your free call <ArrowRight size={18} aria-hidden="true" />
           </Link>
-          <Link href="#foundation" className="btn btn-ghost">
-            Compare the two programs
+          <Link href="/fit" className="btn btn-ghost">
+            Haven&rsquo;t taken the Fit Score? Start there
           </Link>
         </div>
       </section>

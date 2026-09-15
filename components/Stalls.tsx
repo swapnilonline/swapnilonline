@@ -75,22 +75,17 @@ export default function Stalls() {
       <div className="mt-10 grid gap-6 border-t-2 border-mark pt-8 lg:grid-cols-[1.3fr_1fr] lg:items-center">
         <div className="flex flex-col gap-3">
           <p className="font-display text-[26px] font-extrabold leading-tight sm:text-[30px]">
-            Every barrier above has a system-level fix. The 7-Day Foundation gives you all six.
+            Every barrier above has a system-level fix. First, find out if you&rsquo;re eligible.
           </p>
           <p className="text-[17px] text-ink-soft">
-            The 7-Day Digital Business Foundation: seven days of hand-holding with me before you
-            launch. You finish with 100% clarity on your digital business: a named customer, a
-            chosen model, an offer with a price, the page plan, the first five messages, and the
-            price said out loud. ₹7,500, credited in full if you join the 90-Day Challenge within
-            60 days.
+            The Fit Score checks all seven stages of the framework in three minutes. Qualified
+            people get the fixes, the program details, and a free call. Everyone gets the Blueprint
+            and the one thing to do this week.
           </p>
         </div>
         <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
-          <Link href="/program#foundation" className="btn btn-primary">
-            See the 7-Day Foundation <ArrowRight size={18} aria-hidden="true" />
-          </Link>
-          <Link href="/fit" className="btn btn-ghost">
-            Not sure which is yours? Take the Fit Score
+          <Link href="/fit" className="btn btn-primary">
+            Check your eligibility <ArrowRight size={18} aria-hidden="true" />
           </Link>
         </div>
       </div>

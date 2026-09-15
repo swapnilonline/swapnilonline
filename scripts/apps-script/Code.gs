@@ -46,10 +46,12 @@ function leadRow(b) {
   const d = b.data || {};
   const a = d.answers || {};
   const r = d.result || {};
+  const sc = r.scores || {};
   return [
     b.at, d.name, d.whatsapp, d.email,
-    r.segment, r.model, r.stage, r.blocker, r.hours,
-    a.skill, a.situation, a.how, a.paid, a.offer, a.website,
+    r.lane, r.total, r.weakest, r.model,
+    sc.person, sc.problem, sc.product, sc.promise, sc.proof, sc.capacity, sc.commitment,
+    a.skill, a.hours, a.ready,
     d.source || "", "new", "", "",
   ];
 }
@@ -63,8 +65,9 @@ function applicationRow(b) {
 }
 
 const HEADERS = {
-  leads: ["at", "name", "whatsapp", "email", "segment", "model", "stage", "blocker", "hours",
-          "skill", "situation", "how", "paid", "offer", "website", "source", "status", "nurture_day", "last_sent"],
+  leads: ["at", "name", "whatsapp", "email", "lane", "score", "weakest", "model",
+          "s_person", "s_problem", "s_product", "s_promise", "s_proof", "s_capacity", "s_commitment",
+          "skill", "hours", "ready", "source", "status", "nurture_day", "last_sent"],
   applications: ["at", "name", "whatsapp", "email", "skill", "ninety_days", "hours", "ready",
                  "notes", "segment", "stage", "status", "nurture_day", "last_sent"],
 };
@@ -84,8 +87,8 @@ function notify(type, b) {
   if (!NOTIFY_EMAIL) return;
   const d = b.data || {};
   const subject = type === "applications"
-    ? "Launch Call application: " + d.name + " (" + d.ready + ")"
-    : "New Fit Score lead: " + d.name + " (" + ((d.result || {}).segment || "") + ")";
+    ? "Free call application: " + d.name + " (" + d.ready + ")"
+    : "New Fit Score lead: " + d.name + " · " + ((d.result || {}).total ?? "?") + "/14 · " + ((d.result || {}).lane || "");
   const lines = Object.keys(d).map(function (k) {
     const v = d[k];
     return k + ": " + (typeof v === "object" ? JSON.stringify(v) : v);
@@ -103,7 +106,9 @@ function test() {
     postData: { contents: JSON.stringify({
       type: "lead", at: new Date().toISOString(), secret: SECRET,
       data: { name: "Test Lead", whatsapp: "+919999999999", email: "test@example.com",
-              answers: { skill: "I design websites" }, result: { segment: "freelancer", model: "services", stage: "package" }, source: "test" },
+              answers: { skill: "I design websites", hours: "5to10", ready: "now" },
+              result: { lane: "foundation", total: 9, weakest: "promise", model: "services",
+                        scores: { person: 2, problem: 1, product: 2, promise: 0, proof: 2, capacity: 2, commitment: 0 } }, source: "test" },
     }) },
     parameter: {},
   };

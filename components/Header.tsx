@@ -34,8 +34,8 @@ export default function Header() {
               {n.label}
             </Link>
           ))}
-          <Link href="/call" className="btn btn-primary !min-h-[42px]">
-            Book your free call
+          <Link href="/fit" className="btn btn-primary !min-h-[42px]">
+            Check your eligibility
           </Link>
         </nav>
 
@@ -71,8 +71,8 @@ export default function Header() {
               </li>
             ))}
             <li className="pt-2">
-              <Link href="/call" onClick={() => setOpen(false)} className="btn btn-primary w-full">
-                Book your free call
+              <Link href="/fit" onClick={() => setOpen(false)} className="btn btn-primary w-full">
+                Check your eligibility
               </Link>
             </li>
           </ul>
