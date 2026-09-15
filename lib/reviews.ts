@@ -6,9 +6,9 @@
 
 export const trustpilot = {
   url: "https://www.trustpilot.com/review/swapnilonline.com",
-  score: 4.3,
+  score: 4.4,
   label: "Excellent", // Trustpilot's own label for this score
-  count: 9,
+  count: 11,
   fiveStarShare: 100,
   claimedSince: "December 2020",
 } as const;
@@ -51,6 +51,27 @@ export function placeOf(r: Review): string {
 }
 
 export const reviews: Review[] = [
+  {
+    name: "DM",
+    country: "GB",
+    where: "United Kingdom",
+    date: "Sep 15, 2026",
+    title: "Exceptional remote support and expertise",
+    quote:
+      "You put so much time and effort into getting the website, email, and payments set up, and it really shows. I so appreciate how patient you were with me and how you just 'got' what I was trying to do.",
+    full: "Hey Swapnil, I just wanted to send a quick note to say a massive thank you. You put so much time and effort into getting the website, email, and payments set up, and it really shows. I so appreciate how patient you were with me and how you just 'got' what I was trying to do. Thanks for walking me through everything—I'm definitely going to recommend you to everyone I know.",
+    relationship: "Website, email and payments set up remotely",
+    featured: true,
+  },
+  {
+    name: "Aslam Keyi",
+    country: "IN",
+    date: "Sep 16, 2026",
+    title: "Innovative and visionary",
+    quote: "Great work as Usual ,For the last 12 years ,Amazing journey .",
+    full: "Great work as Usual ,For the last 12 years ,Amazing journey .",
+    relationship: "Client for 12 years",
+  },
   {
     name: "Kumar Bahirwani",
     country: "IN",
