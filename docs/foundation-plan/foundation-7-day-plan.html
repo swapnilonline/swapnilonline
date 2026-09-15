@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><title>The 7-Day Digital Business Foundation · Plan</title>
+<style>
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:500;src:url(../blueprint/fonts/bricolagegrotesque-3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvSniyMg.woff2) format('woff2');}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:600;src:url(../blueprint/fonts/bricolagegrotesque-3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvcXlyMg.woff2) format('woff2');}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:700;src:url(../blueprint/fonts/bricolagegrotesque-3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvfzlyMg.woff2) format('woff2');}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:800;src:url(../blueprint/fonts/bricolagegrotesque-3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvZvlyMg.woff2) format('woff2');}
+@font-face{font-family:'Newsreader';font-style:italic;font-weight:400;src:url(../blueprint/fonts/newsreader-cY9kfjOCX1hbuyalUrK439vogqC9yFZCYg7oRZaLP4obnf7fTXglsMwoT-ZF.woff2) format('woff2');}
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:400;src:url(../blueprint/fonts/newsreader-cY9qfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBCzBDXXD9JVF438weI_ACQ.woff2) format('woff2');}
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:500;src:url(../blueprint/fonts/newsreader-cY9qfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBCzBDXXD9JVF438wSo_ACQ.woff2) format('woff2');}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;src:url(../blueprint/fonts/ibmplexmono--F63fjptAgt5VM-kVkqdyU8n5i0.woff2) format('woff2');}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;src:url(../blueprint/fonts/ibmplexmono--F6qfjptAgt5VM-kVkqdyU8n3twJ8lI.woff2) format('woff2');}
+  @page { size: A4; margin: 0; }
+  :root { --ground:#F8F7F3; --surface:#fff; --surface-2:#EFEDE7; --ink:#14211B; --soft:#55615A; --line:#D9DBD3; --accent:#0F5C4B; --mark:#F5C12E; --mark-soft:#FBEDC2; --money:#9A5A14;
+    --display:"Bricolage Grotesque",Helvetica,Arial,sans-serif; --body:"Newsreader",Georgia,serif; --mono:"IBM Plex Mono",Menlo,monospace; }
+  * { box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  html, body { margin:0; background:var(--ground); color:var(--ink); font-family:var(--body); font-size:11pt; line-height:1.45; }
+  .page { width:210mm; height:297mm; padding:14mm 15mm 13mm; page-break-after:always; position:relative; overflow:hidden; background:var(--ground); display:flex; flex-direction:column; }
+  .page:last-child { page-break-after:auto; }
+  .rule { position:absolute; top:0; left:0; right:0; height:4mm; background:var(--mark); }
+  .foot { position:absolute; bottom:7mm; left:15mm; right:15mm; display:flex; justify-content:space-between; font-family:var(--mono); font-size:7.5pt; color:var(--soft); letter-spacing:.06em; }
+  h1,h2,h3 { font-family:var(--display); margin:0; line-height:1.08; letter-spacing:-.015em; }
+  h1 { font-size:30pt; font-weight:800; } h2 { font-size:17pt; font-weight:800; } h3 { font-size:12pt; font-weight:700; }
+  p { margin:0 0 6pt; }
+  .eyebrow { font-family:var(--mono); font-size:7.5pt; letter-spacing:.14em; text-transform:uppercase; color:var(--soft); margin-bottom:4pt; }
+  .soft { color:var(--soft); }
+  .top { display:grid; grid-template-columns:44pt 1fr; gap:10pt; align-items:start; margin-top:4pt; }
+  .daynum { font-family:var(--display); font-weight:800; font-size:44pt; line-height:.85; color:var(--accent); }
+  .goal { margin:8pt 0 8pt; font-size:11pt; max-width:none; border-left:3pt solid var(--mark); background:var(--mark-soft); padding:6pt 9pt; }
+  .goal b { font-family:var(--display); }
+  .cols { display:grid; grid-template-columns:1fr 1.15fr; gap:10pt; }
+  ul, ol { margin:0; padding-left:14pt; font-size:10pt; display:flex; flex-direction:column; gap:2pt; }
+  .f { margin-bottom:8pt; } .f .lbl { font-family:var(--mono); font-size:7.5pt; letter-spacing:.06em; text-transform:uppercase; color:var(--soft); margin-bottom:2pt; }
+  .f .ln { border-bottom:1pt solid var(--line); height:23pt; }
+  .bottom { margin-top:auto; display:grid; grid-template-columns:1.2fr 1fr; gap:10pt; padding-top:8pt; border-top:1pt solid var(--ink); }
+  .chk { list-style:none; padding-left:0; }
+  .chk li { position:relative; padding-left:14pt; font-size:9.5pt; }
+  .chk li::before { content:""; position:absolute; left:0; top:3pt; width:8pt; height:8pt; border:1pt solid var(--ink); }
+  .done { background:var(--surface); border:1pt solid var(--line); padding:8pt 10pt; }
+  .done p { font-size:10pt; margin:0 0 6pt; }
+  .sig { font-family:var(--mono); font-size:8pt; color:var(--soft); }
+  /* cover */
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:8pt; }
+  .card { background:var(--surface); border:1pt solid var(--line); padding:9pt 11pt; }
+  .card b { font-family:var(--display); display:block; margin-bottom:2pt; }
+  .card span { font-size:10pt; color:var(--soft); }
+  table { border-collapse:collapse; width:100%; font-size:10pt; margin-top:4pt; }
+  th, td { text-align:left; vertical-align:top; padding:5pt 6pt 5pt 0; border-bottom:1pt solid var(--line); }
+  th { font-family:var(--mono); font-size:7.5pt; letter-spacing:.08em; text-transform:uppercase; color:var(--soft); font-weight:500; }
+  td.k { font-family:var(--mono); font-size:9pt; color:var(--money); white-space:nowrap; }
+  .fill { border-bottom:1pt solid var(--ink); display:inline-block; min-width:140pt; height:14pt; vertical-align:bottom; }
+</style></head><body>
+
+<section class="page">
+  <div class="rule"></div>
+  <div class="eyebrow">The 7-Day Digital Business Foundation</div>
+  <h1>Your seven-day plan.</h1>
+  <p style="font-size:13pt;margin-top:8pt;max-width:60ch">Seven days of hand-holding before you launch. One task a day. One check-in a day. By day 7 you have 100% clarity on your digital business: who you help, what it costs them, what you sell, what you promise, your proof, your page, your pipeline, and your number.</p>
+
+  <div class="grid2" style="margin:12pt 0">
+    <div class="card"><b>Name</b><span class="fill"></span></div>
+    <div class="card"><b>Start date</b><span class="fill"></span></div>
+    <div class="card"><b>Daily check-in time</b><span class="fill"></span></div>
+    <div class="card"><b>WhatsApp</b><span class="fill"></span></div>
+  </div>
+
+  <div class="eyebrow">The seven days at a glance</div>
+  <table>
+    <tr><th>Day</th><th>Stage</th><th>You finish with</th><th>Time with Swapnil</th></tr>
+    <tr><td class="k">1</td><td>ONE PERSON</td><td>Your customer, named. Your model chosen.</td><td>90-minute call</td></tr>
+    <tr><td class="k">2</td><td>ONE PROBLEM</td><td>The problem, priced, in their words.</td><td>20-minute check-in</td></tr>
+    <tr><td class="k">3</td><td>ONE PROMISE</td><td>Your offer in one sentence. The price said out loud.</td><td>30-minute call</td></tr>
+    <tr><td class="k">4</td><td>PROOF</td><td>One line of proof, or the small job that produces it.</td><td>20-minute check-in</td></tr>
+    <tr><td class="k">5</td><td>ONE PAGE</td><td>The page in a document. The first five messages written.</td><td>30-minute call</td></tr>
+    <tr><td class="k">6</td><td>PIPELINE</td><td>Five messages sent. The next ten mapped.</td><td>20-minute check-in</td></tr>
+    <tr><td class="k">7</td><td>THE NUMBER</td><td>Price × clients × hours, on one page. Your decision.</td><td>45-minute call</td></tr>
+  </table>
+
+  <div class="eyebrow" style="margin-top:12pt">The rhythm</div>
+  <div class="grid2">
+    <div class="card"><b>Morning</b><span>Read the day's page. Do the task. It takes 45 to 90 minutes.</span></div>
+    <div class="card"><b>By 6pm</b><span>Send me the worksheet, a photo or a document. I review it the same day.</span></div>
+    <div class="card"><b>The check-in</b><span>Short call or WhatsApp voice notes at the time above. We fix what needs fixing before the next day.</span></div>
+    <div class="card"><b>The rule</b><span>Do the days in order. Do not skip ahead. Day 7 only works if days 1 to 6 are real.</span></div>
+  </div>
+  <div class="foot"><span>The 7-Day Digital Business Foundation · Plan</span><span>swapnilonline.com</span></div>
+</section>
+
+<section class="page">
+  <div class="rule"></div>
+  <div class="top"><span class="daynum">1</span><div><div class="eyebrow">Day 1 of 7 · ONE PERSON</div><h2>Name your customer. Choose your model.</h2></div></div>
+  <p class="goal"><b>Today's goal.</b> By tonight you can say one real person's name, the situation they are in, and whether you will do it for them, decide it for them, or package it for them.</p>
+  <div class="cols">
+    <div class="col">
+      <div class="eyebrow">On the call with Swapnil</div>
+      <ul><li>90-minute call, 1:1</li><li>Your skill: what people pay you for, or ask you for</li><li>The three people who asked you for help this year</li><li>Pick one. Describe their situation in their words</li><li>Choose: services, consulting or products, and why</li></ul>
+      <div class="eyebrow" style="margin-top:8pt">Your task today</div>
+      <ol><li>Write the names of three real people who asked you for help in the last twelve months.</li><li>Circle one. Write one line about the situation they were in when they asked.</li><li>Write your model in one word: services, consulting, or products.</li><li>Send me the page by 6pm.</li></ol>
+    </div>
+    <div class="col">
+      <div class="eyebrow">Worksheet</div>
+      <div class="f"><div class="lbl">Three people who asked me for help</div><div class="ln"></div><div class="ln"></div><div class="ln"></div></div><div class="f"><div class="lbl">The one I am starting with, and their situation, in their words</div><div class="ln"></div><div class="ln"></div></div><div class="f"><div class="lbl">My model for the next 90 days, and why</div><div class="ln"></div><div class="ln"></div></div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="rev"><div class="eyebrow">Swapnil checks</div><ul class="chk"><li>The person is specific: a type in a situation, not a category</li><li>Someone real has asked, with a name</li><li>One model, not two</li><li>The model matches how they want to be helped: done, decided, or taught</li></ul></div>
+    <div class="done"><div class="eyebrow">Done when</div><p>You can say one person's name and describe their problem in a sentence they would nod at.</p><div class="sig">Reviewed ☐ &nbsp; Date ______ &nbsp; Sent by 6pm ☐</div></div>
+  </div>
+  <div class="foot"><span>The 7-Day Digital Business Foundation · Plan</span><span>Day 1 · swapnilonline.com</span></div>
+</section>
+<section class="page">
+  <div class="rule"></div>
+  <div class="top"><span class="daynum">2</span><div><div class="eyebrow">Day 2 of 7 · ONE PROBLEM</div><h2>Price the problem.</h2></div></div>
+  <p class="goal"><b>Today's goal.</b> By tonight you know what this problem costs your person, in money or time, per month. That number becomes your pricing power.</p>
+  <div class="cols">
+    <div class="col">
+      <div class="eyebrow">On the call with Swapnil</div>
+      <ul><li>20-minute check-in</li><li>What happens to your person when this stays unsolved</li><li>What it costs them: money lost, hours lost, sleep lost</li><li>The expensive version of the problem, if today's version is a nice-to-have</li></ul>
+      <div class="eyebrow" style="margin-top:8pt">Your task today</div>
+      <ol><li>Message one or two people who have this problem. Ask: what does it cost you each month when this is not fixed?</li><li>Write their answers in their words.</li><li>Put a number on it, even a rough one.</li><li>Send me the page by 6pm.</li></ol>
+    </div>
+    <div class="col">
+      <div class="eyebrow">Worksheet</div>
+      <div class="f"><div class="lbl">What it costs them when it stays unsolved, in their words</div><div class="ln"></div><div class="ln"></div><div class="ln"></div></div><div class="f"><div class="lbl">The number: per month, in money or hours</div><div class="ln"></div></div><div class="f"><div class="lbl">Who loses the most when this is unsolved</div><div class="ln"></div><div class="ln"></div></div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="rev"><div class="eyebrow">Swapnil checks</div><ul class="chk"><li>The cost is stated as a number, not a feeling</li><li>The words came from a real person, not from the client's guess</li><li>The problem is urgent and expensive, not a nice-to-have</li></ul></div>
+    <div class="done"><div class="eyebrow">Done when</div><p>You can say what the problem costs, and your person would agree with the number.</p><div class="sig">Reviewed ☐ &nbsp; Date ______ &nbsp; Sent by 6pm ☐</div></div>
+  </div>
+  <div class="foot"><span>The 7-Day Digital Business Foundation · Plan</span><span>Day 2 · swapnilonline.com</span></div>
+</section>
+<section class="page">
+  <div class="rule"></div>
+  <div class="top"><span class="daynum">3</span><div><div class="eyebrow">Day 3 of 7 · ONE PROMISE</div><h2>Say your offer in one sentence. Then say the price out loud.</h2></div></div>
+  <p class="goal"><b>Today's goal.</b> By tonight your offer exists as one sentence: the result, for whom, at a price, in a timeframe. And you have said the price to me without flinching.</p>
+  <div class="cols">
+    <div class="col">
+      <div class="eyebrow">On the call with Swapnil</div>
+      <ul><li>30-minute call</li><li>Fill the four blanks together: [result] for [person] at [price] in [timeframe]</li><li>Price from the number on day 2: a fraction of what the problem costs</li><li>Say it out loud, three times, until it sounds decided</li></ul>
+      <div class="eyebrow" style="margin-top:8pt">Your task today</div>
+      <ol><li>Write the sentence. Ugly is fine. Complete is what matters.</li><li>Say it to one friend. Ask them to repeat it back, price included.</li><li>If they cannot, change the words, not the price.</li><li>Send me the sentence and what your friend said, by 6pm.</li></ol>
+    </div>
+    <div class="col">
+      <div class="eyebrow">Worksheet</div>
+      <div class="f"><div class="lbl">The result</div><div class="ln"></div></div><div class="f"><div class="lbl">For whom</div><div class="ln"></div></div><div class="f"><div class="lbl">The price</div><div class="ln"></div></div><div class="f"><div class="lbl">The timeframe</div><div class="ln"></div></div><div class="f"><div class="lbl">The offer, in one sentence</div><div class="ln"></div><div class="ln"></div></div><div class="f"><div class="lbl">What my friend repeated back</div><div class="ln"></div><div class="ln"></div></div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="rev"><div class="eyebrow">Swapnil checks</div><ul class="chk"><li>All four parts present</li><li>Price is a fraction of the day-2 number, and above ₹1,500 an hour when divided by the hours</li><li>A number that sounds decided: ₹45,000, not ₹43,750</li><li>Client has said the price out loud, to me and to one other person</li></ul></div>
+    <div class="done"><div class="eyebrow">Done when</div><p>A friend can repeat your offer back to you, including the price, after hearing it once.</p><div class="sig">Reviewed ☐ &nbsp; Date ______ &nbsp; Sent by 6pm ☐</div></div>
+  </div>
+  <div class="foot"><span>The 7-Day Digital Business Foundation · Plan</span><span>Day 3 · swapnilonline.com</span></div>
+</section>
+<section class="page">
+  <div class="rule"></div>
+  <div class="top"><span class="daynum">4</span><div><div class="eyebrow">Day 4 of 7 · PROOF</div><h2>Turn what you have done into one line of proof.</h2></div></div>
+  <p class="goal"><b>Today's goal.</b> By tonight you have one proof point in writing: a result you got for someone, a review, or a before-and-after. If you have none, you know exactly which small job produces one this month.</p>
+  <div class="cols">
+    <div class="col">
+      <div class="eyebrow">On the call with Swapnil</div>
+      <ul><li>20-minute check-in</li><li>Everything you have done for anyone in this area, paid or unpaid</li><li>Pick the one with a visible result</li><li>Turn it into one line: who, what changed, in what time</li><li>If there is nothing yet: design the small job that produces it</li></ul>
+      <div class="eyebrow" style="margin-top:8pt">Your task today</div>
+      <ol><li>List every time you helped someone with this, even informally.</li><li>For the best one: message that person and ask for one line you can quote.</li><li>Write the proof line.</li><li>No proof yet? Write down who you will do a small paid version for this month, and at what price.</li></ol>
+    </div>
+    <div class="col">
+      <div class="eyebrow">Worksheet</div>
+      <div class="f"><div class="lbl">Times I have helped someone with this</div><div class="ln"></div><div class="ln"></div><div class="ln"></div></div><div class="f"><div class="lbl">The one I will use, and what changed for them</div><div class="ln"></div><div class="ln"></div></div><div class="f"><div class="lbl">My proof line, or the small job that will produce it</div><div class="ln"></div><div class="ln"></div></div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="rev"><div class="eyebrow">Swapnil checks</div><ul class="chk"><li>One proof point, specific, with a result</li><li>Real words from a real person where possible</li><li>If none: a named person, a price and a date for the small job</li></ul></div>
+    <div class="done"><div class="eyebrow">Done when</div><p>You have one line you would be comfortable putting on your page under the offer.</p><div class="sig">Reviewed ☐ &nbsp; Date ______ &nbsp; Sent by 6pm ☐</div></div>
+  </div>
+  <div class="foot"><span>The 7-Day Digital Business Foundation · Plan</span><span>Day 4 · swapnilonline.com</span></div>
+</section>
+<section class="page">
+  <div class="rule"></div>
+  <div class="top"><span class="daynum">5</span><div><div class="eyebrow">Day 5 of 7 · ONE PAGE</div><h2>Plan the page. Write the first five messages.</h2></div></div>
+  <p class="goal"><b>Today's goal.</b> By tonight the one page that books clients exists in a document, and the five messages that will bring your first conversations are written.</p>
+  <div class="cols">
+    <div class="col">
+      <div class="eyebrow">On the call with Swapnil</div>
+      <ul><li>30-minute call</li><li>The four things on the page: who you help, the offer with the price, one proof, one way to book</li><li>Draft the headline and the offer line together</li><li>The three-line message, filled in with your blanks</li><li>Choose the five people</li></ul>
+      <div class="eyebrow" style="margin-top:8pt">Your task today</div>
+      <ol><li>Write the page in a document: headline, offer line, proof line, how to book.</li><li>Fill in the three-line message: Hi [name]. I've started helping [who] with [result]. Who do you know who's dealing with that right now?</li><li>Write the five names you will send it to on day 6.</li><li>Send me the document by 6pm.</li></ol>
+    </div>
+    <div class="col">
+      <div class="eyebrow">Worksheet</div>
+      <div class="f"><div class="lbl">Headline: who I help and the result</div><div class="ln"></div></div><div class="f"><div class="lbl">The offer line, with the price</div><div class="ln"></div></div><div class="f"><div class="lbl">The proof line</div><div class="ln"></div></div><div class="f"><div class="lbl">How people book me: calendar link or WhatsApp</div><div class="ln"></div></div><div class="f"><div class="lbl">The three-line message, filled in</div><div class="ln"></div><div class="ln"></div><div class="ln"></div></div><div class="f"><div class="lbl">The five people</div><div class="ln"></div><div class="ln"></div><div class="ln"></div><div class="ln"></div><div class="ln"></div></div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="rev"><div class="eyebrow">Swapnil checks</div><ul class="chk"><li>Page has exactly four things, in order, nothing else</li><li>Price is on the page</li><li>Booking is a link or a button, not a contact form</li><li>Five people are named and reachable</li></ul></div>
+    <div class="done"><div class="eyebrow">Done when</div><p>A stranger reading the page for eight seconds would know who it is for, what it costs, and how to book.</p><div class="sig">Reviewed ☐ &nbsp; Date ______ &nbsp; Sent by 6pm ☐</div></div>
+  </div>
+  <div class="foot"><span>The 7-Day Digital Business Foundation · Plan</span><span>Day 5 · swapnilonline.com</span></div>
+</section>
+<section class="page">
+  <div class="rule"></div>
+  <div class="top"><span class="daynum">6</span><div><div class="eyebrow">Day 6 of 7 · PIPELINE</div><h2>Send the five messages. Map the next ten conversations.</h2></div></div>
+  <p class="goal"><b>Today's goal.</b> By tonight the five messages are sent, and you know where the next ten conversations will come from.</p>
+  <div class="cols">
+    <div class="col">
+      <div class="eyebrow">On the call with Swapnil</div>
+      <ul><li>20-minute check-in, after the messages are sent</li><li>What happened with each of the five</li><li>What to say to each kind of reply: a name, a maybe, a silence</li><li>Where the next ten come from: past clients, ex-colleagues, groups, one platform</li></ul>
+      <div class="eyebrow" style="margin-top:8pt">Your task today</div>
+      <ol><li>Send all five messages before noon. Not this week. Today.</li><li>Log each reply in the table below.</li><li>Reply to anyone who names someone: ask for an introduction.</li><li>List ten more people or places for next week.</li></ol>
+    </div>
+    <div class="col">
+      <div class="eyebrow">Worksheet</div>
+      <div class="f"><div class="lbl">Sent to / reply / next step (five rows)</div><div class="ln"></div><div class="ln"></div><div class="ln"></div><div class="ln"></div><div class="ln"></div></div><div class="f"><div class="lbl">The next ten: people or places</div><div class="ln"></div><div class="ln"></div><div class="ln"></div><div class="ln"></div><div class="ln"></div></div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="rev"><div class="eyebrow">Swapnil checks</div><ul class="chk"><li>All five sent, today, in the client's own words</li><li>Replies answered the same day</li><li>Introductions asked for, not just thanked</li><li>Next ten are specific, not 'LinkedIn'</li></ul></div>
+    <div class="done"><div class="eyebrow">Done when</div><p>Five messages sent, every reply answered, and ten more names on the list.</p><div class="sig">Reviewed ☐ &nbsp; Date ______ &nbsp; Sent by 6pm ☐</div></div>
+  </div>
+  <div class="foot"><span>The 7-Day Digital Business Foundation · Plan</span><span>Day 6 · swapnilonline.com</span></div>
+</section>
+<section class="page">
+  <div class="rule"></div>
+  <div class="top"><span class="daynum">7</span><div><div class="eyebrow">Day 7 of 7 · THE NUMBER</div><h2>Your recurring-income plan. Then the decision.</h2></div></div>
+  <p class="goal"><b>Today's goal.</b> By tonight you have the maths on one page, price × clients × hours, the road from here to a 6-figure month, and a decision: launch alone, or build it together.</p>
+  <div class="cols">
+    <div class="col">
+      <div class="eyebrow">On the call with Swapnil</div>
+      <ul><li>45-minute call</li><li>Price × clients × hours, with your numbers</li><li>The hours check: does it fit the time you actually have</li><li>The road: what happens in weeks 2 to 12 if we build together</li><li>The honest decision, either way</li></ul>
+      <div class="eyebrow" style="margin-top:8pt">Your task today</div>
+      <ol><li>Fill in the formula with your real numbers.</li><li>Check the hours. If they do not fit, raise the price, not the hours.</li><li>Write the date you will have your first paying client, alone or with me.</li><li>Tell me your decision on the call, not by message.</li></ol>
+    </div>
+    <div class="col">
+      <div class="eyebrow">Worksheet</div>
+      <div class="f"><div class="lbl">Price per client, per month</div><div class="ln"></div></div><div class="f"><div class="lbl">Clients I can serve at once</div><div class="ln"></div></div><div class="f"><div class="lbl">Hours per client, per week</div><div class="ln"></div></div><div class="f"><div class="lbl">Every month =</div><div class="ln"></div></div><div class="f"><div class="lbl">Hours check: clients × hours per client, against the hours I have</div><div class="ln"></div></div><div class="f"><div class="lbl">The date of my first paying client</div><div class="ln"></div></div><div class="f"><div class="lbl">My decision</div><div class="ln"></div><div class="ln"></div></div>
+    </div>
+  </div>
+  <div class="bottom">
+    <div class="rev"><div class="eyebrow">Swapnil checks</div><ul class="chk"><li>The numbers are the client's, not mine</li><li>Hours check passes, or the price was raised</li><li>A date is written down</li><li>The decision is made on the call, either way, without pressure</li></ul></div>
+    <div class="done"><div class="eyebrow">Done when</div><p>You can say your number, how it is built, and what you are doing next week.</p><div class="sig">Reviewed ☐ &nbsp; Date ______ &nbsp; Sent by 6pm ☐</div></div>
+  </div>
+  <div class="foot"><span>The 7-Day Digital Business Foundation · Plan</span><span>Day 7 · swapnilonline.com</span></div>
+</section>
+</body></html>
