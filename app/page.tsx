@@ -6,7 +6,6 @@ import { site } from "@/lib/site";
 import { ReviewsSection, TrustLine } from "@/components/Reviews";
 import { portrait } from "@/lib/assets";
 import Stalls from "@/components/Stalls";
-import VideoPlayer from "@/components/VideoPlayer";
 
 export default function Home() {
   const photo = portrait();
@@ -37,15 +36,22 @@ export default function Home() {
         </div>
 
         <div className="flex flex-col gap-4">
-          <VideoPlayer
-            source={
-              site.homeVideoId
-                ? { kind: "youtube", id: site.homeVideoId }
-                : { kind: "file", src: "/home-video-v2.mp4", poster: "/home-video-poster-v2.jpg" }
-            }
-            title="90 seconds with Swapnil"
-          />
-          {/* The video ends with "the link is right below this video". This is that link. */}
+          <div className="flex flex-col gap-5 border border-line bg-surface p-7 sm:p-8">
+            <p className="eyebrow">Digital Solopreneur</p>
+            <p className="font-display text-[26px] font-extrabold leading-[1.15] sm:text-[30px]">
+              A recurring monthly income. No employer, no office, no commute. One person, one
+              problem, one product, one promise, run from home. That is the Digital Solopreneur,
+              and it is a lifestyle of freedom you learn from someone who has lived it for twenty
+              years, not read about it.
+            </p>
+            <blockquote className="border-l-[3px] border-mark pl-4">
+              <p className="font-body text-[19px] italic leading-[1.4]">
+                &ldquo;Freedom is not the absence of work. It is choosing the work, the hours, the
+                people, and the place. Everything else is a job with a longer leash.&rdquo;
+              </p>
+              <footer className="mt-2 font-mono text-[12px] text-ink-soft">{site.name}</footer>
+            </blockquote>
+          </div>
           <Link href="/fit" className="btn btn-primary w-full">
             Check your eligibility <ArrowRight size={18} aria-hidden="true" />
           </Link>
