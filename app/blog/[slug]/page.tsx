@@ -103,15 +103,16 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
           <aside className="mt-14 flex flex-col gap-5 bg-panel px-7 py-9 text-panel-ink sm:px-9">
             <p className="font-mono text-[12px] uppercase tracking-[0.12em] text-mark">Do this next</p>
             <h2 className="max-w-[24ch] text-[28px] font-extrabold text-panel-ink sm:text-[32px]">
-              Find out if you&rsquo;re eligible, and which stage is blocking you.
+              Are you ready? Find out in 3 minutes.
             </h2>
             <p className="max-w-[56ch] text-[17px] text-panel-ink/85">
-              Eleven questions, three minutes. You get a score out of 14, your lane, the stage that&rsquo;s in the way, the
-              one thing to do this week, and a free copy of The Digital Business Blueprint.
+              Eleven simple questions, three minutes. You get a score out of 14, the one stage to
+              fix first, one thing to do this week, and a free copy of The Digital Business
+              Blueprint.
             </p>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link href="/fit" className="btn bg-mark text-accent-ink hover:bg-accent-strong">
-                Check your eligibility <ArrowRight size={18} aria-hidden="true" />
+                Check if you&rsquo;re ready <ArrowRight size={18} aria-hidden="true" />
               </Link>
             </div>
           </aside>

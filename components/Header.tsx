@@ -35,7 +35,7 @@ export default function Header() {
             </Link>
           ))}
           <Link href="/fit" className="btn btn-primary !min-h-[42px]">
-            Check your eligibility
+            Check if you&rsquo;re ready
           </Link>
         </nav>
 
@@ -72,7 +72,7 @@ export default function Header() {
             ))}
             <li className="pt-2">
               <Link href="/fit" onClick={() => setOpen(false)} className="btn btn-primary w-full">
-                Check your eligibility
+                Check if you&rsquo;re ready
               </Link>
             </li>
           </ul>

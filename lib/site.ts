@@ -4,7 +4,7 @@ export const site = {
   url: "https://swapnilonline.com",
   title: "A 6-Figure Recurring Income, From Home, Without a Job",
   description:
-    "Start an online business selling digital services, consulting or products, and build it toward a 6-figure recurring income, from home, without a job. A free call maps your skill, positioning, market, offer and earning potential. Then 7 days of hand-holding, or the 90-day setup challenge, 1:1.",
+    "Turn a skill people already ask you for into a business that pays you every month. From home. No job. Check if you are ready in 3 minutes. If you are, you get the full plan and a free call with Swapnil, who has done this for 20 years.",
   role: "Digital Business Consultant",
   years: "20 years working from home",
   websites: "2,500+ websites developed",
@@ -19,7 +19,7 @@ export const site = {
   /** The number the whole offer is designed around. Framed as a target, never a promise. */
   target: "a 6-figure monthly recurring income",
   foundationLine: "Seven days of hand-holding before you launch. You finish with 100% clarity on your digital business.",
-  audience: "Anyone who wants to start an online business selling digital services, digital consulting or digital products.",
+  audience: "For anyone who wants to start an online business selling digital services, digital consulting or digital products.",
   /** Booking page shown after a qualified application. Set in .env */
   calUrl: process.env.NEXT_PUBLIC_CAL_URL ?? "",
   /** WhatsApp click-to-chat number in international format, digits only. */

@@ -15,13 +15,13 @@ export default function FitPage() {
         <aside className="flex flex-col gap-5">
           <p className="eyebrow">The Fit Score · 7 stages · scored out of 14</p>
           <h1 className="text-[34px] font-extrabold leading-tight sm:text-[40px]">
-            Are you ready to launch a digital business?
+            Are you ready to start a digital business? Find out in 3 minutes.
           </h1>
           <p className="text-[17px] text-ink-soft">
-            Eleven questions, three minutes. The framework is ONE PERSON → ONE PROBLEM → ONE
-            PRODUCT → ONE PROMISE, then proof, capacity and commitment. Each stage is scored. You get
-            your total, your lane, the stage that is weakest, and the one thing to do this week. No
-            pitch at the end. You get your score, the Blueprint, and a short note from Swapnil.
+            Eleven simple questions. Seven stages: ONE PERSON, ONE PROBLEM, ONE PRODUCT, ONE
+            PROMISE, then proof, time and commitment. Each stage gets a score. At the end you see
+            your total out of 14, the one stage to fix first, and exactly what to do this week. No
+            pitch. You also get the Blueprint, free.
           </p>
           <ol className="flex flex-col gap-1 border-t border-line pt-4 font-mono text-[12.5px] text-ink-soft">
             {["ONE PERSON", "ONE PROBLEM", "ONE PRODUCT", "ONE PROMISE", "PROOF", "CAPACITY", "COMMITMENT"].map((s, i) => (

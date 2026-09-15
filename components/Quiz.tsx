@@ -175,10 +175,10 @@ export default function Quiz() {
               Your score is ready. Where should I send it?
             </h2>
             <p className="measure text-[17px] text-ink-soft">
-              Your Fit Score out of 14, your lane, and your map across all seven stages are on the
-              next page, with a free copy of The Digital Business Blueprint. Over the next seven
-              days I&rsquo;ll also send one short lesson a day, starting with your weakest stage.
-              Reply STOP anytime.
+              Your score out of 14 and your map of all seven stages are on the next page, with a
+              free copy of The Digital Business Blueprint. For the next seven days I&rsquo;ll also
+              send you one short lesson a day, starting with the stage you need most. Reply STOP any
+              time.
             </p>
           </div>
 

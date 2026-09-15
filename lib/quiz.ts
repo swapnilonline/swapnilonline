@@ -204,18 +204,18 @@ export function parseResult(p: Record<string, string | string[] | undefined>): R
 export const laneCopy: Record<Lane, { title: string; headline: string; body: string }> = {
   challenge: {
     title: "Qualified",
-    headline: "You're ready to build. Let's not waste a week.",
-    body: "Your person, problem, product and promise are mostly in place, you have the hours, and you'll run the framework as given. That is exactly who the program is built for. The details are open to you below, and so is the free call.",
+    headline: "You're ready. Let's not waste a week.",
+    body: "You know who you help, what you sell and what it costs. You have the time. You'll do the work as given. That is exactly who this is for. The full plan is open to you below, and so is the free call with me.",
   },
   foundation: {
     title: "Almost there",
-    headline: "You're close. The gaps below are this month's job.",
-    body: "Two or three parts of the framework are missing or blurry, and that is normal at this stage. Work the weakest stage this week with the Blueprint, or book the free call and we'll close the gaps together. Retake the score any time; most people move up a lane within a month.",
+    headline: "You're close. Fix the gaps below and you're in.",
+    body: "Two or three parts are missing or blurry. That is normal. Work the weakest stage this week with the Blueprint, or book the free call and we'll close the gaps together. Retake the score any time. Most people move up within a month.",
   },
   notyet: {
     title: "Not yet",
-    headline: "Not yet, and that's an honest answer, not a rejection.",
-    body: "Either the capacity or the commitment isn't there right now, or the framework is mostly empty. Start with the Blueprint, work the weakest stage below this month, and retake the score in 30 days. Most people who come back move up a lane.",
+    headline: "Not yet. That's an honest answer, not a no.",
+    body: "Either the time or the commitment isn't there right now, or most of the plan is still empty. Start with the Blueprint. Work the weakest stage below this month. Retake the score in 30 days. Most people who come back move up.",
   },
 };
 

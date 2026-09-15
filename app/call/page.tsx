@@ -22,19 +22,20 @@ export default async function CallPage({
         <aside className="flex flex-col gap-5">
           <p className="eyebrow">Free · 30 minutes · 1:1</p>
           <h1 className="text-[34px] font-extrabold leading-tight sm:text-[40px]">
-            Find out what your skill can earn from home.
+            Let&rsquo;s find out what your skill can earn.
           </h1>
           <p className="text-[17px] text-ink-soft">
-            Thirty minutes, 1:1, free. You leave with a one-page map whether or not we work
-            together. If I can&rsquo;t help, I&rsquo;ll say so and tell you what to do instead.
+            Thirty minutes. Just you and me. Free. You leave with a one-page plan whether we work
+            together or not. If I can&rsquo;t help you, I&rsquo;ll say so and tell you what to do
+            instead.
           </p>
           <ul className="flex flex-col gap-3 border-t border-line pt-5 text-[16px]">
             {[
-              ["Potential", "What your skills and expertise can be sold as: services, consulting or products"],
+              ["Potential", "What your skill can be sold as: a service, advice, or a product"],
               ["Positioning", "The one line that makes the right people notice you"],
-              ["Market", "Who pays for this, and who among them pays best"],
-              ["Offer", "The result, for whom, at a price, in a timeframe"],
-              ["Earning", "Price × clients × hours: what this can realistically make, and the path to a 6-figure monthly recurring income"],
+              ["Market", "Who pays for this, and who pays best"],
+              ["Offer", "What you sell, to whom, at what price, by when"],
+              ["Earning", "Your price × your clients × your hours. What this can really make, and the road to a 6-figure month"],
             ].map(([t, d]) => (
               <li key={t} className="grid grid-cols-[96px_1fr] gap-3">
                 <span className="font-mono text-[12.5px] text-ink-soft pt-1">{t}</span>

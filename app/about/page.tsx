@@ -55,7 +55,7 @@ export default function AboutPage() {
             </dl>
             <div className="flex flex-col gap-3 sm:flex-row">
               <Link href="/fit" className="btn btn-primary">
-                Check your eligibility <ArrowRight size={18} aria-hidden="true" />
+                Check if you&rsquo;re ready <ArrowRight size={18} aria-hidden="true" />
               </Link>
             </div>
           </div>

@@ -44,13 +44,13 @@ export default function BlogIndex() {
 
       <section className="py-16">
         <div className="flex flex-col gap-6 bg-panel px-7 py-10 text-panel-ink sm:px-10 sm:py-14">
-          <p className="font-mono text-[12px] uppercase tracking-[0.12em] text-mark">Not sure which stage you&rsquo;re at?</p>
+          <p className="font-mono text-[12px] uppercase tracking-[0.12em] text-mark">Not sure where you&rsquo;re stuck?</p>
           <h2 className="max-w-[22ch] text-[32px] font-extrabold text-panel-ink sm:text-[40px]">
-            Find out what&rsquo;s between you and your first client.
+            Are you ready? Find out in 3 minutes.
           </h2>
           <div>
             <Link href="/fit" className="btn bg-mark text-accent-ink hover:bg-accent-strong">
-              Check your eligibility <ArrowRight size={18} aria-hidden="true" />
+              Check if you&rsquo;re ready <ArrowRight size={18} aria-hidden="true" />
             </Link>
           </div>
         </div>

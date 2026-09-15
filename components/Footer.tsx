@@ -25,7 +25,7 @@ export default function Footer() {
           )}
         </div>
         <nav aria-label="Footer" className="flex flex-col gap-2 text-[16px]">
-          <Link href="/fit" className="text-ink-soft no-underline hover:text-ink">Check your eligibility</Link>
+          <Link href="/fit" className="text-ink-soft no-underline hover:text-ink">Check if you&rsquo;re ready</Link>
           <Link href="/blog" className="text-ink-soft no-underline hover:text-ink">Blog</Link>
           <Link href="/about" className="text-ink-soft no-underline hover:text-ink">About Swapnil</Link>
           <Link href="/privacy" className="text-ink-soft no-underline hover:text-ink">Privacy</Link>
