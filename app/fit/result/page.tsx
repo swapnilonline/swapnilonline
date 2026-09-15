@@ -163,14 +163,18 @@ export default async function ResultPage({
       {/* Blueprint + WhatsApp */}
       <section className="grid gap-4 border-t border-line py-10 lg:grid-cols-2">
         <div className="flex flex-col gap-4 border border-line bg-surface px-6 py-6">
-          <p className="eyebrow">Your free copy</p>
-          <p className="font-display text-[20px] font-bold">The Digital Business Blueprint</p>
+          <p className="eyebrow">Your free copies</p>
+          <p className="font-display text-[20px] font-bold">The Recurring Income Blueprint</p>
           <p className="text-[16.5px] text-ink-soft">
-            The seven stages, one page each, with a worksheet and a done-when test. 12 pages, PDF.
+            The formula, price × clients × hours, with a fill-in worksheet, and the road from skill
+            to scale as one graph. 2 pages, PDF.
           </p>
-          <a href="/digital-business-blueprint.pdf" download className="btn btn-ghost self-start">
-            <FileDown size={18} aria-hidden="true" /> Download the Blueprint
+          <a href="/recurring-income-blueprint.pdf" download className="btn btn-primary self-start">
+            <FileDown size={18} aria-hidden="true" /> Download the formula
           </a>
+          <p className="text-[15px] text-ink-soft">
+            Want the long version? <a href="/digital-business-blueprint.pdf" download className="font-display font-bold text-accent no-underline hover:underline">The Digital Business Blueprint</a>, 12 pages with a worksheet for every stage.
+          </p>
         </div>
         {waHref && (
           <div className="flex flex-col gap-4 border border-line bg-surface px-6 py-6">

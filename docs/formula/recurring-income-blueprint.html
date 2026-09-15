@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Recurring Income Blueprint</title>
+<style>
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:500;src:url(../blueprint/fonts/bricolagegrotesque-3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvSniyMg.woff2) format('woff2');}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:600;src:url(../blueprint/fonts/bricolagegrotesque-3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvcXlyMg.woff2) format('woff2');}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:700;src:url(../blueprint/fonts/bricolagegrotesque-3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvfzlyMg.woff2) format('woff2');}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:800;src:url(../blueprint/fonts/bricolagegrotesque-3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvZvlyMg.woff2) format('woff2');}
+@font-face{font-family:'Newsreader';font-style:italic;font-weight:400;src:url(../blueprint/fonts/newsreader-cY9kfjOCX1hbuyalUrK439vogqC9yFZCYg7oRZaLP4obnf7fTXglsMwoT-ZF.woff2) format('woff2');}
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:400;src:url(../blueprint/fonts/newsreader-cY9qfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBCzBDXXD9JVF438weI_ACQ.woff2) format('woff2');}
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:500;src:url(../blueprint/fonts/newsreader-cY9qfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBCzBDXXD9JVF438wSo_ACQ.woff2) format('woff2');}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;src:url(../blueprint/fonts/ibmplexmono--F63fjptAgt5VM-kVkqdyU8n5i0.woff2) format('woff2');}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;src:url(../blueprint/fonts/ibmplexmono--F6qfjptAgt5VM-kVkqdyU8n3twJ8lI.woff2) format('woff2');}
+  @page { size: A4; margin: 0; }
+  :root { --ground:#050506; --surface:#111213; --surface-2:#1a1b1d; --ink:#f2f1ee; --soft:#a6a6a3; --line:#27282b; --mark:#f5c12e; --money:#e3b263;
+    --display:"Bricolage Grotesque",Helvetica,Arial,sans-serif; --body:"Newsreader",Georgia,serif; --mono:"IBM Plex Mono",Menlo,monospace; }
+  * { box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  html, body { margin:0; background:var(--ground); color:var(--ink); font-family:var(--body); font-size:12.5pt; line-height:1.5; }
+  .page { width:210mm; height:297mm; padding:16mm 16mm 14mm; page-break-after:always; position:relative; overflow:hidden; background:var(--ground); }
+  .page:last-child { page-break-after:auto; }
+  .rule { position:absolute; top:0; left:0; right:0; height:4mm; background:var(--mark); }
+  .foot { position:absolute; bottom:8mm; left:16mm; right:16mm; display:flex; justify-content:space-between; font-family:var(--mono); font-size:8pt; color:var(--soft); letter-spacing:.06em; }
+  h1,h2,h3 { font-family:var(--display); margin:0; line-height:1.06; letter-spacing:-.015em; }
+  h1 { font-size:30pt; font-weight:800; } h2 { font-size:18pt; font-weight:800; } h3 { font-size:12pt; font-weight:700; }
+  p { margin:0 0 8pt; }
+  .eyebrow { font-family:var(--mono); font-size:8.5pt; letter-spacing:.14em; text-transform:uppercase; color:var(--soft); margin-bottom:6pt; }
+  .soft { color:var(--soft); } .mark { color:var(--mark); }
+  .statement { font-family:var(--display); font-size:14pt; font-weight:700; line-height:1.3; max-width:60ch; }
+  .formula { display:grid; grid-template-columns:1fr 22pt 1fr 22pt 1fr 22pt 1.35fr; align-items:stretch; gap:6pt; margin:10pt 0 8pt; }
+  .tile { background:var(--surface); border:1pt solid var(--line); padding:10pt 10pt; display:flex; flex-direction:column; gap:3pt; min-height:66pt; }
+  .tile.result { background:var(--mark); color:#0b0b0c; border-color:var(--mark); }
+  .tile .k { font-family:var(--mono); font-size:8pt; letter-spacing:.12em; text-transform:uppercase; color:var(--soft); }
+  .tile.result .k { color:#3a2f0a; }
+  .tile .v { font-family:var(--display); font-size:19pt; font-weight:800; line-height:1.05; }
+  .tile .d { font-size:9.5pt; color:var(--soft); line-height:1.35; }
+  .tile.result .d { color:#3a2f0a; }
+  .op { display:flex; align-items:center; justify-content:center; font-family:var(--display); font-size:24pt; font-weight:800; color:var(--mark); }
+  table { border-collapse:collapse; width:100%; font-size:10.5pt; margin:6pt 0 10pt; }
+  th, td { text-align:left; vertical-align:top; padding:4pt 8pt 4pt 0; border-bottom:1pt solid var(--line); }
+  th { font-family:var(--mono); font-size:8pt; letter-spacing:.08em; text-transform:uppercase; color:var(--soft); font-weight:500; }
+  td.n { font-family:var(--mono); color:var(--money); white-space:nowrap; }
+  .work { border:1pt solid var(--mark); padding:8pt 12pt; margin-top:6pt; }
+  .work .row { display:grid; grid-template-columns:1fr 18pt 1fr 18pt 1fr 18pt 1.3fr; gap:6pt; align-items:end; margin-top:6pt; }
+  .work .blank { border-bottom:1.2pt solid var(--ink); height:20pt; }
+  .work .lbl { font-family:var(--mono); font-size:8pt; letter-spacing:.1em; text-transform:uppercase; color:var(--soft); }
+  .work .op { font-size:16pt; }
+  .three { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8pt; margin-top:8pt; }
+  .box { background:var(--surface); border:1pt solid var(--line); padding:8pt 10pt; }
+  .box b { font-family:var(--display); display:block; margin-bottom:2pt; }
+  .box span { font-size:9.5pt; color:var(--soft); line-height:1.35; }
+  .chain { margin:10pt 0 6pt; }
+  .steps { display:grid; grid-template-columns:repeat(5,1fr); gap:6pt; margin-top:4pt; }
+  .step { background:var(--surface); border:1pt solid var(--line); padding:9pt 9pt; min-height:118pt; display:flex; flex-direction:column; gap:4pt; }
+  .step .n { font-family:var(--display); font-size:22pt; font-weight:800; color:var(--mark); line-height:1; }
+  .step .t { font-family:var(--display); font-size:11.5pt; font-weight:800; text-transform:uppercase; letter-spacing:.04em; }
+  .step .m { font-size:9.5pt; color:var(--soft); line-height:1.35; }
+  .step .w { font-family:var(--mono); font-size:8pt; color:var(--money); margin-top:auto; line-height:1.3; }
+  .cta { background:var(--surface); border-left:3pt solid var(--mark); padding:10pt 12pt; margin-top:10pt; display:flex; justify-content:space-between; align-items:center; gap:12pt; }
+  .cta b { font-family:var(--display); font-size:13pt; }
+  .cta .u { font-family:var(--mono); font-size:10pt; color:var(--mark); white-space:nowrap; }
+</style>
+</head>
+<body>
+
+<!-- ================= PAGE 1: THE FORMULA ================= -->
+<section class="page">
+  <div class="rule"></div>
+  <div class="eyebrow">The Recurring Income Blueprint · Swapnil Shiwalay</div>
+  <h1>Get paid every month.<br>From home. Without a job.</h1>
+  <p class="statement" style="margin-top:12pt">Recurring means clients who pay you every month, not projects you chase. A 6-figure month is not a promise. It is simple maths we do together: your price, times your clients, times your hours. Then we build the offer, the page and the system that makes it repeat.</p>
+
+  <div class="eyebrow" style="margin-top:14pt">The formula</div>
+  <div class="formula">
+    <div class="tile"><span class="k">Your price</span><span class="v">PRICE</span><span class="d">What one client pays you every month. Price the result, not the hour.</span></div>
+    <div class="op">×</div>
+    <div class="tile"><span class="k">Your clients</span><span class="v">CLIENTS</span><span class="d">How many pay you at the same time. Few, and they come back.</span></div>
+    <div class="op">×</div>
+    <div class="tile"><span class="k">Your hours</span><span class="v">HOURS</span><span class="d">The check. Clients × hours each must fit the hours you really have.</span></div>
+    <div class="op">=</div>
+    <div class="tile result"><span class="k">Every month</span><span class="v">RECURRING INCOME</span><span class="d">Income that arrives without a fresh sale. That is the number we build toward.</span></div>
+  </div>
+
+  <div class="eyebrow">Three honest examples, 5 to 10 hours a week</div>
+  <table>
+    <tr><th>Model</th><th>Price per client, per month</th><th>Clients</th><th>Hours a week</th><th>Every month</th></tr>
+    <tr><td>Digital services (retainer)</td><td class="n">₹20,000</td><td class="n">5</td><td class="n">10</td><td class="n">₹1,00,000</td></tr>
+    <tr><td>Digital consulting (retainer)</td><td class="n">₹40,000</td><td class="n">3</td><td class="n">6</td><td class="n">₹1,20,000</td></tr>
+    <tr><td>Digital product + services</td><td class="n">₹15,000 + product sales</td><td class="n">6</td><td class="n">8</td><td class="n">₹1,20,000+</td></tr>
+  </table>
+  <p class="soft" style="font-size:10pt">Not a promise. The numbers you reach depend on your skill, your market, your price and the work you put in. The point is the shape: a few clients, paying monthly, inside hours you actually have.</p>
+
+  <div class="work">
+    <div class="eyebrow" style="margin:0">Your numbers · fill in, then check the hours</div>
+    <div class="row">
+      <div><div class="lbl">Price / month</div><div class="blank"></div></div>
+      <div class="op">×</div>
+      <div><div class="lbl">Clients</div><div class="blank"></div></div>
+      <div class="op">×</div>
+      <div><div class="lbl">Hours / client / week</div><div class="blank"></div></div>
+      <div class="op">=</div>
+      <div><div class="lbl">Every month</div><div class="blank"></div></div>
+    </div>
+    <p class="soft" style="font-size:9.5pt;margin:8pt 0 0">Hours check: clients × hours per client must be under the hours you have each week. If it is not, raise the price, not the hours.</p>
+  </div>
+
+  <div class="three">
+    <div class="box"><b>No office.</b><span>A laptop and a phone. Your home address is your business address.</span></div>
+    <div class="box"><b>No team. No big spend.</b><span>You are the business. Under ₹6,000 a year before the first client.</span></div>
+    <div class="box"><b>5 to 10 hours a week.</b><span>And a skill people already ask you for. That is the whole entry ticket.</span></div>
+  </div>
+  <div class="foot"><span>The Recurring Income Blueprint</span><span>swapnilonline.com · 1</span></div>
+</section>
+
+<!-- ================= PAGE 2: THE CHAIN ================= -->
+<section class="page">
+  <div class="rule"></div>
+  <div class="eyebrow">The road, in order</div>
+  <h1>Skill → Offer → Client → Business → Scale</h1>
+  <p class="soft" style="margin-top:8pt;max-width:66ch">Five links. Each one ends with something you can hold, not something you learned. Most people skip from Skill to Scale and wonder why nothing earns. The line only rises when the links are built in order.</p>
+
+  <div class="chain">
+    <svg viewBox="0 0 1000 300" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A rising line through five points: Skill, Offer, Client, Business, Scale">
+      <defs>
+        <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#f5c12e"/></marker>
+      </defs>
+      <!-- grid -->
+      <g stroke="#27282b" stroke-width="1">
+        <line x1="60" y1="250" x2="960" y2="250"/><line x1="60" y1="190" x2="960" y2="190"/><line x1="60" y1="130" x2="960" y2="130"/><line x1="60" y1="70" x2="960" y2="70"/>
+      </g>
+      <text x="60" y="290" fill="#a6a6a3" font-family="IBM Plex Mono, monospace" font-size="13" letter-spacing="2">TIME →</text>
+      <text x="60" y="30" fill="#a6a6a3" font-family="IBM Plex Mono, monospace" font-size="13" letter-spacing="2">RECURRING INCOME ↑</text>
+      <!-- area under the curve -->
+      <path d="M120,245 C240,240 300,225 320,215 C400,185 440,165 520,150 C600,135 660,120 720,95 C800,65 860,50 920,40 L920,250 L120,250 Z" fill="#f5c12e" opacity="0.08"/>
+      <!-- the rising line -->
+      <path d="M120,245 C240,240 300,225 320,215 C400,185 440,165 520,150 C600,135 660,120 720,95 C800,65 860,50 920,40" fill="none" stroke="#f5c12e" stroke-width="4" marker-end="url(#arr)"/>
+      <!-- nodes -->
+      <g font-family="Bricolage Grotesque, Helvetica, sans-serif" font-weight="800" font-size="16" fill="#f2f1ee" text-anchor="middle">
+        <circle cx="120" cy="245" r="11" fill="#050506" stroke="#f5c12e" stroke-width="4"/><text x="120" y="222">SKILL</text>
+        <circle cx="320" cy="215" r="11" fill="#050506" stroke="#f5c12e" stroke-width="4"/><text x="320" y="192">OFFER</text>
+        <circle cx="520" cy="150" r="11" fill="#050506" stroke="#f5c12e" stroke-width="4"/><text x="520" y="127">CLIENT</text>
+        <circle cx="720" cy="95" r="11" fill="#050506" stroke="#f5c12e" stroke-width="4"/><text x="720" y="72">BUSINESS</text>
+        <circle cx="900" cy="43" r="11" fill="#f5c12e" stroke="#f5c12e" stroke-width="4"/><text x="880" y="20">SCALE</text>
+      </g>
+      <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#a6a6a3" text-anchor="middle">
+        <text x="120" y="272">what you know</text><text x="320" y="272">one sentence, with a price</text><text x="520" y="272">the first yes</text><text x="720" y="272">it repeats without you</text><text x="900" y="272">more, without more hours</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="steps">
+    <div class="step"><span class="n">1</span><span class="t">Skill</span><span class="m">What people already pay you for, or ask you for. Not an idea. A thing you can do today.</span><span class="w">Done when: one real person has asked you for it in the last year.</span></div>
+    <div class="step"><span class="n">2</span><span class="t">Offer</span><span class="m">The result, for one kind of person, at a price, in a timeframe. Said in one sentence.</span><span class="w">Done when: a friend can repeat it back, price included.</span></div>
+    <div class="step"><span class="n">3</span><span class="t">Client</span><span class="m">Someone has paid. From your own network first: one message to five people who know you.</span><span class="w">Done when: money has moved. Not agreed. Paid.</span></div>
+    <div class="step"><span class="n">4</span><span class="t">Business</span><span class="m">The page, the proposal, the calendar, the invoice. The second client arrives without starting from zero.</span><span class="w">Done when: a new enquiry goes from hello to paid on templates.</span></div>
+    <div class="step"><span class="n">5</span><span class="t">Scale</span><span class="m">Raise the price. Sell the next thing to existing clients. Automate the repeat. Then, a helper.</span><span class="w">Done when: income grew last quarter and your hours did not.</span></div>
+  </div>
+
+  <div class="eyebrow" style="margin-top:14pt">Where recurring comes from</div>
+  <div class="three" style="margin-top:4pt">
+    <div class="box"><b>Retainers</b><span>A monthly fee for a defined scope. The backbone of a one-person business.</span></div>
+    <div class="box"><b>Repeat clients</b><span>The next thing, offered before the first project ends. Cheaper than any stranger.</span></div>
+    <div class="box"><b>Products</b><span>The piece of your service people can buy without you on the call. Sells while you sleep.</span></div>
+  </div>
+
+  <div class="cta">
+    <div><b>Are you ready? Find out in 3 minutes.</b><br><span class="soft" style="font-size:10pt">Eleven questions. A score out of 14. The one stage to fix first. If you are ready, the full plan and a free call with Swapnil.</span></div>
+    <span class="u">swapnilonline.com/fit</span>
+  </div>
+  <div class="foot"><span>The Recurring Income Blueprint · © Swapnil Shiwalay</span><span>swapnilonline.com · 2</span></div>
+</section>
+</body>
+</html>
