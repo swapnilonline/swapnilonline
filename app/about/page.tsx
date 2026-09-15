@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
-import { site, personalBrands, corporateBrandsExtra } from "@/lib/site";
+import { site } from "@/lib/site";
 import ParallaxBand from "@/components/ParallaxBand";
 import { AllReviews } from "@/components/Reviews";
 
@@ -99,27 +99,6 @@ export default function AboutPage() {
             </li>
           ))}
         </ul>
-      </section>
-
-      <section className="border-t border-line py-16">
-        <p className="eyebrow">Built for</p>
-        <h2 className="mt-3 text-[30px] font-bold sm:text-[36px]">
-          Some of the brands behind the 2,500 websites.
-        </h2>
-        <div className="mt-8 rounded-sm bg-white p-6 sm:p-10">
-          <Image
-            src="/brands.jpg"
-            alt="Logos of HCC, NMIMS, Asian American Heritage Festival, Horizon, Schneider Electric, TVF, Sagar Pictures Entertainment, Pooja Entertainment, Vijayta Films, Classics Films, Hatim Glazing and Cladding, Litmus Marine, Old Harbor, HTOA, ACCI, Yasham, Expo Universe, GRL, Forstar, Premier Logistics and Green Cells"
-            width={1600}
-            height={619}
-            sizes="(min-width: 1024px) 960px, 100vw"
-            className="h-auto w-full"
-          />
-        </div>
-        <p className="mt-4 text-[16px] text-ink-soft">
-          Also {corporateBrandsExtra.join(", ")}. And personal brands including{" "}
-          {personalBrands.join(", ")}.
-        </p>
       </section>
 
       <section className="border-t border-line py-16">
