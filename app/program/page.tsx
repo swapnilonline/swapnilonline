@@ -100,9 +100,9 @@ export default function ProgramPage() {
           <Link href="/call" className="btn btn-primary">
             Book your free call <ArrowRight size={18} aria-hidden="true" />
           </Link>
-          <Link href="/fit" className="btn btn-ghost">
-            Haven&rsquo;t taken the Fit Score? Start there
-          </Link>
+          <a href="/offer.pdf" download className="btn btn-ghost">
+            Download the offer as a PDF
+          </a>
         </div>
       </section>
 

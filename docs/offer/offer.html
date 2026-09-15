@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Swapnil Shiwalay · The Offer</title>
+<style>
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:500;src:url(../blueprint/fonts/bricolagegrotesque-3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvSniyMg.woff2) format('woff2');}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:600;src:url(../blueprint/fonts/bricolagegrotesque-3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvcXlyMg.woff2) format('woff2');}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:700;src:url(../blueprint/fonts/bricolagegrotesque-3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvfzlyMg.woff2) format('woff2');}
+@font-face{font-family:'Bricolage Grotesque';font-style:normal;font-weight:800;src:url(../blueprint/fonts/bricolagegrotesque-3y9U6as8bTXq_nANBjzKo3IeZx8z6up5BeSl5jBNz_19PpbpMXuECpwUxJBOm_OJWiaaD30YfKfjZZoLvZvlyMg.woff2) format('woff2');}
+@font-face{font-family:'Newsreader';font-style:italic;font-weight:400;src:url(../blueprint/fonts/newsreader-cY9kfjOCX1hbuyalUrK439vogqC9yFZCYg7oRZaLP4obnf7fTXglsMwoT-ZF.woff2) format('woff2');}
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:400;src:url(../blueprint/fonts/newsreader-cY9qfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBCzBDXXD9JVF438weI_ACQ.woff2) format('woff2');}
+@font-face{font-family:'Newsreader';font-style:normal;font-weight:500;src:url(../blueprint/fonts/newsreader-cY9qfjOCX1hbuyalUrK49dLac06G1ZGsZBtoBCzBDXXD9JVF438wSo_ACQ.woff2) format('woff2');}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;src:url(../blueprint/fonts/ibmplexmono--F63fjptAgt5VM-kVkqdyU8n5i0.woff2) format('woff2');}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:500;src:url(../blueprint/fonts/ibmplexmono--F6qfjptAgt5VM-kVkqdyU8n3twJ8lI.woff2) format('woff2');}
+  @page { size: A4; margin: 0; }
+  :root { --ground:#050506; --surface:#111213; --surface-2:#1a1b1d; --ink:#f2f1ee; --soft:#a6a6a3; --line:#27282b; --mark:#f5c12e; --money:#e3b263;
+    --display:"Bricolage Grotesque",Helvetica,Arial,sans-serif; --body:"Newsreader",Georgia,serif; --mono:"IBM Plex Mono",Menlo,monospace; }
+  * { box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+  html, body { margin:0; background:var(--ground); color:var(--ink); font-family:var(--body); font-size:12pt; line-height:1.5; }
+  .page { width:210mm; height:297mm; padding:16mm 16mm 14mm; page-break-after:always; position:relative; overflow:hidden; background:var(--ground); display:flex; flex-direction:column; }
+  .page:last-child { page-break-after:auto; }
+  .rule { position:absolute; top:0; left:0; right:0; height:4mm; background:var(--mark); }
+  .foot { position:absolute; bottom:8mm; left:16mm; right:16mm; display:flex; justify-content:space-between; font-family:var(--mono); font-size:8pt; color:var(--soft); letter-spacing:.06em; }
+  h1,h2,h3 { font-family:var(--display); margin:0; line-height:1.06; letter-spacing:-.015em; }
+  h1 { font-size:32pt; font-weight:800; } h2 { font-size:20pt; font-weight:800; } h3 { font-size:12.5pt; font-weight:700; }
+  p { margin:0 0 8pt; max-width:66ch; }
+  .eyebrow { font-family:var(--mono); font-size:8.5pt; letter-spacing:.14em; text-transform:uppercase; color:var(--soft); margin-bottom:6pt; }
+  .soft { color:var(--soft); } .mark { color:var(--mark); } .money { color:var(--money); font-family:var(--mono); }
+  .big { font-family:var(--display); font-size:15pt; font-weight:700; line-height:1.3; max-width:58ch; }
+  .price { font-family:var(--display); font-size:34pt; font-weight:800; color:var(--mark); line-height:1; }
+  .card { background:var(--surface); border:1pt solid var(--line); padding:10pt 12pt; }
+  .card.hl { border-color:var(--mark); }
+  .grid2 { display:grid; grid-template-columns:1fr 1fr; gap:8pt; }
+  .grid3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8pt; }
+  ul { margin:0; padding-left:0; list-style:none; display:flex; flex-direction:column; gap:4pt; }
+  li { display:grid; grid-template-columns:12pt 1fr; gap:6pt; font-size:10.5pt; line-height:1.4; }
+  li::before { content:""; width:8pt; height:2pt; background:var(--mark); margin-top:8pt; }
+  table { border-collapse:collapse; width:100%; font-size:10.5pt; }
+  th, td { text-align:left; vertical-align:top; padding:6pt 8pt 6pt 0; border-bottom:1pt solid var(--line); }
+  th { font-family:var(--mono); font-size:8pt; letter-spacing:.08em; text-transform:uppercase; color:var(--soft); font-weight:500; }
+  td.k { font-family:var(--mono); font-size:9.5pt; white-space:nowrap; color:var(--soft); }
+  .timeline { display:flex; flex-direction:column; }
+  .timeline div { display:grid; grid-template-columns:58pt 1fr; gap:10pt; padding:4.5pt 0; border-top:1pt solid var(--line); font-size:10.5pt; line-height:1.4; }
+  .timeline div:last-child { border-bottom:1pt solid var(--line); }
+  .timeline b { font-family:var(--mono); font-weight:500; font-size:9.5pt; color:var(--money); padding-top:2pt; }
+  .callout { border-left:3pt solid var(--mark); background:var(--surface); padding:8pt 12pt; margin-top:8pt; font-size:10.5pt; }
+  .stamp { display:inline-block; font-family:var(--mono); font-size:8.5pt; letter-spacing:.12em; text-transform:uppercase; background:var(--mark); color:#0b0b0c; padding:3pt 7pt; }
+  .cred { margin-top:auto; display:flex; gap:12pt; align-items:flex-end; }
+  .cred img { width:30mm; height:auto; }
+</style>
+</head>
+<body>
+
+<!-- ============ 1. THE OFFER ============ -->
+<section class="page">
+  <div class="rule"></div>
+  <div class="eyebrow">For people who qualified on the Fit Score · private</div>
+  <h1>Get paid every month.<br>From home. Without a job.</h1>
+  <p class="big" style="margin-top:12pt">This is the offer. Two ways to work with me, 1:1, from your skill to a 6-figure recurring income. Read it before our call, so the thirty minutes go on your business, not on the brochure.</p>
+
+  <div class="eyebrow" style="margin-top:12pt">The framework</div>
+  <div class="grid2" style="margin-bottom:10pt">
+    <div class="card"><h3 class="mark">ONE PERSON</h3><p class="soft" style="font-size:10.5pt;margin:2pt 0 0">One kind of customer, in one situation, with a name.</p></div>
+    <div class="card"><h3 class="mark">ONE PROBLEM</h3><p class="soft" style="font-size:10.5pt;margin:2pt 0 0">Expensive enough that they will pay to make it go away.</p></div>
+    <div class="card"><h3 class="mark">ONE PRODUCT</h3><p class="soft" style="font-size:10.5pt;margin:2pt 0 0">A service, a decision, or a product. One, not a menu.</p></div>
+    <div class="card"><h3 class="mark">ONE PROMISE</h3><p class="soft" style="font-size:10.5pt;margin:2pt 0 0">The result, for whom, at a price, in a timeframe. One sentence.</p></div>
+  </div>
+
+  <div class="eyebrow">Two ways in</div>
+  <table>
+    <tr><th></th><th>The 7-Day Digital Business Foundation</th><th>The 90-Day Digital Business Setup Challenge</th></tr>
+    <tr><td class="k">For</td><td>Getting 100% clear before you launch</td><td>Building the whole business, to paying clients</td></tr>
+    <tr><td class="k">Length</td><td>Seven days of 1:1 hand-holding</td><td>Ninety days, weekly 1:1, WhatsApp on working days</td></tr>
+    <tr><td class="k">You leave with</td><td>Person, problem, product, promise, page plan, recurring-income plan</td><td>Website live, first paying clients, pipeline and systems that repeat</td></tr>
+    <tr><td class="k">Guarantee</td><td>Full refund up to 24 hours before we start</td><td>Paying client by day 90, or I keep working at no cost</td></tr>
+    <tr><td class="k">Fee</td><td class="money">₹7,500</td><td class="money">₹75,000 · or 3 × ₹27,500</td></tr>
+  </table>
+  <p class="soft" style="font-size:10pt;margin-top:8pt">The Foundation fee is credited in full toward the Challenge if you join within 60 days. Most people start with the Foundation.</p>
+
+  <div class="cred">
+    <img src="../../public/swapnil-portrait.jpg" alt="">
+    <div>
+      <div style="font-family:var(--display);font-weight:800;font-size:14pt">Swapnil Shiwalay</div>
+      <div class="soft">Digital Business Consultant · Teacher | Entrepreneur</div>
+      <div class="soft" style="font-family:var(--mono);font-size:9pt;margin-top:3pt">20 years working from home · 2,500+ websites · Rated Excellent on Trustpilot</div>
+    </div>
+  </div>
+  <div class="foot"><span>The Offer · Swapnil Shiwalay</span><span>swapnilonline.com · 1</span></div>
+</section>
+
+<!-- ============ 2. FOUNDATION ============ -->
+<section class="page">
+  <div class="rule"></div>
+  <div class="eyebrow">Option one</div>
+  <h1>The 7-Day Digital Business Foundation</h1>
+  <p class="big" style="margin-top:10pt">Seven days of hand-holding before you launch. You finish with 100% clarity on your digital business.</p>
+  <div style="display:flex;gap:16pt;align-items:baseline;margin:4pt 0 9pt"><span class="price">₹7,500</span><span class="soft" style="font-family:var(--mono);font-size:10pt">one payment · credited in full toward the Challenge within 60 days</span></div>
+
+  <div class="eyebrow">Day by day</div>
+  <div class="timeline">
+    <div><b>Day 1</b><span>Your customer, named. A real person in a real situation, not a category. Your model chosen: services, consulting or products. We do this together on a call.</span></div>
+    <div><b>Day 2</b><span>The problem, priced. What it costs them in money or time when it stays unsolved. This number becomes your pricing power.</span></div>
+    <div><b>Day 3</b><span>Your offer in one sentence: the result, for whom, at a price, in a timeframe. You say the price out loud to me first.</span></div>
+    <div><b>Day 4</b><span>Proof. What you have already done for anyone, paid or unpaid, turned into the one line that goes on your page.</span></div>
+    <div><b>Day 5</b><span>The one-page plan: who you help, the offer with the price, the proof, the way to book you. And the first five outreach messages, written.</span></div>
+    <div><b>Day 6</b><span>The pipeline on paper: where your first ten conversations will come from, and the three-line message that starts them.</span></div>
+    <div><b>Day 7</b><span>Your recurring-income plan: price × clients × hours, on one page, with the road from here to a 6-figure month. Then the decision: launch alone, or build it together.</span></div>
+  </div>
+
+  <div class="grid2" style="margin-top:9pt">
+    <div class="card"><h3>How we work</h3><ul style="margin-top:4pt"><li>One 90-minute call on day 1, then daily 1:1 on WhatsApp and short calls as needed</li><li>Every day has one task. You do it, I review it the same day</li><li>You keep every document we make</li></ul></div>
+    <div class="card"><h3>Who it is for</h3><ul style="margin-top:4pt"><li>You scored Almost there, or you want to be certain before you commit ninety days</li><li>You have a skill people ask you for and five hours a week</li><li>You would rather be clear in a week than busy for a year</li></ul></div>
+  </div>
+  <div class="callout"><b style="font-family:var(--display)">Refund:</b> full refund up to 24 hours before we start. After that the fee is earned by the work done, and it is credited in full if you join the Challenge within 60 days.</div>
+  <div class="foot"><span>The Offer · The 7-Day Digital Business Foundation</span><span>swapnilonline.com · 2</span></div>
+</section>
+
+<!-- ============ 3. CHALLENGE ============ -->
+<section class="page">
+  <div class="rule"></div>
+  <div class="eyebrow">Option two · for people who qualify</div>
+  <h1>The 90-Day Digital Business Setup Challenge</h1>
+  <p class="big" style="margin-top:10pt">The whole build, 1:1. From your skill to paying clients who come back every month, with the website, the pipeline and the systems that make it repeat.</p>
+  <div style="display:flex;gap:16pt;align-items:baseline;margin:4pt 0 9pt"><span class="price">₹75,000</span><span class="soft" style="font-family:var(--mono);font-size:10pt">or 3 × ₹27,500 · overseas clients pay in USD</span></div>
+
+  <div class="eyebrow">Week by week</div>
+  <div class="timeline">
+    <div><b>Week 1</b><span>Everything in the Foundation: person, problem, product, promise, proof, page plan, income plan.</span></div>
+    <div><b>Weeks 2 to 3</b><span>The offer tested on three real people until they can repeat it back, price included. Proposal and pricing written.</span></div>
+    <div><b>Week 4</b><span>Your website live. I build it with you, not assigned as homework. One page that books you.</span></div>
+    <div><b>Weeks 5 to 8</b><span>Launch. Five messages a week to people who know you. Every conversation rehearsed with me first. The first yes.</span></div>
+    <div><b>Weeks 9 to 12</b><span>Systemize from the first sale: proposal template, calendar link, invoice flow, follow-up rule. The second client without starting from zero.</span></div>
+    <div><b>Day 90</b><span>Paying clients, retainers and repeat work, and the plan from here to the number. Or we keep going at no cost until the first client is real.</span></div>
+  </div>
+
+  <div class="grid3" style="margin-top:9pt">
+    <div class="card"><h3>What is included</h3><ul style="margin-top:4pt"><li>12 weekly 1:1 sessions, 45 minutes</li><li>WhatsApp access on working days</li><li>Your website, built and live</li><li>Offer, proposal, scripts, written together</li></ul></div>
+    <div class="card"><h3>What I need from you</h3><ul style="margin-top:4pt"><li>Five to ten hours a week</li><li>Show up to every session</li><li>Ship what we agree each week</li><li>Run the framework as given, in order</li></ul></div>
+    <div class="card hl"><h3>The guarantee</h3><p style="font-size:10.5pt;margin:4pt 0 0">Do the above, and if you do not have a paying client by day 90, I keep working with you at no cost until you do. Not a refund. A result.</p></div>
+  </div>
+  <div class="callout"><b style="font-family:var(--display)">Refund:</b> full refund within 7 days of your first session if it is not for you. After that, no refund on fees paid, because the work delivered each week cannot be returned. Future instalments stop if you leave.</div>
+  <div class="foot"><span>The Offer · The 90-Day Digital Business Setup Challenge</span><span>swapnilonline.com · 3</span></div>
+</section>
+
+<!-- ============ 4. HOW TO START ============ -->
+<section class="page">
+  <div class="rule"></div>
+  <div class="eyebrow">Straight answers</div>
+  <h2>Questions people ask before they say yes</h2>
+  <div class="grid2" style="margin-top:10pt">
+    <div class="card"><h3>Is a 6-figure recurring income guaranteed?</h3><p class="soft" style="font-size:10.5pt;margin:4pt 0 0">No. Anyone who guarantees income is lying to you. It is the number we build toward, and the maths is done for your case on the call: your price × your clients × your hours. What is guaranteed is the first paying client, or we keep working.</p></div>
+    <div class="card"><h3>I have a full-time job.</h3><p class="soft" style="font-size:10.5pt;margin:4pt 0 0">Fine, if you have five to ten hours a week. The Challenge needs 45 minutes with me and about four hours of doing. Many people build while employed and leave when the business can carry them.</p></div>
+    <div class="card"><h3>Is this a course?</h3><p class="soft" style="font-size:10.5pt;margin:4pt 0 0">No. There are no videos. Every week we sit down 1:1 and work on your business. You leave each session with something finished, not notes.</p></div>
+    <div class="card"><h3>What if I am afraid nobody will buy?</h3><p class="soft" style="font-size:10.5pt;margin:4pt 0 0">Everyone is. You say your price to me first, in practice. Then to a client. The fear does not survive the first yes, and if there is no yes by day 90, we keep going.</p></div>
+    <div class="card"><h3>Why is there a Fit Score and a call first?</h3><p class="soft" style="font-size:10.5pt;margin:4pt 0 0">I work with around ten Challenge clients at a time and take six free calls a week. The score and the call make sure the ninety days will work for both of us. If not yet, I will say so.</p></div>
+    <div class="card"><h3>Can I pay in instalments?</h3><p class="soft" style="font-size:10.5pt;margin:4pt 0 0">Yes. The Challenge is three payments of ₹27,500. The Foundation is one payment of ₹7,500, credited in full if you join the Challenge within 60 days.</p></div>
+  </div>
+
+  <div class="eyebrow" style="margin-top:14pt">How to start</div>
+  <div class="timeline">
+    <div><b>1</b><span>Reply to the message this came with, or WhatsApp +91 98193 59393, with the word <b style="color:var(--ink)">FOUNDATION</b> or <b style="color:var(--ink)">CHALLENGE</b>.</span></div>
+    <div><b>2</b><span>You get a payment link and a one-page agreement. Pay by UPI, card or bank transfer. Overseas, by card in USD.</span></div>
+    <div><b>3</b><span>Within 24 hours of payment you get your day-1 call time and an onboarding form: your skill, your three people, your hours.</span></div>
+    <div><b>4</b><span>Day 1. We name your customer. Everything else follows in order.</span></div>
+  </div>
+
+  <div class="callout" style="margin-top:14pt;display:flex;justify-content:space-between;align-items:center;gap:12pt">
+    <div><b style="font-family:var(--display);font-size:13pt">Not sure which one? Book the free call.</b><br><span class="soft" style="font-size:10pt">Thirty minutes on your potential, positioning, market, offer and earning. You leave with the map either way.</span></div>
+    <span class="mark" style="font-family:var(--mono);font-size:10pt;white-space:nowrap">swapnilonline.com/call</span>
+  </div>
+  <p class="soft" style="font-size:9pt;margin-top:12pt">Prices in Indian rupees, inclusive of applicable taxes unless a GST invoice is requested. Terms: swapnilonline.com/refunds. This document is for the person it was sent to.</p>
+  <div class="foot"><span>The Offer · © Swapnil Shiwalay</span><span>swapnilonline.com · 4</span></div>
+</section>
+</body>
+</html>

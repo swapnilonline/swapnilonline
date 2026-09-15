@@ -101,6 +101,7 @@ The old WordPress site stays reachable at its host until DNS moves, so there is 
 - `app/globals.css`: design tokens. Fonts load in `app/layout.tsx`.
 - `scripts/apps-script/Code.gs`: the free lead receiver.
 - `public/home-video-v2.mp4` + `home-video-poster-v2.jpg`: the home page video, 720p, 5 MB. Replace both files to change it, or set `NEXT_PUBLIC_HOME_VIDEO_ID` to use YouTube instead.
+- `public/offer.pdf`: the 4-page offer sent to qualified people. Prices live here, not on public pages. Source in `docs/offer/`.
 - `public/recurring-income-blueprint.pdf`: the 2-page formula download. Source in `docs/formula/`.
 - `public/digital-business-blueprint.pdf`: the lead magnet. Source in `docs/blueprint/blueprint.html`; re-render with the command in that folder's README.
 - `scripts/apps-script/Nurture.gs`: the 7-day email sequence, applicant follow-ups, and the daily WhatsApp digest.
