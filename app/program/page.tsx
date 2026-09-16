@@ -94,7 +94,8 @@ export default function ProgramPage() {
           Digital services, digital consulting or digital products. The free call maps your
           potential, positioning, market, offer and earning. If you qualify, you choose: seven days
           of hand-holding before launch for 100% clarity, or ninety days to build the whole thing
-          with me, ending with paying clients or we keep going.
+          with me, ending with paying clients or we keep going. I take ten Challenge clients at a
+          time. When the tenth joins, the next start date moves.
         </p>
         <div className="flex flex-col gap-3 sm:flex-row">
           <Link href="/call" className="btn btn-primary">

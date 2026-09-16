@@ -19,10 +19,9 @@ export default function Home() {
             Get paid every month. <span className="hl">From home. Without a job.</span>
           </h1>
           <p className="measure text-[21px] leading-[1.45] text-ink sm:text-[23px]">
-            You already have a skill. People already ask you for help with it. I show you how to
-            turn that into a business that pays you every month, from home. Digital services,
-            consulting or products. First, a 3-minute check to see if you are ready. If you are,
-            you get the full plan and a free call with me.
+            From a skill people ask you for, to a business that pays you every month. From home.
+            Digital services, consulting or products. First, a 3-minute check to see if you are
+            ready. If you are, you get the full plan and a free call with me.
           </p>
           <div className="flex flex-col gap-3 sm:flex-row">
             <Link href="/fit" className="btn btn-primary">
@@ -31,6 +30,9 @@ export default function Home() {
           </div>
           <p className="font-mono text-[12.5px] text-ink-soft">
             11 questions · 3 minutes · free · no pitch
+          </p>
+          <p className="font-mono text-[12.5px] text-ink-soft">
+            6 free calls a week · 10 clients at a time · one of me
           </p>
           <TrustLine />
         </div>
@@ -66,10 +68,10 @@ export default function Home() {
             />
             <div className="flex flex-col gap-0.5">
               <p className="font-display text-[19px] font-extrabold leading-tight">
-                20 Years. Work From Home. 2,500+ Websites.
+                20 years from home. 2,500+ websites built.
               </p>
               <p className="text-[15px] text-ink-soft">
-                {site.name}, {site.role}. I also teach social media advertising at Mithibai College, Mumbai.
+                Rated Excellent on Trustpilot, every review five stars. {site.name}, {site.role}. I also teach social media advertising at Mithibai College, Mumbai.
               </p>
             </div>
           </div>
@@ -81,7 +83,7 @@ export default function Home() {
       {/* Promise */}
       <section className="grid gap-8 border-t border-line py-16 lg:grid-cols-[1fr_1.4fr]">
         <h2 className="text-[30px] font-bold sm:text-[36px]">
-          Here is the road. Step by step.
+          Here is how you get from here to there.
         </h2>
         <div className="flex flex-col gap-5 text-[19px]">
           <ul className="flex flex-col gap-3 pl-0">
@@ -118,9 +120,9 @@ Recurring means clients who pay you every month, not projects you chase. A 6-fig
         <p className="measure mt-4 text-[17px] text-ink-soft">{site.audience} It does not matter if you have a job, freelance, or are between things right now.</p>
         <div className="mt-10 grid gap-px overflow-hidden border border-line bg-line sm:grid-cols-3">
           {[
-            ["Digital services", "You do the work for them.", "Stop chasing projects by the hour. Sell one packaged service that clients come back for, at a price you set. The fastest way to your first rupee."],
-            ["Digital consulting", "You tell them what to do.", "Turn what you know into advice people pay for, month after month. The highest fee per client."],
-            ["Digital products", "You package it. They do it themselves.", "Turn the idea you keep talking about into a course, a kit or a program that sells while you sleep. Grows the furthest."],
+            ["Digital services", "You do the work for them.", "From chasing projects by the hour, to clients who come back every month at a price you set. The fastest way to your first rupee."],
+            ["Digital consulting", "You tell them what to do.", "From \u201cI know this\u201d, to advice people pay for month after month. The highest fee per client."],
+            ["Digital products", "You package it. They do it themselves.", "From an idea you keep talking about, to a course, a kit or a program that sells while you sleep. Grows the furthest."],
           ].map(([t, how, line]) => (
             <div key={t} className="flex flex-col gap-3 bg-surface p-7">
               <h3 className="font-display text-[22px] font-extrabold uppercase tracking-wide">{t}</h3>
@@ -164,7 +166,7 @@ Recurring means clients who pay you every month, not projects you chase. A 6-fig
             ["Every week, something gets done", "45 minutes with me, 1:1, on your business. Not a group call with 40 people. You leave each week with a finished piece, not a to-do list."],
             ["Your website is live by week 4", "I have built 2,500 of them. I build yours with you. You never lose a month to \u201cworking on the site\u201d."],
             ["You say your price out loud by week 3", "We write your offer, your price and your messages together. Then we test them on real people before you send them."],
-            ["You end with paying clients, or we keep going", "Show up, do the work we agree on, and if you have no paying client by day 90, I keep working with you for free until you do."],
+            ["Backed by a first-client guarantee", "Show up, do the work we agree on, and if you have no paying client by day 90, I keep working with you for free until you do. In writing."],
           ].map(([t, d]) => (
             <li key={t} className="grid grid-cols-[28px_1fr] gap-3">
               <Check size={22} className="mt-1 text-accent" aria-hidden="true" />
@@ -177,7 +179,7 @@ Recurring means clients who pay you every month, not projects you chase. A 6-fig
         </ul>
       </section>
 
-      <ReviewsSection />
+      <ReviewsSection heading="What people say. Verified on Trustpilot, unedited." />
 
       {/* CTA */}
       <section className="border-t border-line py-16">

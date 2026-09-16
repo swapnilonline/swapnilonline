@@ -60,7 +60,14 @@ Primary keyword first, then the long-tail variants each article is written to ca
 | 11 | Traffic without paid ads | Quora answer + link |
 | 12 | Digital products from a service | LinkedIn: the three worked examples |
 
-Then one post every two weeks. Next six topics, in order: "How to write an offer in one sentence", "Launch Call vs discovery call: what to say in the first 30 minutes", "Retainers for freelancers in India", "Proposal template for consultants", "How much time does a side business need", "LinkedIn for consultants in India who hate posting".
+Then one post every two weeks. Next six titles, in order, written with curiosity hooks (use these on the post and the LinkedIn share, never on a button):
+
+1. "The Real Reason Your Posts Get Likes and No Clients"
+2. "What No One Tells You About Pricing by the Hour"
+3. "The Overlooked Step Between a Skill and a Business"
+4. "The Little-Known Reason Retainers Beat Projects in India"
+5. "What a Proposal Template Reveals About Your Offer"
+6. "The Surprising Amount of Time a Side Business Actually Needs"
 
 ## On-page rules used in every post
 

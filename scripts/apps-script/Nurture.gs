@@ -62,7 +62,7 @@ Swapnil
 `Hi {name}, Swapnil here. Your Fit Score is {score}/14, {lane}, weakest stage {weakest}. Over the next 7 days I'll send you one short lesson a day, one per stage, so you can see the whole road from where you are to a business that runs. Reply STOP anytime. Lesson 1 tomorrow morning.`,
   },
   1: {
-    subject: "Day 1 · Discover: pick a customer, not an idea",
+    subject: "Day 1 · The little-known first step. It's not a niche.",
     email:
 `{name},
 

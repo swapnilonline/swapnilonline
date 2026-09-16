@@ -11,6 +11,13 @@ export const metadata: Metadata = {
   robots: { index: false },
 };
 
+/** The retake date, 30 days from the request. This page is rendered per request, so it is always current. */
+function retakeDate(): string {
+  const d = new Date();
+  d.setDate(d.getDate() + 30);
+  return d.toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
+}
+
 export default async function ResultPage({
   searchParams,
 }: {
@@ -28,6 +35,7 @@ export default async function ResultPage({
   );
   const waHref = site.whatsapp ? `https://wa.me/${site.whatsapp}?text=${waText}` : null;
   const callQuery = new URLSearchParams({ lane: r.lane, score: String(r.total), weakest: r.weakest }).toString();
+  const retake = retakeDate();
 
   return (
     <div className="mx-auto max-w-5xl px-5">
@@ -93,9 +101,9 @@ export default async function ResultPage({
       {r.lane === "challenge" && (
         <section className="border-t border-line py-14">
           <div className="flex flex-col gap-6 bg-panel px-7 py-10 text-panel-ink sm:px-10 sm:py-12">
-            <p className="font-mono text-[12px] uppercase tracking-[0.12em] text-mark">You qualify · program details and the free call</p>
+            <p className="font-mono text-[12px] uppercase tracking-[0.12em] text-mark">You qualify · {site.callsPerWeek} free calls this week · one of me</p>
             <h2 className="max-w-[24ch] text-[30px] font-extrabold text-panel-ink sm:text-[36px]">
-              Pick a time. We&rsquo;ll do the earning arithmetic on the call.
+              Pick your call before this week&rsquo;s {site.callsPerWeek} are gone.
             </h2>
             <p className="max-w-[56ch] text-[17px] text-panel-ink/85">
               Thirty minutes: your skill&rsquo;s potential, positioning, market, offer and what it can
@@ -147,14 +155,15 @@ export default async function ResultPage({
         <section className="border-t border-line py-14">
           <div className="flex flex-col gap-4 border-l-[3px] border-mark bg-mark-soft/60 px-6 py-6">
             <p className="eyebrow">This month</p>
-            <p className="font-display text-[22px] font-bold">Work {weak.label}. Then retake the score in 30 days.</p>
+            <p className="font-display text-[22px] font-bold">Work {weak.label}. Then retake the score on {retake}.</p>
             <p className="text-[16.5px]">{weakCopy.action}</p>
             <p className="text-[16px] text-ink-soft">
-              The Blueprint below has a worksheet for every stage. Most people who retake after a
-              month move up a lane, and the free call is open the moment they do.
+              Put that date in your calendar now. The Blueprint below has a worksheet for every
+              stage. Most people who retake after a month move up a lane, and the free call is
+              open the moment they do.
             </p>
             <Link href="/fit" className="btn btn-ghost self-start">
-              <RotateCcw size={18} aria-hidden="true" /> Retake in 30 days
+              <RotateCcw size={18} aria-hidden="true" /> Retake on {retake}
             </Link>
           </div>
         </section>

@@ -49,7 +49,7 @@ export default function Stalls() {
     <section className="border-t border-line py-16">
       <p className="eyebrow">Sound familiar?</p>
       <h2 className="mt-3 max-w-[22ch] text-[30px] font-bold sm:text-[36px]">
-        Six ways people get stuck. Not one of them is your fault.
+        The real reason people get stuck. Not one of these is your fault.
       </h2>
       <p className="measure mt-4 text-[17px] text-ink-soft">
         Twenty years of watching people start from home. It is always one of these six. Find yours.
@@ -75,11 +75,12 @@ export default function Stalls() {
       <div className="mt-10 grid gap-6 border-t-2 border-mark pt-8 lg:grid-cols-[1.3fr_1fr] lg:items-center">
         <div className="flex flex-col gap-3">
           <p className="font-display text-[26px] font-extrabold leading-tight sm:text-[30px]">
-            Every one of these has a fix. First, find out if you&rsquo;re ready.
+            Every one of these has a fix. Every month you wait is a month of clients you didn&rsquo;t get.
           </p>
           <p className="text-[17px] text-ink-soft">
-            Three minutes. Eleven questions. If you are ready, you get the fixes, the full plan and a
-            free call with me. If not, you get the Blueprint and one clear thing to do this week.
+            Check if you&rsquo;re ready today. It takes three minutes. If you are, you get the fixes,
+            the full plan and a free call with me. If not, you get the Blueprint and one clear thing
+            to do this week.
           </p>
         </div>
         <div className="flex flex-col gap-3 sm:flex-row lg:flex-col">
