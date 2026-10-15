@@ -4,7 +4,7 @@ description: After 2,500 websites, the honest answer: you need one page, not a b
 date: 2026-09-15
 keywords: do i need a website to start a business, one page website for consultants, freelancer website india, simple website for coaching business, what should a consultant website include
 cluster: Build
-related: how-to-get-your-first-client, how-to-price-consulting-services-india
+related: work-from-anywhere-business, how-to-get-your-first-client, how-to-price-consulting-services-india
 ---
 
 I have built more than 2,500 websites, most of them for people at the very start of a business. So the answer you would expect from me is "yes, and here is a package". The honest answer is different. You need one page. Not a brand. Not a logo suite. Not the twelve-page site you will be "finishing" for a year.

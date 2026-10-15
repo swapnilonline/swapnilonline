@@ -5,9 +5,9 @@ import { allPosts } from "@/lib/blog";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Blog: building a business from home, stage by stage",
+  title: "Blog: work from home business, online business and recurring income guides",
   description:
-    "Practical guides for freelancers, consultants and solopreneurs in India: picking a model, packaging an offer, pricing, getting the first client, and the one-page website that books you.",
+    "Practical guides for starting a work from home business in India: online business ideas that pay monthly, picking a model, packaging an offer, pricing, getting the first client, and building a business that works from anywhere.",
   alternates: { canonical: `${site.url}/blog` },
 };
 

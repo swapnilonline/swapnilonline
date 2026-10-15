@@ -4,7 +4,7 @@ description: Same skill, three businesses. One question decides which model is y
 date: 2026-09-15
 keywords: consulting vs coaching, consulting vs coaching vs services, which business model is right for me, done for you vs done with you, coaching or consulting business india
 cluster: Design
-related: how-to-get-your-first-client, how-to-price-consulting-services-india
+related: how-to-start-an-online-business-from-home, how-to-get-your-first-client, how-to-price-consulting-services-india
 ---
 
 A designer can build the website, advise on the brand, or teach founders to do it themselves. Same skill. Three completely different businesses, with different prices, different customers and different ways to fail. Most people never choose. They offer all three, the customer hears indecision, and picks none.

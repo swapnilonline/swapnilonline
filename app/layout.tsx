@@ -4,6 +4,7 @@ import "./globals.css";
 import { site } from "@/lib/site";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SiteJsonLd from "@/components/SiteJsonLd";
 import Script from "next/script";
 
 const GA_ID = process.env.NEXT_PUBLIC_GA_ID;
@@ -61,6 +62,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         >
           Skip to content
         </a>
+        <SiteJsonLd />
         <Header />
         <main id="main" className="flex-1">
           {children}

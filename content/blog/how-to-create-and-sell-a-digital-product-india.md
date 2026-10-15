@@ -4,7 +4,7 @@ description: The digital products that sell are not ideas. They are pieces of a 
 date: 2026-09-16
 keywords: how to create and sell digital products in india, digital products to sell online india, how to sell digital products in india, digital product ideas for consultants, sell templates online india
 cluster: Scale
-related: what-is-a-lead-magnet, what-is-a-sales-funnel-how-to-build-one
+related: what-is-a-freedom-business, what-is-a-lead-magnet, what-is-a-sales-funnel-how-to-build-one
 ---
 
 Every list of "digital products to sell in India" says the same things: ebooks, courses, templates, presets, Notion dashboards. What none of them say is where a product that actually sells comes from. It does not come from an idea. It comes from a service you already deliver, sliced into a piece people can buy without you on the call.

@@ -4,7 +4,7 @@ description: Your first client already knows you, or knows someone who does. Sen
 date: 2026-09-15
 keywords: how to get your first client, first consulting client, first freelance client without ads, how to get clients without ads india, referral message template
 cluster: Launch
-related: consulting-vs-coaching-vs-services, do-you-need-a-website-to-start-a-business
+related: how-to-start-an-online-business-from-home, consulting-vs-coaching-vs-services, do-you-need-a-website-to-start-a-business
 ---
 
 Your first client will not come from an ad. Not from a viral post, not from a job platform, not from a perfect portfolio. Across 2,500 websites built for people at the start of a business, the pattern is almost boring: the first client came from someone who already knew them, or from someone that person knew.

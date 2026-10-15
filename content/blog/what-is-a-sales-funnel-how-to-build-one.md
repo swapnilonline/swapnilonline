@@ -4,7 +4,7 @@ description: A sales funnel is the path from stranger to paying client. For a on
 date: 2026-09-16
 keywords: what is a sales funnel, how to build a sales funnel, sales funnel for coaches, sales funnel for consultants, funnel building for coaching business india
 cluster: Systemize
-related: what-is-a-lead-magnet, how-to-generate-leads-for-a-service-business-india
+related: work-from-anywhere-business, what-is-a-lead-magnet, how-to-generate-leads-for-a-service-business-india
 ---
 
 A sales funnel is the path a person takes from hearing about you for the first time to paying you. That is all. The word gets dressed up in software and seven-stage diagrams, but for a one-person coaching or consulting business it is three steps, and you can build it in a weekend.

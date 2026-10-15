@@ -4,7 +4,7 @@ description: Forget the registration checklist for now. The order that works: pi
 date: 2026-09-15
 keywords: how to start a consulting business from home in india, start consultancy from home, home based consulting business india, consulting business ideas india, how to become a consultant in india
 cluster: Discover
-related: consulting-vs-coaching-vs-services, how-to-price-consulting-services-india
+related: work-from-home-business-india, consulting-vs-coaching-vs-services, how-to-price-consulting-services-india
 ---
 
 Search this question and you get registration guides: pick a structure, get a PAN, open a current account, register for GST. All true, all useful, and all the wrong first step. Registration is what you do once someone has agreed to pay you. Before that, you have a different problem: what exactly are you selling, and to whom?
