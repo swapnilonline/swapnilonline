@@ -24,9 +24,18 @@ npm run dev
 
 ## Launch checklist
 
-### 1. Lead pipeline (5 minutes, free)
+### 1. Leads by email (3 minutes)
 
-Leads need somewhere to land. The included Google Apps Script writes each one to a Google Sheet and emails you.
+Every Fit Score lead and call application is emailed to `LEAD_TO_EMAIL` with the score, lane, weakest stage, contact details and a one-tap WhatsApp link. Reply-to is set to the lead, so replying reaches them.
+
+1. Sign up at resend.com with digital@swapnilonline.com (free tier: 3,000 emails a month).
+2. API Keys → Create → copy it.
+3. In Vercel → Settings → Environment Variables add `RESEND_API_KEY` and `LEAD_TO_EMAIL=digital@swapnilonline.com`. Redeploy.
+4. Optional, for a sender on your own domain: Resend → Domains → add swapnilonline.com, add the DNS records it shows, then set `LEAD_FROM_EMAIL=leads@swapnilonline.com`.
+
+### 1a. Lead sheet (optional, 5 minutes, free)
+
+If you also want every lead in a Google Sheet, the included Apps Script writes each one there and emails you.
 
 1. Create a Google Sheet called "swapnilonline leads".
 2. Extensions → Apps Script. Paste `scripts/apps-script/Code.gs`.

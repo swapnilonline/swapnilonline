@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { applySchema, fieldErrors } from "@/lib/validation";
 import { forward } from "@/lib/webhook";
+import { applicationEmail, sendLeadEmail } from "@/lib/email";
 import { rateLimit, clientKey } from "@/lib/ratelimit";
 
 export async function POST(request: Request) {
@@ -27,6 +28,9 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, errors: fieldErrors(parsed.error) }, { status: 422 });
   }
 
-  const { ok } = await forward({ type: "application", data: parsed.data });
-  return NextResponse.json({ ok: true, forwarded: ok, ready: parsed.data.ready });
+  const [hook, mail] = await Promise.all([
+    forward({ type: "application", data: parsed.data }),
+    sendLeadEmail(applicationEmail(parsed.data), parsed.data.email),
+  ]);
+  return NextResponse.json({ ok: true, forwarded: hook.ok, emailed: mail.ok && !mail.skipped, ready: parsed.data.ready });
 }

@@ -17,7 +17,7 @@
  * Re-deploy (Deploy → Manage deployments → edit → new version) whenever you change this file.
  */
 
-const NOTIFY_EMAIL = "contact@swapnilonline.com";
+const NOTIFY_EMAIL = "digital@swapnilonline.com";
 const SECRET = "change-me-to-a-long-random-string";
 const CAL_URL = "https://calendly.com/swapnilonline/launch-call";
 

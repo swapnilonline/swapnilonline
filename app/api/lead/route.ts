@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { leadSchema, fieldErrors } from "@/lib/validation";
 import { forward } from "@/lib/webhook";
+import { leadEmail, sendLeadEmail } from "@/lib/email";
 import { rateLimit, clientKey } from "@/lib/ratelimit";
 
 export async function POST(request: Request) {
@@ -27,7 +28,10 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, errors: fieldErrors(parsed.error) }, { status: 422 });
   }
 
-  const { ok } = await forward({ type: "lead", data: parsed.data });
-  // A webhook outage must not block the visitor from seeing their result.
-  return NextResponse.json({ ok: true, forwarded: ok });
+  // Email and webhook run together; neither can block the visitor from seeing their result.
+  const [hook, mail] = await Promise.all([
+    forward({ type: "lead", data: parsed.data }),
+    sendLeadEmail(leadEmail(parsed.data), parsed.data.email),
+  ]);
+  return NextResponse.json({ ok: true, forwarded: hook.ok, emailed: mail.ok && !mail.skipped });
 }
