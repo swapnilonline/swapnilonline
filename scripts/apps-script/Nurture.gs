@@ -30,7 +30,7 @@
 
 const SEND_HOUR = 9;                       // 9am IST
 const TIMEZONE = "Asia/Kolkata";
-const SITE = "https://swapnilonline.com";
+const SITE = "https://www.swapnilonline.com";
 const CALL_URL = SITE + "/call";
 const FROM_NAME = "Swapnil Shiwalay";
 const STOP_STATUSES = ["stopped", "booked", "client", "lost", "unsubscribed"];

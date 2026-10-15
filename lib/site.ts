@@ -1,7 +1,7 @@
 export const site = {
   name: "Swapnil Shiwalay",
   domain: "swapnilonline.com",
-  url: "https://swapnilonline.com",
+  url: "https://www.swapnilonline.com",
   title: "A 6-Figure Recurring Income, From Home, Without a Job",
   description:
     "Turn a skill people already ask you for into a business that pays you every month. From home. No job. Check if you are ready in 3 minutes. If you are, you get the full plan and a free call with Swapnil, who has done this for 20 years.",
